@@ -1,0 +1,3 @@
+# Project exclude paths
+/spring-boot/spring-boot-start/target/
+/spring-boot/spring-boot-web-start/target/
