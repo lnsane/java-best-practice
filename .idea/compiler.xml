@@ -8,8 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-web-start" />
-        <module name="spring-boot" />
         <module name="spring-boot-jpa" />
+        <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-redis" />
+        <module name="spring-boot" />
         <module name="java-best-practice" />
         <module name="spring-boot-start" />
       </profile>
