@@ -1,0 +1,11 @@
+server:
+  port: 8083
+spring:
+  kafka:
+    consumer:
+      group-id: mytest1
+      auto-offset-reset: earliest
+      heartbeat-interval:
+    bootstrap-servers: localhost:29092
+    template:
+      default-topic: test

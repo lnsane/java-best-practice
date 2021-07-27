@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/spring-boot-kafka/pom.xml" />
       </list>
     </option>
   </component>

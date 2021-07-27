@@ -12,6 +12,7 @@
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-redis" />
         <module name="spring-boot" />
+        <module name="spring-boot-kafka" />
         <module name="java-best-practice" />
         <module name="spring-boot-start" />
       </profile>
