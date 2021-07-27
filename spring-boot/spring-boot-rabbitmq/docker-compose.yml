@@ -2,7 +2,8 @@
 version: '3.8'
 
 services:
-  redis:
-    image: redis:latest
+  rabbitmq:
+    image: rabbitmq:management
     ports:
-      - 6379:6379
+      - 15672:15672
+      - 5672:5672
