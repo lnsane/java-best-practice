@@ -1,0 +1,22 @@
+# Use root/example as user/password credentials
+version: '3.8'
+
+services:
+  elastic-search:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.4
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      discovery.type: single-node
+
+  kibama:
+    image: docker.elastic.co/kibana/kibana:7.13.4
+    ports:
+      - 5601:5601
+    depends_on:
+      - elastic-search
+    environment:
+      ELASTICSEARCH_URL: http://elastic-search:9200
+      ELASTICSEARCH_HOSTS: '["http://elastic-search:9200"]'
+      I18N_LOCALE: zh-CN
