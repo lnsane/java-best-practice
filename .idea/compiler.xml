@@ -14,6 +14,7 @@
         <module name="spring-boot-elastic-search" />
         <module name="spring-boot" />
         <module name="spring-boot-kafka" />
+        <module name="spring-boot-mongodb" />
         <module name="java-best-practice" />
         <module name="spring-boot-start" />
       </profile>
