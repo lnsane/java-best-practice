@@ -17,7 +17,11 @@
         <module name="spring-boot-mongodb" />
         <module name="java-best-practice" />
         <module name="spring-boot-start" />
+        <module name="spring-boot-skywalking" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-hive" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

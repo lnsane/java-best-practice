@@ -1,0 +1,38 @@
+# Use root/example as user/password credentials
+version: '3.8'
+services:
+  elasticsearch:
+    image: elasticsearch:7.13.4
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+    environment:
+      discovery.type: single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+  oap:
+    image: apache/skywalking-oap-server:8.6.0-es7
+    container_name: oap
+    depends_on:
+      - elasticsearch
+    links:
+      - elasticsearch
+    ports:
+      - "11800:11800"
+      - "12800:12800"
+    environment:
+      SW_STORAGE: elasticsearch7
+      SW_STORAGE_ES_CLUSTER_NODES: elasticsearch:9200
+  ui:
+    image: apache/skywalking-ui:8.6.0
+    container_name: ui
+    depends_on:
+      - oap
+    links:
+      - oap
+    ports:
+      - "8080:8080"
+    environment:
+      SW_OAP_ADDRESS: oap:12800

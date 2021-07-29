@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-elastic-search/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/spring-boot-skywalking/pom.xml" />
       </list>
     </option>
   </component>
