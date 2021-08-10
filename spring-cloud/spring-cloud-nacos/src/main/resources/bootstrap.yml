@@ -1,0 +1,11 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: spring-boot-nacos-demo
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        service: 123
