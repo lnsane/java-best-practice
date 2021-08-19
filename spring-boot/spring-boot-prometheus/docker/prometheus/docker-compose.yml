@@ -1,0 +1,22 @@
+# Use root/example as user/password credentials
+version: '3.8'
+
+services:
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - C:\Users\PC\docker\prometheus\prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - web
+  web:
+    image: webdemo
+    ports:
+      - "9199:9199"
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
