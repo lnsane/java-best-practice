@@ -1,2 +1,8 @@
 server:
   port: 8099
+spring:
+  application:
+    name: spring-web-start-demo
+logging:
+  level:
+    root: debug
