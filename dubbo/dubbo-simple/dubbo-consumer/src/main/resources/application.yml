@@ -8,6 +8,8 @@ dubbo:
     metadata-type: composite
   registry:
     address: zookeeper://127.0.0.1:2181?registry-type=service
+  consumer:
+    check: off
 demo:
   service:
     version: 1.0.0

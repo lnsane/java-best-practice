@@ -22,6 +22,11 @@
       <option name="url" value="https://dl.bintray.com/rabbitmq/maven-milestones" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="apache.snapshots" />
       <option name="name" value="Apache Snapshot Repository" />
       <option name="url" value="https://repository.apache.org/snapshots" />
@@ -35,6 +40,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="apache.snapshots.https" />
+      <option name="name" value="Apache Development Snapshot Repository" />
+      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="apache.snapshots.https" />
