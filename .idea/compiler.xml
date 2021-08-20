@@ -7,21 +7,47 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud" />
+        <module name="dubbo-service-api" />
+        <module name="dubbo" />
+        <module name="spring-boot-skywalking" />
         <module name="spring-boot-web-start" />
         <module name="spring-boot-jpa" />
-        <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-limit" />
+        <module name="java" />
+        <module name="spring-boot-start" />
+        <module name="spring-cloud-nacos" />
+        <module name="file-io" />
+        <module name="spring-boot-prometheus" />
+        <module name="spring-boot-admin-client" />
+        <module name="spring-boot-cors" />
         <module name="spring-boot-redis" />
         <module name="spring-boot-elastic-search" />
-        <module name="spring-boot" />
+        <module name="spring-boot-admin-server" />
         <module name="spring-boot-kafka" />
+        <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-log4j2-yml" />
+        <module name="spring-boot" />
+        <module name="dubbo-publisher" />
         <module name="spring-boot-mongodb" />
-        <module name="java-best-practice" />
-        <module name="spring-boot-start" />
-        <module name="spring-boot-skywalking" />
+        <module name="spring-boot-admin-example" />
+        <module name="dubbo-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="redis-actual-combat" target="8" />
       <module name="spring-boot-hive" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-consumer" options="" />
+      <module name="dubbo-publisher" options="" />
+      <module name="dubbo-service-api" options="" />
+      <module name="dubbo-simple" options="" />
+      <module name="spring-boot-cors" options="-parameters" />
+      <module name="spring-boot-log4j2-yml" options="-parameters" />
+      <module name="spring-boot-prometheus" options="-parameters" />
+    </option>
   </component>
 </project>

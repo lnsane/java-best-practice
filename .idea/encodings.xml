@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple/dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple/dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple/dubbo-publisher/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple/dubbo-publisher/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple/dubbo-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-simple/dubbo-service-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-cors/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-log4j2-yml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-prometheus/src/main/java" charset="UTF-8" />
+  </component>
+</project>

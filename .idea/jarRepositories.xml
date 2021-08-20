@@ -3,8 +3,28 @@
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
       <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-snapshot" />
+      <option name="name" value="Spring Snapshot" />
+      <option name="url" value="https://repo.spring.io/snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="rabbit-milestone" />
+      <option name="name" value="Rabbit Milestone" />
+      <option name="url" value="https://dl.bintray.com/rabbitmq/maven-milestones" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="apache.snapshots" />
+      <option name="name" value="Apache Snapshot Repository" />
+      <option name="url" value="https://repository.apache.org/snapshots" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -15,6 +35,16 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="apache.snapshots.https" />
+      <option name="name" value="Apache Development Snapshot Repository" />
+      <option name="url" value="https://repository.apache.org/content/repositories/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-milestone" />
+      <option name="name" value="Spring Milestone" />
+      <option name="url" value="https://repo.spring.io/milestone" />
     </remote-repository>
   </component>
 </project>
