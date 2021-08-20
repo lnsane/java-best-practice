@@ -20,6 +20,19 @@ spring-boot-application (本身数据源) ---- > prometheus(数据汇总)  ---- 
 </dependency>
 ```
 
+spring boot application name 展示问题
+
+```yaml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    tags:
+      application: ${spring.application.name}
+```
+
 ### prometheus 数据源配置
 
 ```yaml
