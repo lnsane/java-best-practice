@@ -1,0 +1,16 @@
+# Use root/example as user/password credentials
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    deploy:
+      resources:
+        limits:
+          cpus: 0.5
+          memory: 7M
+    volumes:
+      - C:\Users\PC\docker\redis:/data
