@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: log4j2
+server:
+  port: 8091
