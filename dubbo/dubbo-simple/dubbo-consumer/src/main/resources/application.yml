@@ -1,0 +1,13 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: comsumer-service
+dubbo:
+  application:
+    metadata-type: composite
+  registry:
+    address: zookeeper://127.0.0.1:2181?registry-type=service
+demo:
+  service:
+    version: 1.0.0
