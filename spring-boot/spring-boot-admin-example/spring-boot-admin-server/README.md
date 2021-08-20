@@ -1,0 +1,1 @@
+# 一个spring boot admin server 的快速demo
