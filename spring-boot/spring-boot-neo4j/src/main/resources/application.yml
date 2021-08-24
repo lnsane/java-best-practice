@@ -1,0 +1,8 @@
+server:
+  port: 9211
+spring:
+  neo4j:
+    uri: bolt://localhost:7687
+  data:
+    neo4j:
+      database: test

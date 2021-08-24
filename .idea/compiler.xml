@@ -31,6 +31,7 @@
         <module name="dubbo-publisher" />
         <module name="spring-boot-mongodb" />
         <module name="spring-boot-admin-example" />
+        <module name="spring-boot-neo4j" />
         <module name="dubbo-consumer" />
       </profile>
     </annotationProcessing>
