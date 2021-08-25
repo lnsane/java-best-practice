@@ -31,6 +31,7 @@
         <option value="$PROJECT_DIR$/dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-simple/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-neo4j/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

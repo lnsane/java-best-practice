@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud" />
         <module name="dubbo-service-api" />
+        <module name="spring-cloud-openfeign" />
         <module name="dubbo" />
         <module name="spring-boot-skywalking" />
         <module name="spring-boot-web-start" />
