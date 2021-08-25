@@ -16,6 +16,7 @@
         <module name="spring-boot-jpa" />
         <module name="spring-boot-limit" />
         <module name="java" />
+        <module name="spring-boot-event-listener" />
         <module name="spring-boot-start" />
         <module name="spring-cloud-nacos" />
         <module name="file-io" />
