@@ -1,0 +1,10 @@
+server:
+  port: 9099
+spring:
+  datasource:
+    database-address: jdbc:mysql://localhost:3306
+    database-name: test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${spring.datasource.database-url}${spring.datasource.database-name}?useUnicode=true&characterEncoding=utf8
