@@ -3,13 +3,38 @@
   <component name="MyBatisCodeHelperDatasource">
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="com.best.spring.boot.web.mapper" />
-        <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java" />
-        <option name="javaModelPackage" value="com.best.spring.boot.web" />
-        <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java" />
-        <option name="lastDatabaseCrudChooseModuleName" value="spring-boot-start" />
+        <option name="addSchemaName" value="true" />
+        <option name="batchInsert" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="insertOnDuplicateKey" value="true" />
+        <option name="javaMapperPackage" value="com.best.spring.boot.mybatis.plus.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java" />
+        <option name="javaModelPackage" value="com.best.spring.boot.mybatis.plus.entity" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="spring-boot-mybatis-plus" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokBuilderAnnotation" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
         <option name="moduleNameToPackageAndPathMap">
           <map>
+            <entry key="spring-boot-mybatis-plus">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.best.spring.boot.mybatis.plus.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java" />
+                  <option name="javaModelPacakge" value="com.best.spring.boot.mybatis.plus.entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.best.spring.boot.mybatis.plus.service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java" />
+                  <option name="javaServicePackage" value="com.best.spring.boot.mybatis.plus.service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/resources。" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
             <entry key="spring-boot-start">
               <value>
                 <UserPackageAndPathInfoByModule>
@@ -17,6 +42,8 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java" />
                   <option name="javaModelPacakge" value="com.best.spring.boot.web" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java" />
                   <option name="xmlPackage" value="mapperxml" />
                   <option name="xmlPath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
@@ -24,6 +51,9 @@
             </entry>
           </map>
         </option>
+        <option name="mybatisPlusIdType" value="ASSIGN_ID" />
+        <option name="mybatisPlusStaticField" value="false" />
+        <option name="p3CComment" value="true" />
         <option name="tableGenerateConfigs">
           <map>
             <entry key="test:role">
@@ -55,10 +85,28 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="test:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="spring-boot-mybatis-plus" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
           </map>
         </option>
-        <option name="xmlMapperPackage" value="mapperxml" />
-        <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/resources" />
+        <option name="updateBatch" value="true" />
+        <option name="useSwagger" value="true" />
+        <option name="userMybatisPlus" value="true" />
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/resources。" />
       </ProjectProfile>
     </option>
   </component>

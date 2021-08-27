@@ -10,7 +10,9 @@
         <module name="spring-cloud" />
         <module name="dubbo-service-api" />
         <module name="spring-cloud-openfeign" />
+        <module name="spring-boot-flyway" />
         <module name="dubbo" />
+        <module name="spring-boot-mybatis-plus" />
         <module name="spring-boot-skywalking" />
         <module name="spring-boot-web-start" />
         <module name="spring-boot-jpa" />
@@ -22,6 +24,7 @@
         <module name="file-io" />
         <module name="spring-boot-prometheus" />
         <module name="spring-boot-admin-client" />
+        <module name="spring-boot-knife4j" />
         <module name="spring-boot-cors" />
         <module name="spring-boot-redis" />
         <module name="spring-boot-elastic-search" />
