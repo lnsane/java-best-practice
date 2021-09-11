@@ -18,4 +18,9 @@ public class SpringBootStartDemo {
     public void test() {
         System.out.println(System.getProperty("sun.jnu.encoding"));
     }
+
+    @PostConstruct
+    public void test() {
+        System.out.println(System.getProperty("sun.jnu.encoding"));
+    }
 }
