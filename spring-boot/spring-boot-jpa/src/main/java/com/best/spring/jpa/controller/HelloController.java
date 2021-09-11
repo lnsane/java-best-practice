@@ -1,7 +1,6 @@
 package com.best.spring.jpa.controller;
 
 import com.best.spring.jpa.dao.Resouce;
-import com.best.spring.jpa.dao.Role;
 import com.best.spring.jpa.dao.User;
 import com.best.spring.jpa.dao.UserInfo;
 import com.best.spring.jpa.repo.ResouceRepo;
@@ -31,7 +30,6 @@ public class HelloController {
         List<UserInfo> all1 = userInfoRepo.findAll();
         userInfoRepo.deleteAll();
         List<Resouce> all2 = resouceRepo.findAll();
-
         return all;
     }
 

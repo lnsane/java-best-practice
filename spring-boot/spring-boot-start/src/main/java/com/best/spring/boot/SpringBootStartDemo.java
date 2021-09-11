@@ -3,6 +3,8 @@ package com.best.spring.boot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import javax.annotation.PostConstruct;
+
 /**
  * @author 王存露
  */
@@ -10,5 +12,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootStartDemo {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootStartDemo.class, args);
+    }
+
+    @PostConstruct
+    public void test() {
+        System.out.println(System.getProperty("sun.jnu.encoding"));
     }
 }
