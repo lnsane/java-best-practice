@@ -9,3 +9,5 @@ set `user`.t_name1 = `user`.id;
 
 update `user`
 set `user`.t_name2 = `user`.username;
+
+
