@@ -22,7 +22,6 @@ import java.util.Map;
 public class RabbitMqConfig {
     @Autowired
     public ConnectionFactory connectionFactory;
-
     @Bean
     public RabbitListenerContainerFactory<SimpleMessageListenerContainer> prefetchTenRabbitListenerContainerFactory(ConnectionFactory rabbitConnectionFactory) {
         SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
@@ -30,7 +29,6 @@ public class RabbitMqConfig {
         factory.setPrefetchCount(1);
         return factory;
     }
-
     @Bean
     Queue queue() {
         return QueueBuilder.durable("queue1")
@@ -38,12 +36,13 @@ public class RabbitMqConfig {
     }
 
     @Bean
+
     Queue queue2() {
         Map<String, Object> hashMap = new HashMap<>();
         hashMap.put("x-max-priority", 100);
         return QueueBuilder.durable("queue2")
-                           .withArguments(hashMap)
-                           .build();
+                .withArguments(hashMap)
+                .build();
     }
 
     @Bean
@@ -54,15 +53,17 @@ public class RabbitMqConfig {
     }
 
     @Bean
-    Binding binding(Queue queue, FanoutExchange exchange) {
+    Binding binding(Queue queue,
+                    FanoutExchange exchange) {
         return BindingBuilder.bind(queue)
-                             .to(exchange);
+                .to(exchange);
     }
 
     @Bean
-    Binding binding2(Queue queue2, FanoutExchange exchange) {
+    Binding binding2(Queue queue2,
+                     FanoutExchange exchange) {
         return BindingBuilder.bind(queue2)
-                             .to(exchange);
+                .to(exchange);
     }
 
     @Bean

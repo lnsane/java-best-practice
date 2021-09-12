@@ -16,11 +16,12 @@ import java.util.concurrent.TimeUnit;
 public class LimitConfig {
     @PostConstruct
     public RateLimiter register() {
-        RateLimiterRule rateLimiterRule = new RateLimiterRuleBuilder().setId("limiter") //ID很重要，对应注解@Limiter中的value
-                                                                      .setLimit(2)
-                                                                      .setPeriod(10)
-                                                                      .setUnit(TimeUnit.SECONDS)
-                                                                      .build();
+        RateLimiterRule rateLimiterRule = new RateLimiterRuleBuilder()
+                .setId("limiter") //ID很重要，对应注解@Limiter中的value
+                .setLimit(2)
+                .setPeriod(10)
+                .setUnit(TimeUnit.SECONDS)
+                .build();
         return RateLimiterFactory.of(rateLimiterRule);
     }
 

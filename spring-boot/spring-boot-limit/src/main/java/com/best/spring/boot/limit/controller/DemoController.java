@@ -35,15 +35,6 @@ public class DemoController {
 //        this.pick("1");
     }
 
-    public void sayFallback(String msg) {
-        logger.info("限流");
-    }
-
-    @Limiter(value = "limiter", fallback = "sayFallback")
-    public void pick(String msg) {
-        logger.info("已被消费 ： {}", msg);
-    }
-
     public class AA {
         private String aa;
 
@@ -54,5 +45,14 @@ public class DemoController {
         public void setAa(String aa) {
             this.aa = aa;
         }
+    }
+
+    public void sayFallback(String msg) {
+        logger.info("限流");
+    }
+
+    @Limiter(value = "limiter", fallback = "sayFallback")
+    public void pick(String msg) {
+        logger.info("已被消费 ： {}", msg);
     }
 }

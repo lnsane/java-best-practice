@@ -26,8 +26,10 @@ import java.util.concurrent.TimeUnit;
 @SpringBootApplication
 public class LimitApplicationDemo {
 
-    private final LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>();
     Logger logger = LoggerFactory.getLogger(LimitApplicationDemo.class);
+
+    private final LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>();
+
     @Autowired
     private RabbitTemplate rabbitTemplate;
     @Resource
@@ -85,9 +87,8 @@ public class LimitApplicationDemo {
                        .setPriority(oldMsg.getMessageProperties()
                                           .getPriority());
             } else {
-                message.getMessageProperties()
-                       .setPriority(oldMsg.getMessageProperties()
-                                          .getPriority() + 1);
+                message.getMessageProperties().setPriority(oldMsg.getMessageProperties()
+                        .getPriority() + 1);
             }
             logger.info("优先级 ： {}", message.getMessageProperties()
                                            .getPriority());
