@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var SendInfo = {numbers: ["LV203224073CN", "LV203224072121223CN", "LV205403585CN"]};
+
+    $.ajax({
+        type: 'post',
+        url: 'http://192.168.5.200:8077/v1/17-track/tackerQuery',
+        data: JSON.stringify(SendInfo),
+        contentType: "application/json; charset=utf-8",
+        traditional: true,
+        success: function (data) {
+        }
+    });
+</script>
+</html>

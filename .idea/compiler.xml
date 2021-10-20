@@ -19,10 +19,13 @@
         <module name="spring-boot-limit" />
         <module name="java" />
         <module name="spring-boot-event-listener" />
+        <module name="spring-cloud-nacos-config" />
         <module name="spring-boot-start" />
         <module name="spring-cloud-nacos" />
+        <module name="strategy-pattern" />
         <module name="file-io" />
         <module name="spring-boot-prometheus" />
+        <module name="netty" />
         <module name="spring-boot-admin-client" />
         <module name="spring-boot-knife4j" />
         <module name="spring-boot-cors" />

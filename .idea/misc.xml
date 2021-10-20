@@ -36,6 +36,9 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-flyway/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-knife4j/pom.xml" />
+        <option value="$PROJECT_DIR$/netty/pom.xml" />
+        <option value="$PROJECT_DIR$/model/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-nacos-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -89,10 +92,9 @@
     </option>
   </component>
   <component name="PWA">
-    <option name="enabled" value="true" />
     <option name="wasEnabledAtLeastOnce" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="semeru-1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

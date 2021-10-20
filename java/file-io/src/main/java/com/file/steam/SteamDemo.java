@@ -24,7 +24,7 @@ public class SteamDemo {
         List<Long> collect2 = list.parallelStream()
                 .map(Long::parseLong)
                 .collect(Collectors.toList());
-
+        list.forEach(System.out::println);
         list.parallelStream()
                 .reduce((s, s2) -> s + s2)
                 .ifPresent(System.out::println);
