@@ -4,42 +4,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-web-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-jpa/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-kafka/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-elastic-search/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-mongodb/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-skywalking/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-nacos/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/spring-boot-nacos/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-nacos/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-limit/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-admin-example/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-admin-example/spring-boot-admin-server/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-admin-example/spring-boot-admin-client/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-log4j2-yml/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-cors/pom.xml" />
-        <option value="$PROJECT_DIR$/java/pom.xml" />
-        <option value="$PROJECT_DIR$/java/file-io/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-prometheus/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo/dubbo-simple/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-neo4j/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-event-listener/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-flyway/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/spring-boot-knife4j/pom.xml" />
-        <option value="$PROJECT_DIR$/netty/pom.xml" />
-        <option value="$PROJECT_DIR$/model/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-nacos-config/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-zookeeper-distributed-lock/pom.xml" />
       </list>
     </option>
   </component>
