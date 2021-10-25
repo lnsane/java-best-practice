@@ -39,6 +39,7 @@
         <option value="$PROJECT_DIR$/netty/pom.xml" />
         <option value="$PROJECT_DIR$/model/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-nacos-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud/spring-cloud-zookeeper/pom.xml" />
       </list>
     </option>
   </component>

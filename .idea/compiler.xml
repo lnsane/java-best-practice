@@ -11,6 +11,7 @@
         <module name="dubbo-service-api" />
         <module name="spring-cloud-openfeign" />
         <module name="spring-boot-flyway" />
+        <module name="spring-cloud-zookeeper" />
         <module name="dubbo" />
         <module name="spring-boot-mybatis-plus" />
         <module name="spring-boot-skywalking" />
