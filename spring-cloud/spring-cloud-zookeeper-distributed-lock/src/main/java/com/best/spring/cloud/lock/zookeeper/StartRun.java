@@ -2,7 +2,9 @@ package com.best.spring.cloud.lock.zookeeper;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessLock;
+import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.framework.recipes.locks.InterProcessReadWriteLock;
+import org.apache.curator.framework.recipes.locks.InterProcessSemaphoreMutex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,56 +40,50 @@ public class StartRun implements ApplicationListener<ApplicationStartedEvent> {
     public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
         String lockPath = "/lock";
 
-//        logger.info("分布式可重入排它锁 开始");
-//        // 分布式可重入排它锁
-//        InterProcessMutex interProcessMutex = new InterProcessMutex(curatorFramework, lockPath);
-//        //模拟50个线程抢锁
-//        for (int i = 0; i < 4; i++) {
-//            new Thread(new TestThread(i, interProcessMutex,LockTypeEnums.LOCK_SHARE)).start();
-//        }
+        extracted1(lockPath);
+//        extracted(lockPath);
 //
-//        logger.info("分布式可重入排它锁 结束");
+//        extracted(lockPath, 2, LockTypeEnums.READ_WRITE_LOCK_WRITE);
+//        extracted(lockPath, 10, LockTypeEnums.READ_WRITE_LOCK_READ);
 
-//        try {
-//            Thread.sleep(2000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        logger.info("分布式排它锁 开始");
-//
-//        // 分布式排它锁
-//        InterProcessSemaphoreMutex interProcessSemaphoreMutex = new InterProcessSemaphoreMutex(curatorFramework,lockPath);
-//
-//        //模拟50个线程抢锁
-//        for (int i = 0; i < 4; i++) {
-//            new Thread(new TestThread(i, interProcessSemaphoreMutex,LockTypeEnums.LOCK_ANYTHING)).start();
-//        }
-//        logger.info("分布式排它锁 结束");
 
-//
-//
-//
-//        try {
-//            Thread.sleep(2000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        分布式读写锁
-//        InterProcessReadWriteLock interProcessReadWriteLockWrite = new InterProcessReadWriteLock(curatorFramework, lockPath);
-//
-//        for (int i = 0; i < 2; i++) {
-//            new Thread(new TestThread(i, interProcessReadWriteLockWrite.writeLock(), LockTypeEnums.READ_WRITE_LOCK_WRITE)).start();
-//        }
+    }
 
+    private void extracted1(String lockPath) {
+        logger.info("分布式可重入排它锁 开始");
+        // 分布式可重入排它锁
+        InterProcessMutex interProcessMutex = new InterProcessMutex(curatorFramework, lockPath);
+        //模拟50个线程抢锁
+        for (int i = 0; i < 4; i++) {
+            new Thread(new TestThread(i, interProcessMutex, LockTypeEnums.LOCK_SHARE)).start();
+        }
+
+        logger.info("分布式可重入排它锁 结束");
+    }
+
+    private void extracted(String lockPath) {
+        logger.info("分布式排它锁 开始");
+
+        // 分布式排它锁
+        InterProcessSemaphoreMutex interProcessSemaphoreMutex = new InterProcessSemaphoreMutex(curatorFramework, lockPath);
+
+        //模拟50个线程抢锁
+        for (int i = 0; i < 4; i++) {
+            new Thread(new TestThread(i, interProcessSemaphoreMutex, LockTypeEnums.LOCK_ANYTHING)).start();
+        }
+        logger.info("分布式排它锁 结束");
+    }
+
+    private void extracted(String lockPath, int i2, LockTypeEnums readWriteLockRead) {
         // 分布式读写锁
         InterProcessReadWriteLock interProcessReadWriteLockRead = new InterProcessReadWriteLock(curatorFramework, lockPath);
 
-        for (int i = 0; i < 10; i++) {
-            new Thread(new TestThread(i, interProcessReadWriteLockRead.writeLock(), LockTypeEnums.READ_WRITE_LOCK_READ)).start();
+        for (int i = 0; i < i2; i++) {
+            new Thread(new TestThread(i, interProcessReadWriteLockRead.writeLock(), readWriteLockRead)).start();
         }
     }
+
+
 }
 
 class TestThread implements Runnable {
