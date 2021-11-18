@@ -3,3 +3,5 @@ server:
 spring:
   application:
     name: opefeign-demo
+  main:
+    allow-bean-definition-overriding: true
