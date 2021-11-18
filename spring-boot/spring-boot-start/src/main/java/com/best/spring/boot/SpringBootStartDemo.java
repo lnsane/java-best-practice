@@ -10,17 +10,18 @@ import javax.annotation.PostConstruct;
  */
 @SpringBootApplication
 public class SpringBootStartDemo {
+
     public static void main(String[] args) {
         SpringApplication.run(SpringBootStartDemo.class, args);
     }
 
     @PostConstruct
     public void test() {
+        ServiceB serviceB = new ServiceB(new ServiceA(new ServiceC()));
+        serviceB.setServiceB();
         System.out.println(System.getProperty("sun.jnu.encoding"));
     }
 
-    @PostConstruct
-    public void test() {
-        System.out.println(System.getProperty("sun.jnu.encoding"));
-    }
+
+
 }
