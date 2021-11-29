@@ -1,5 +1,5 @@
 server:
-  port: 8099
+  port: 8039
 spring:
   application:
     name: spring-web-start-demo

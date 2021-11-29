@@ -36,7 +36,6 @@ public class RabbitMqConfig {
     }
 
     @Bean
-
     Queue queue2() {
         Map<String, Object> hashMap = new HashMap<>();
         hashMap.put("x-max-priority", 100);

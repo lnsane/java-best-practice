@@ -12,7 +12,7 @@ public class GoodsListener {
     Logger logger = LoggerFactory.getLogger(GoodsListener.class);
 
     @Async
-    @EventListener
+    @EventListener(classes = GoodsEventListener.class)
     public void goodsListenerEvent(GoodsEventListener goodsEventListener) {
         logger.info(goodsEventListener.toString());
     }

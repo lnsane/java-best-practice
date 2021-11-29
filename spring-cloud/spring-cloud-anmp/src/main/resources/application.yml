@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    password: guest
+    username: guest
+    host: localhost
+    listener:
+      simple:
+        acknowledge-mode: manual
+server:
+  port: 12080
