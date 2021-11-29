@@ -1,0 +1,15 @@
+server:
+  port: 8419
+spring:
+  application:
+    name: spring-boot-nacos-config-demo
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        shared-configs:
+          - dataId: hello.yml
+            group: DEFAULT_GROUP
+            refresh: true
+        namespace: public

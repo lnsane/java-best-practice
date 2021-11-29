@@ -1,0 +1,29 @@
+<changelist name="master" date="1637201722910" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/master/shelved.patch" />
+  <option name="DESCRIPTION" value="master" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="spring-boot/spring-boot-rabbitmq-try-throw/target/classes/com/best/spring/rabbitmq/config/RabbitMqConfig.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/master/RabbitMqConfig.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="spring-boot/spring-boot-rabbitmq-try-throw/target/classes/com/best/spring/rabbitmq/enums/DemoEnum1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/master/DemoEnum1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="spring-boot/spring-boot-rabbitmq-try-throw/target/classes/com/best/spring/rabbitmq/model/Demo1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/master/Demo1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="spring-boot/spring-boot-rabbitmq-try-throw/target/classes/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/master/SpringBootRabbitMqDemo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="spring-boot/spring-boot-rabbitmq-try-throw/target/test-classes/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/master/SpringBootRabbitMqDemoTest.class" />
+  </binary>
+</changelist>

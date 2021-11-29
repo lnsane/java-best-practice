@@ -1,0 +1,16 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: publisher-service
+dubbo:
+  protocol:
+    port: -1
+    name: dubbo
+  registry:
+    address: zookeeper://127.0.0.1:2181?registry-type=service
+  scan:
+    base-packages: com.best.dubbo.publisher.service
+demo:
+  service:
+    version: 1.0.0

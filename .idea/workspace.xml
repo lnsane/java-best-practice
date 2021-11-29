@@ -1,0 +1,2133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a250eb1-fe52-4141-8737-7362f983308e" name="Default Changelist" comment="新增一些demo" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DockDockBuild.Settings">
+    <option name="codePath" value="$PROJECT_DIR$" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
+        <option value="Swagger" />
+        <option value="Interface" />
+        <option value="@Aspect" />
+        <option value="Aspect" />
+        <option value="FlywayMigrationScript" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="feat_1.0.0" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2.0.0" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-transaction/src/main/java/com/best/spring/boot/transaction/SpringBootTransactionDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/MapSession.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletRequestMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolverComposite.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.4.2/mybatis-plus-annotation-3.4.2-sources.jar!/com/baomidou/mybatisplus/annotation/TableLogic.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/config/WebMvcConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-jpa/src/main/java/com/best/spring/jpa/SpringBootJpaDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/IndexOutOfBoundsException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/web/http/SessionRepositoryFilter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-jpa/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-jpa/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="1vhDFWfApnS5Qlb4PJn6FWAvDGu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="elasticsearch&#10;mongo&#10;clickhouse&#10;cassandra&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="MySQL" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="yaml" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL&#10;SQL92" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5637019" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.best.spring.boot.resolve.controller.method.controller" />
+      <recent name="com.best.spring.boot.xml" />
+      <recent name="com.best.spring.boot.jetcache" />
+      <recent name="com.best.spring.boot.mq.aop.t.service.lmpl" />
+      <recent name="com.best.spring.boot.transaction.service.lmpl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\k\Desktop\java-best-practice\spring-boot" />
+      <recent name="C:\Users\k\Desktop\java-best-practice\spring-boot\spring-boot-session" />
+      <recent name="C:\Users\k\Desktop\java-best-practice\spring-cloud\spring-cloud-anmp\src\main\java\com\best\spring\cloud\anmp\mq" />
+      <recent name="C:\Users\k\Desktop\java-best-practice\spring-cloud\spring-cloud-anmp\src\main\resources" />
+      <recent name="C:\Users\k\Desktop\java-best-practice\spring-boot\spring-boot-jetcache" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\java-best-practice\spring-boot\spring-boot-mybatis-plus" />
+      <recent name="C:\Users\PC\Desktop\java-best-practice\spring-boot\spring-boot-flyway" />
+      <recent name="C:\Users\PC\Desktop\java-best-practice\dubbo\zookeeper" />
+      <recent name="C:\Users\PC\Desktop\java-best-practice\spring-boot\spring-boot-prometheus" />
+      <recent name="C:\Users\PC\Desktop\java-best-practice\spring-boot\spring-boot-redis\docker\default" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.strategy.patterm.demo.goods.lmpl" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.best.spring.boot.mybatis.plus" />
+      <recent name="com.best.spring.cloud.openfeign" />
+      <recent name="com.best.spring.neo4j" />
+      <recent name="com.best.spring.boot.mongodb" />
+      <recent name="com.best.spring.boot.elastic.search" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.best.spring.cloud.anmp" />
+      <recent name="com.best.spring.boot.listener.controller" />
+      <recent name="com.best.spring.boot.mq.aop.t.aespt" />
+      <recent name="com.best.spring.boot.mq.aop.t.consume" />
+      <recent name="com.best.spring.boot.mq.aop.t.mq" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+        <option value="docker-deploy" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootWebTomcatStart">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloServlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.best.spring.boot.session.HelloServlet" />
+      <module name="spring-boot-session" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.best.spring.boot.session.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generated-requests | #52" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="52" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #53" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="53" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#87" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="87" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="PromSpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-prometheus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.best.spring.boot.prometheus.PromSpringBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootMybatisPlusDemo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-mybatis-plus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.best.spring.boot.mybatis.plus.SpringBootMybatisPlusDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootStartDemo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.best.spring.boot.SpringBootStartDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootWebTomcatStart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-web-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.best.spring.boot.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.best.spring.boot.web.SpringBootWebTomcatStart" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\Users\k\Desktop\java-best-practice\gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="C:\Users\k\Desktop\java-best-practice\123.yaml" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests#87" />
+        <item itemvalue="Spring Boot.SpringBootWebTomcatStart" />
+        <item itemvalue="HTTP Request.generated-requests | #53" />
+        <item itemvalue="HTTP Request.generated-requests | #52" />
+        <item itemvalue="Application.HelloServlet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\k\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a250eb1-fe52-4141-8737-7362f983308e" name="Default Changelist" comment="" />
+      <created>1627005326667</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627005326667</updated>
+      <workItem from="1627005329439" duration="6096000" />
+      <workItem from="1627012920257" duration="620000" />
+      <workItem from="1627013582289" duration="32385000" />
+      <workItem from="1627290992333" duration="8399000" />
+      <workItem from="1627351225154" duration="3437000" />
+      <workItem from="1627355104884" duration="25765000" />
+      <workItem from="1627437067205" duration="42428000" />
+      <workItem from="1627719550733" duration="88997000" />
+      <workItem from="1628674664682" duration="2724000" />
+      <workItem from="1631417136531" duration="6388000" />
+      <workItem from="1631429734708" duration="23033000" />
+      <workItem from="1629336817678" duration="8061000" />
+      <workItem from="1629346443925" duration="17000000" />
+      <workItem from="1629449404081" duration="2539000" />
+      <workItem from="1629470652939" duration="2838000" />
+      <workItem from="1629684978246" duration="56464000" />
+      <workItem from="1629879262701" duration="29197000" />
+      <workItem from="1630112697645" duration="3734000" />
+      <workItem from="1630131492879" duration="9219000" />
+      <workItem from="1630556957627" duration="53795000" />
+      <workItem from="1631333810532" duration="1174000" />
+      <workItem from="1631335008866" duration="9148000" />
+      <workItem from="1631673133692" duration="3403000" />
+      <workItem from="1631755462271" duration="587000" />
+      <workItem from="1631859663050" duration="12080000" />
+      <workItem from="1632272512464" duration="633000" />
+      <workItem from="1632309028981" duration="589000" />
+      <workItem from="1632370215477" duration="1653000" />
+      <workItem from="1632450137492" duration="1771000" />
+      <workItem from="1632797153247" duration="22644000" />
+      <workItem from="1633483909175" duration="177000" />
+      <workItem from="1633484116500" duration="96000" />
+      <workItem from="1633484237816" duration="12853000" />
+      <workItem from="1633686387640" duration="18100000" />
+      <workItem from="1634181287533" duration="11990000" />
+      <workItem from="1634293133246" duration="573000" />
+      <workItem from="1634293762021" duration="3870000" />
+      <workItem from="1634701337017" duration="8661000" />
+      <workItem from="1634710200170" duration="9119000" />
+      <workItem from="1634883224466" duration="3284000" />
+      <workItem from="1634953706279" duration="1570000" />
+      <workItem from="1635147706166" duration="27572000" />
+      <workItem from="1635233308147" duration="135000" />
+      <workItem from="1635233458082" duration="9404000" />
+      <workItem from="1635304752063" duration="6994000" />
+      <workItem from="1635414593655" duration="2636000" />
+      <workItem from="1635734320744" duration="11535000" />
+      <workItem from="1636022781874" duration="5219000" />
+      <workItem from="1636107709583" duration="9143000" />
+      <workItem from="1636366837547" duration="5685000" />
+      <workItem from="1636440793190" duration="2492000" />
+      <workItem from="1636509478459" duration="929000" />
+      <workItem from="1636593673359" duration="43664000" />
+      <workItem from="1637198763409" duration="451000" />
+      <workItem from="1637200294177" duration="1438000" />
+      <workItem from="1637204763654" duration="724000" />
+      <workItem from="1637206077431" duration="1700000" />
+      <workItem from="1637207851909" duration="79000" />
+      <workItem from="1637207964580" duration="4271000" />
+      <workItem from="1637215663728" duration="605000" />
+      <workItem from="1637545306518" duration="11848000" />
+      <workItem from="1637572309999" duration="18017000" />
+      <workItem from="1637736604634" duration="47891000" />
+      <workItem from="1638150331591" duration="8695000" />
+      <workItem from="1638166783181" duration="717000" />
+      <workItem from="1638167535060" duration="2799000" />
+      <workItem from="1638170550093" duration="582000" />
+      <workItem from="1638171838668" duration="11066000" />
+    </task>
+    <task id="LOCAL-00010" summary="新增 修改限流 demo">
+      <created>1631417277615</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631417277615</updated>
+    </task>
+    <task id="LOCAL-00026" summary="增加 spring boot admin">
+      <created>1629471023372</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1629471023372</updated>
+    </task>
+    <task id="LOCAL-00027" summary="增加 sentinel 使用">
+      <created>1629694346762</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1629694346762</updated>
+    </task>
+    <task id="LOCAL-00028" summary="增加 neo4j 操作">
+      <created>1629802163069</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1629802163069</updated>
+    </task>
+    <task id="LOCAL-00029" summary="增加 openfeign">
+      <created>1629873617779</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1629873617779</updated>
+    </task>
+    <task id="LOCAL-00030" summary="增加 spring boot 监听器">
+      <created>1629877094014</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1629877094014</updated>
+    </task>
+    <task id="LOCAL-00031" summary="新增 flyway">
+      <created>1630060121560</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1630060121560</updated>
+    </task>
+    <task id="LOCAL-00032" summary="新增 jpa">
+      <created>1630060129576</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1630060129576</updated>
+    </task>
+    <task id="LOCAL-00033" summary="新增 knifej">
+      <created>1630060156112</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1630060156112</updated>
+    </task>
+    <task id="LOCAL-00034" summary="新增 mybatis-plus">
+      <created>1630060174828</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1630060174828</updated>
+    </task>
+    <task id="LOCAL-00035" summary="新增 base">
+      <created>1630060182663</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1630060182663</updated>
+    </task>
+    <task id="LOCAL-00036" summary="test">
+      <created>1630297482004</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1630297482004</updated>
+    </task>
+    <task id="LOCAL-00037" summary="test 2">
+      <created>1630297615712</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1630297615712</updated>
+    </task>
+    <task id="LOCAL-00038" summary="123...test">
+      <created>1630297678490</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1630297678490</updated>
+    </task>
+    <task id="LOCAL-00039" summary="test 3">
+      <created>1630297916494</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1630297916494</updated>
+    </task>
+    <task id="LOCAL-00040" summary="master 01">
+      <created>1630297954762</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1630297954762</updated>
+    </task>
+    <task id="LOCAL-00041" summary="test 3">
+      <created>1630298020546</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1630298020546</updated>
+    </task>
+    <task id="LOCAL-00042" summary="test 04 01">
+      <created>1630298293366</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1630298293366</updated>
+    </task>
+    <task id="LOCAL-00043" summary="test 04 01">
+      <created>1630298305089</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1630298305089</updated>
+    </task>
+    <task id="LOCAL-00044" summary="master 02">
+      <created>1630298356116</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1630298356116</updated>
+    </task>
+    <task id="LOCAL-00045" summary="test 04 01">
+      <created>1630298481757</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1630298481757</updated>
+    </task>
+    <task id="LOCAL-00046" summary="test 04 01">
+      <created>1630298493872</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1630298493872</updated>
+    </task>
+    <task id="LOCAL-00047" summary="master 02">
+      <created>1630299421177</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1630299421177</updated>
+    </task>
+    <task id="LOCAL-00048" summary="test 0009">
+      <created>1630299670222</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1630299670222</updated>
+    </task>
+    <task id="LOCAL-00049" summary="test 0009">
+      <created>1630299720724</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1630299720724</updated>
+    </task>
+    <task id="LOCAL-00050" summary="关于 Java steam">
+      <created>1631334415328</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1631334415329</updated>
+    </task>
+    <task id="LOCAL-00051" summary="change readme.md">
+      <created>1631334481176</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1631334481176</updated>
+    </task>
+    <task id="LOCAL-00052" summary="squash! change readme.md 1">
+      <created>1631334587641</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1631334587641</updated>
+    </task>
+    <task id="LOCAL-00053" summary="change readme.md">
+      <created>1631334826841</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1631334826841</updated>
+    </task>
+    <task id="LOCAL-00054" summary="修改一些东西">
+      <created>1631335104223</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1631335104223</updated>
+    </task>
+    <task id="LOCAL-00055" summary="新需求1.0.0 登录">
+      <created>1631335314547</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1631335314547</updated>
+    </task>
+    <task id="LOCAL-00056" summary="新需求1.0.0 登录">
+      <created>1631335391401</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1631335391401</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Revert &quot;新需求1.0.0 登录&quot;&#10;&#10;This reverts commit a724b44f">
+      <created>1631335499970</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1631335499970</updated>
+    </task>
+    <task id="LOCAL-00058" summary="增加 策略模式demo">
+      <created>1634699992488</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1634699992488</updated>
+    </task>
+    <task id="LOCAL-00059" summary="增加 naocs 因为 2.2x 版本ribbon内httpclient低版本引发的错误">
+      <created>1634714212567</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1634714212567</updated>
+    </task>
+    <task id="LOCAL-00060" summary="增加 nacos 配置中心的demo">
+      <created>1635149067891</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1635149067891</updated>
+    </task>
+    <task id="LOCAL-00061" summary="增加 zookeeper 服务发现">
+      <created>1635155120436</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1635155120436</updated>
+    </task>
+    <task id="LOCAL-00062" summary="新增 zookeeper 分布式锁">
+      <created>1635162572385</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1635162572385</updated>
+    </task>
+    <task id="LOCAL-00063" summary="新增：redis 分布式锁">
+      <created>1635237415997</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1635237415999</updated>
+    </task>
+    <task id="LOCAL-00064" summary="test">
+      <created>1637201765613</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1637201765613</updated>
+    </task>
+    <task id="LOCAL-00065" summary="新增：spring boot aop demo">
+      <created>1637219237044</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219237045</updated>
+    </task>
+    <task id="LOCAL-00066" summary="新增：openfeign 调用接口封装的调用形式">
+      <created>1637219307127</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219307127</updated>
+    </task>
+    <task id="LOCAL-00067" summary="新增：spring boot 事务的demo">
+      <created>1637219339048</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219339048</updated>
+    </task>
+    <task id="LOCAL-00068" summary="新增：spring boot 验证循环依赖">
+      <created>1637219375889</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219375889</updated>
+    </task>
+    <task id="LOCAL-00069" summary="新增：spring boot mq 和 aop 的结合">
+      <created>1637219403215</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219403215</updated>
+    </task>
+    <task id="LOCAL-00070" summary="新增：spring boot mq 延迟队列">
+      <created>1637219415829</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219415829</updated>
+    </task>
+    <task id="LOCAL-00071" summary="新增：spring boot mq demo">
+      <created>1637219421941</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219421941</updated>
+    </task>
+    <task id="LOCAL-00072" summary="新增：Java 线程的demo">
+      <created>1637219451382</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1637219451382</updated>
+    </task>
+    <task id="LOCAL-00073" summary="新增一些demo">
+      <created>1638192831636</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1638192831636</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="07102d97-3253-4415-bc35-5bdbc9b7d9f8">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="156db734-a777-4cc7-8090-69dc5a4b4602">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
+          </value>
+        </entry>
+        <entry key="b157540f-f3e7-4427-91d5-86e26eb3c6f1">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="d20e0662-ffb8-4f98-8a42-bd4390c2e2a8">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="d61a4e18-1e0b-4d48-83cd-f3735d90f5e8">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="ee334968-6c2a-47c2-ae40-7b8d29385b06">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/123" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/tese04" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="master 02" />
+    <MESSAGE value="test 0009" />
+    <MESSAGE value="关于 Java steam" />
+    <MESSAGE value="change readme.md 1" />
+    <MESSAGE value="squash! change readme.md 1" />
+    <MESSAGE value="change readme.md" />
+    <MESSAGE value="修改一些东西" />
+    <MESSAGE value="新需求1.0.0 登录" />
+    <MESSAGE value="Revert &quot;新需求1.0.0 登录&quot;&#10;&#10;This reverts commit a724b44f" />
+    <MESSAGE value="增加 策略模式demo" />
+    <MESSAGE value="增加 naocs 因为 2.2x 版本ribbon内httpclient低版本引发的错误" />
+    <MESSAGE value="增加 nacos 配置中心的demo" />
+    <MESSAGE value="增加 zookeeper 服务发现" />
+    <MESSAGE value="新增 zookeeper 分布式锁" />
+    <MESSAGE value="新增：redis 分布式锁" />
+    <MESSAGE value="test" />
+    <MESSAGE value="新增：spring boot aop demo" />
+    <MESSAGE value="新增：openfeign 调用接口封装的调用形式" />
+    <MESSAGE value="新增：spring boot 事务的demo" />
+    <MESSAGE value="新增：spring boot 验证循环依赖" />
+    <MESSAGE value="新增：spring boot mq 和 aop 的结合" />
+    <MESSAGE value="新增：spring boot mq 延迟队列" />
+    <MESSAGE value="新增：spring boot mq demo" />
+    <MESSAGE value="新增：Java 线程的demo" />
+    <MESSAGE value="新增一些demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增一些demo" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/test/java/com/best/spring/boot/web/controller/HelloControllerTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-jpa/src/main/java/com/best/spring/jpa/controller/HelloController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-jpa/src/test/java/com/best/spring/jpa/repo/UserRepoTest.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/1.4.1/nacos-api-1.4.1-sources.jar!/com/alibaba/nacos/api/naming/utils/NamingUtils.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/cloud/spring-cloud-starter-alibaba-nacos-discovery/2021.1/spring-cloud-starter-alibaba-nacos-discovery-2021.1-sources.jar!/com/alibaba/cloud/nacos/discovery/NacosWatch.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/cloud/spring-cloud-starter-alibaba-nacos-discovery/2021.1/spring-cloud-starter-alibaba-nacos-discovery-2021.1-sources.jar!/com/alibaba/cloud/nacos/NacosDiscoveryProperties.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-limit/src/main/java/com/best/spring/boot/limit/LimitApplicationDemo.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-limit/src/main/java/com/best/spring/boot/limit/LimitApplicationDemo.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/onblog/snowjean-spring-boot-starter/4.0.0.RELEASE/snowjean-spring-boot-starter-4.0.0.RELEASE-sources.jar!/com/github/onblog/snowjeanspringbootstarter/annotation/aspect/RateLimiterAspect.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.8/spring-context-5.3.8-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>573</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.8/spring-context-5.3.8-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>576</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.8/spring-context-5.3.8-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>579</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.8/spring-context-5.3.8-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>582</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.8/spring-context-5.3.8-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>585</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.8/spring-context-5.3.8-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>906</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-redis/src/test/java/com/best/spring/redis/RedisKeyOver.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.12/feign-core-10.12-sources.jar!/feign/FeignException.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.12/feign-core-10.12-sources.jar!/feign/Client.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/test/java/com/best/spring/cloud/openfeign/SpringCloudOpenFeignDemoTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/HttpRequest.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/HttpRequest.java</url>
+          <line>1063</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/HttpConnection.java</url>
+          <line>265</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/HttpConnection.java</url>
+          <line>269</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/ssl/DefaultSSLInfo.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/ssl/DefaultSSLInfo.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/ssl/CustomProtocolsSSLFactory.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-http/5.7.9/hutool-http-5.7.9-sources.jar!/cn/hutool/http/ssl/CustomProtocolsSSLFactory.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-event-listener/src/main/java/com/best/spring/boot/listener/listener/GoodsListener.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.4.3.2/mybatis-plus-core-3.4.3.2.jar!/com/baomidou/mybatisplus/core/metadata/IPage.class</url>
+          <line>12</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/steam/ArraysParent.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/util/stream/ReferencePipeline.java</url>
+          <line>189</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/util/stream/ReferencePipeline.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/util/stream/ReferencePipeline.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/io/PrintStream.java</url>
+          <line>323</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/inter/Main.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/System.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/Throwable.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/System.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/steam/SteamUserDemo.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/steam/SteamUserDemo.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/steam/SteamDemo.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/steam/SteamDemo.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/java/file-io/src/main/java/com/file/steam/SteamDemo.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/ResolveData.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/TimeClientHandler.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/TimeClientHandler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/TimeClientHandler.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/ResolveData2.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/Out1.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/Out1.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/netty/src/main/java/com/test/netty/demo/Out2.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mybatis-plus/src/main/java/com/best/spring/boot/mybatis/plus/bootstart/BootStart.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.6/mybatis-spring-2.0.6-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>430</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.6/mybatis-spring-2.0.6-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>427</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.6/mybatis-spring-2.0.6-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>426</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/mapping/MappedStatement.java</url>
+          <line>306</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.6/mybatis-spring-2.0.6-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>223</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/scripting/xmltags/MixedSqlNode.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.65.Final/netty-transport-4.1.65.Final-sources.jar!/io/netty/channel/nio/NioEventLoop.java</url>
+          <line>450</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger2/3.0.0/springfox-swagger2-3.0.0-sources.jar!/springfox/documentation/swagger2/mappers/RequestParameterMapper.java</url>
+          <line>263</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceB.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/config/MyFeign.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/config/MyFeign.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/HelloController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/config/CustomFeignClient.class</url>
+          <line>35</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/interceptor/GlobalRequestInterceptor.class</url>
+          <line>26</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/interceptor/GlobalRequestInterceptor.class</url>
+          <line>42</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/interceptor/GlobalRequestInterceptor.class</url>
+          <line>46</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/exception/ControllerExceptionHandler.class</url>
+          <line>41</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/exception/ControllerExceptionHandler.class</url>
+          <line>99</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/aop/WebLogAspect.class</url>
+          <line>68</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/aop/WebLogAspect.class</url>
+          <line>95</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/aop/WebLogAspect.class</url>
+          <line>100</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/aop/WebLogAspect.class</url>
+          <line>104</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/lnsane/web-common-core/1.0-SNAPSHOT/web-common-core-1.0-SNAPSHOT.jar!/com/github/lnsane/web/common/core/aop/WebLogAspect.class</url>
+          <line>105</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/service/lmpl/PutServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/consume/MqConsume.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/service/lmpl/PutServiceImpl.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="344" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/service/lmpl/PutServiceImpl.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/GlaobaException.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-event-listener/src/main/java/com/best/spring/boot/listener/controller/TestController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-sync-event-trancation/src/main/java/com/best/spring/boot/sync/event/trancation/service/MyBuisService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-sync-event-trancation/src/main/java/com/best/spring/boot/sync/event/trancation/service/MyBuisService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="357" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-sync-event-trancation/src/main/java/com/best/spring/boot/sync/event/trancation/service/MyBuisService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="358" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-sync-event-trancation/src/main/java/com/best/spring/boot/sync/event/trancation/listener/GoodsListener.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="359" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-sync-event-trancation/src/main/java/com/best/spring/boot/sync/event/trancation/controller/HelloController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="361" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="367" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/service/lmpl/PutServiceImpl.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/DownloadAop.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="377" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="380" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="384" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/aespt/Glaobl.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-anmp/src/main/java/com/best/spring/cloud/anmp/MqConsume.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="390" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-anmp/src/main/java/com/best/spring/cloud/anmp/Glaobl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-anmp/src/main/java/com/best/spring/cloud/anmp/Glaobl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="392" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-anmp/src/main/java/com/best/spring/cloud/anmp/Glaobl.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="393" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-anmp/src/main/java/com/best/spring/cloud/anmp/Glaobl.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="394" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-anmp/src/main/java/com/best/spring/cloud/anmp/Glaobl.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="395" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.12/spring-aop-5.3.12-sources.jar!/org/springframework/aop/aspectj/AspectJAfterThrowingAdvice.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="396" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.12/spring-aop-5.3.12-sources.jar!/org/springframework/aop/aspectj/AspectJAfterThrowingAdvice.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="397" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/consume/MqConsume.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="401" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/ListenEent.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="404" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/ListenEent.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="405" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/warpper/SessionRepositoryRequestWrapper.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="415" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/filter/SecFilter.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.3/spring-security-web-5.5.3-sources.jar!/org/springframework/security/web/session/HttpSessionEventPublisher.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="423" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/filter/SecFilter.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="425" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/filter/SecFilter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="426" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/warpper/SessionRepositoryRequestWrapper.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="428" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/warpper/SessionRepositoryRequestWrapper.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/warpper/SessionRepositoryRequestWrapper.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="430" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/filter/SecFilter.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="431" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisSessionRepository.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="434" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="435" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="436" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="437" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="439" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/event/SessionEvent.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="441" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>536</line>
+          <option name="timeStamp" value="442" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>521</line>
+          <option name="timeStamp" value="445" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-session/src/main/java/com/best/spring/boot/session/RedisLienter.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="446" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>414</line>
+          <option name="timeStamp" value="448" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>797</line>
+          <option name="timeStamp" value="451" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>798</line>
+          <option name="timeStamp" value="452" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>834</line>
+          <option name="timeStamp" value="453" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>830</line>
+          <option name="timeStamp" value="454" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>814</line>
+          <option name="timeStamp" value="455" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>809</line>
+          <option name="timeStamp" value="456" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.5.2/spring-data-redis-2.5.2-sources.jar!/org/springframework/data/redis/core/DefaultBoundHashOperations.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisIndexedSessionRepository.java</url>
+          <line>811</line>
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisSessionExpirationPolicy.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.5.2/spring-data-redis-2.5.2-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java</url>
+          <line>833</line>
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisSessionExpirationPolicy.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.5.3/spring-session-data-redis-2.5.3-sources.jar!/org/springframework/session/data/redis/RedisSessionRepository.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/MapSession.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="491" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-resolve-controller-method/src/main/java/com/best/spring/boot/resolve/controller/method/controller/HelloController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/annotation/RequestHeaderMapMethodArgumentResolver.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.5.6/spring-boot-2.5.6-sources.jar!/org/springframework/boot/SpringApplication.java</url>
+          <line>334</line>
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.54/tomcat-embed-core-9.0.54-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="502" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMapping.java</url>
+          <line>395</line>
+          <option name="timeStamp" value="511" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
+          <line>362</line>
+          <option name="timeStamp" value="513" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="514" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>263</line>
+          <option name="timeStamp" value="516" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>265</line>
+          <option name="timeStamp" value="518" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>345</line>
+          <option name="timeStamp" value="519" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>348</line>
+          <option name="timeStamp" value="520" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java</url>
+          <line>462</line>
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
+          <line>387</line>
+          <option name="timeStamp" value="522" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
+          <line>415</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
+          <line>1041</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/interceptor/FirstInterceptor.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="530" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/interceptor/FirstInterceptor.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="531" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/interceptor/FirstInterceptor.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="532" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/interceptor/SecInterceptor.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="533" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/interceptor/SecInterceptor.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="534" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/interceptor/SecInterceptor.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="535" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
+          <line>1066</line>
+          <option name="timeStamp" value="536" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
+          <line>945</line>
+          <option name="timeStamp" value="537" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/support/AbstractDispatcherServletInitializer.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="547" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.31/tomcat-embed-core-9.0.31-sources.jar!/org/apache/catalina/core/StandardWrapper.java</url>
+          <line>594</line>
+          <option name="timeStamp" value="549" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.31/tomcat-embed-core-9.0.31-sources.jar!/org/apache/catalina/core/StandardWrapper.java</url>
+          <line>603</line>
+          <option name="timeStamp" value="551" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE-sources.jar!/org/springframework/boot/web/servlet/ServletRegistrationBean.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="553" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.31/tomcat-embed-core-9.0.31-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="554" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="555" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.31/tomcat-embed-core-9.0.31-sources.jar!/javax/servlet/http/HttpServlet.java</url>
+          <line>740</line>
+          <option name="timeStamp" value="556" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
+          <line>1046</line>
+          <option name="timeStamp" value="559" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java</url>
+          <line>1022</line>
+          <option name="timeStamp" value="560" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
+          <line>21</line>
+          <properties class="com.best.spring.rabbitmq.cq.SpringBootRabbitMqDemo" method="rce">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.6/spring-beans-5.3.6-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>247</line>
+          <properties class="org.springframework.beans.factory.support.AbstractBeanFactory">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/BeanFactory.java</url>
+          <line>142</line>
+          <properties class="org.springframework.beans.factory.BeanFactory">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/BeanFactory.java</url>
+          <line>159</line>
+          <properties class="org.springframework.beans.factory.BeanFactory">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/BeanFactory.java</url>
+          <line>175</line>
+          <properties class="org.springframework.beans.factory.BeanFactory">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/BeanFactory.java</url>
+          <line>191</line>
+          <properties class="org.springframework.beans.factory.BeanFactory">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8-sources.jar!/org/springframework/beans/factory/BeanFactory.java</url>
+          <line>211</line>
+          <properties class="org.springframework.beans.factory.BeanFactory">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/feign/HelloFeign.java</url>
+          <line>15</line>
+          <properties class="com.best.spring.cloud.openfeign.feign.HelloFeign" method="sayHello" />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.12/feign-core-10.12-sources.jar!/feign/Client.java</url>
+          <line>56</line>
+          <properties class="feign.Client" method="execute">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/util/stream/Stream.java</url>
+          <line>183</line>
+          <properties class="java.util.stream.Stream">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/util/stream/ReferencePipeline.java</url>
+          <line>188</line>
+          <properties>
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/util/stream/ReferencePipeline.java</url>
+          <line>191</line>
+          <properties>
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/System.java</url>
+          <line>590</line>
+          <properties class="java.lang.System">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/System.java</url>
+          <line>737</line>
+          <properties class="java.lang.System">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/Thread.java</url>
+          <line>347</line>
+          <properties class="java.lang.Thread">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/SessionRepository.java</url>
+          <line>52</line>
+          <properties class="org.springframework.session.SessionRepository" method="save">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.5.6/spring-data-redis-2.5.6-sources.jar!/org/springframework/data/redis/connection/MessageListener.java</url>
+          <line>33</line>
+          <properties class="org.springframework.data.redis.connection.MessageListener" method="onMessage">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="475" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerMapping.java</url>
+          <line>147</line>
+          <properties class="org.springframework.web.servlet.HandlerMapping" method="getHandler">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerAdapter.java</url>
+          <line>77</line>
+          <properties class="org.springframework.web.servlet.HandlerAdapter" method="handle">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="527" />
+        </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="158" />
+        </breakpoint>
+        <line-breakpoint type="java-field">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/System.java</url>
+          <line>56</line>
+          <properties field="out" class="java.lang.System" />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint type="java-field">
+          <url>jar://$USER_HOME$/.jdks/semeru-1.8.0_302/src.zip!/java/lang/System.java</url>
+          <line>72</line>
+          <properties field="security" class="java.lang.System" />
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint type="java-field">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE-sources.jar!/org/springframework/boot/web/servlet/ServletRegistrationBean.java</url>
+          <line>54</line>
+          <properties field="servlet" class="org.springframework.boot.web.servlet.ServletRegistrationBean" />
+          <option name="timeStamp" value="552" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.best.spring.boot.ServiceB" memberName="serviceB" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="count" />
+        <PinnedItemInfo parentTag="feign.Request" memberName="requestTemplate" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="java-best-practice" type="b2602c69:ProjectViewProjectNode" />
+        <item name="java-best-practice" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_best_practice$LimitApplicationDemo.ic" NAME="LimitApplicationDemo Coverage Results" MODIFIED="1628236874358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.best.spring.boot.limit.*</FILTER>
+    </SUITE>
+  </component>
+</project>

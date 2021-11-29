@@ -1,0 +1,1959 @@
+Index: spring-cloud/spring-cloud-openfeign/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>spring-cloud-openfeign</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>8</maven.compiler.source>\r\n        <maven.compiler.target>8</maven.compiler.target>\r\n    </properties>\r\n\r\n    <dependencies>\r\n\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-web</artifactId>\r\n            <version>2.5.3</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-test</artifactId>\r\n            <version>2.5.3</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.cloud</groupId>\r\n            <artifactId>spring-cloud-starter-openfeign</artifactId>\r\n            <version>3.0.3</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>cn.hutool</groupId>\r\n            <artifactId>hutool-http</artifactId>\r\n            <version>5.7.9</version>\r\n        </dependency>\r\n\r\n    </dependencies>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/pom.xml b/spring-cloud/spring-cloud-openfeign/pom.xml
+--- a/spring-cloud/spring-cloud-openfeign/pom.xml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-cloud/spring-cloud-openfeign/pom.xml	(date 1636703352028)
+@@ -14,7 +14,11 @@
+     </properties>
+ 
+     <dependencies>
+-
++        <dependency>
++            <groupId>com.github.lnsane</groupId>
++            <artifactId>web-common-core</artifactId>
++            <version>1.0-SNAPSHOT</version>
++        </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-web</artifactId>
+@@ -35,6 +39,10 @@
+             <artifactId>hutool-http</artifactId>
+             <version>5.7.9</version>
+         </dependency>
+-
++        <dependency>
++            <groupId>org.springframework.cloud</groupId>
++            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
++            <version>3.0.3</version>
++        </dependency>
+     </dependencies>
+ </project>
+\ No newline at end of file
+Index: spring-boot/spring-boot-start/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 0\r\nserver:\r\n  port: 0
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-start/src/main/resources/application.yml b/spring-boot/spring-boot-start/src/main/resources/application.yml
+--- a/spring-boot/spring-boot-start/src/main/resources/application.yml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-start/src/main/resources/application.yml	(date 1635753275802)
+@@ -1,4 +1,2 @@
+ server:
+   port: 0
+-server:
+-  port: 0
+\ No newline at end of file
+Index: java/thread-demo/src/main/java/com/best/java/thread/wait/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/wait/Main.java b/java/thread-demo/src/main/java/com/best/java/thread/wait/Main.java
+new file mode 100644
+--- /dev/null	(date 1635244738019)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/wait/Main.java	(date 1635244738019)
+@@ -0,0 +1,20 @@
++package com.best.java.thread.wait;
++
++public class Main {
++    public static void main(String[] args) throws InterruptedException {
++        Msg msg = new Msg();
++        msg.setContent("hello world");
++
++        TestTread testTread = new TestTread(msg,1);
++        new Thread(testTread).start();
++
++        TestTread testTread2 = new TestTread(msg,2);
++        new Thread(testTread2).start();
++
++        Thread.sleep(10000);
++        WakeUpThread  wakeUpThread  = new WakeUpThread(msg);
++        new Thread(wakeUpThread).start();
++        WakeUpThread  wakeUpThread2  = new WakeUpThread(msg);
++        new Thread(wakeUpThread2).start();
++    }
++}
+Index: java/thread-demo/src/main/java/com/best/java/thread/wait/Msg.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/wait/Msg.java b/java/thread-demo/src/main/java/com/best/java/thread/wait/Msg.java
+new file mode 100644
+--- /dev/null	(date 1635244738026)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/wait/Msg.java	(date 1635244738026)
+@@ -0,0 +1,13 @@
++package com.best.java.thread.wait;
++
++public class Msg {
++    private String content;
++
++    public String getContent() {
++        return content;
++    }
++
++    public void setContent(String content) {
++        this.content = content;
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java
+new file mode 100644
+--- /dev/null	(date 1637113675848)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java	(date 1637113675848)
+@@ -0,0 +1,8 @@
++package com.best.spring.rabbitmq.enums;
++
++/**
++ * @author 王存露
++ */
++public enum DemoEnum1 {
++    MAN;
++}
+Index: java/thread-demo/src/main/java/com/best/java/thread/join/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/join/Main.java b/java/thread-demo/src/main/java/com/best/java/thread/join/Main.java
+new file mode 100644
+--- /dev/null	(date 1635246142460)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/join/Main.java	(date 1635246142460)
+@@ -0,0 +1,13 @@
++package com.best.java.thread.join;
++
++public class Main {
++    public static void main(String[] args) throws InterruptedException {
++        JoinTest joinTest = new JoinTest();
++        ForJoinTest forJoinTest = new ForJoinTest();
++        Thread thread = new Thread(joinTest);
++        thread.start();
++//        thread.join();
++//        thread.interrupt();
++        new Thread(forJoinTest).start();
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/model/Demo1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/model/Demo1.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/model/Demo1.java
+new file mode 100644
+--- /dev/null	(date 1637113675835)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/model/Demo1.java	(date 1637113675835)
+@@ -0,0 +1,32 @@
++package com.best.spring.rabbitmq.model;
++
++import com.best.spring.rabbitmq.enums.DemoEnum1;
++
++/**
++ * @author 王存露
++ */
++public class Demo1 {
++    private String name;
++    private DemoEnum1 demoEnum1;
++
++    public String getName() {
++        return name;
++    }
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public DemoEnum1 getDemoEnum1() {
++        return demoEnum1;
++    }
++
++    public void setDemoEnum1(DemoEnum1 demoEnum1) {
++        this.demoEnum1 = demoEnum1;
++    }
++
++    @Override
++    public String toString() {
++        return "Demo1{" + "name='" + name + '\'' + ", demoEnum1=" + demoEnum1 + '}';
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java
+new file mode 100644
+--- /dev/null	(date 1637054292634)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java	(date 1637054292634)
+@@ -0,0 +1,29 @@
++package com.best.spring.rabbitmq;
++
++import com.best.spring.rabbitmq.service.MyPrivete;
++import com.rabbitmq.client.Channel;
++import org.springframework.amqp.core.Message;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++/**
++ * @author 王存露
++ */
++@SpringBootApplication
++public class SpringBootRabbitMqDemo {
++
++    public static void main(String[] args) {
++        SpringApplication.run(SpringBootRabbitMqDemo.class, args);
++    }
++
++    @Autowired
++    private MyPrivete myPrivete;
++
++    @RabbitListener(queues = "queue2")
++    public void rce(String demo1,  Channel channel, Message message) {
++        myPrivete.resolve(demo1,channel,message);
++    }
++
++}
+Index: spring-boot/spring-boot-web-start/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8099\r\nspring:\r\n  application:\r\n    name: spring-web-start-demo\r\nlogging:\r\n  level:\r\n    root: debug\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-web-start/src/main/resources/application.yml b/spring-boot/spring-boot-web-start/src/main/resources/application.yml
+--- a/spring-boot/spring-boot-web-start/src/main/resources/application.yml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-web-start/src/main/resources/application.yml	(date 1636629302989)
+@@ -1,8 +1,9 @@
+ server:
+-  port: 8099
++  port: 8399
+ spring:
+   application:
+     name: spring-web-start-demo
+ logging:
+   level:
+-    root: debug
++    root: info
++
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/README.md b/spring-boot/spring-boot-rabbitmq-expiration-time/README.md
+new file mode 100644
+--- /dev/null	(date 1627351750053)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/README.md	(date 1627351750053)
+@@ -0,0 +1,1 @@
++# 一个spring boot rabbitmq 的快速demo
+\ No newline at end of file
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/docker-compose.yml b/spring-boot/spring-boot-rabbitmq-expiration-time/docker-compose.yml
+new file mode 100644
+--- /dev/null	(date 1637050820051)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/docker-compose.yml	(date 1637050820051)
+@@ -0,0 +1,9 @@
++# Use root/example as user/password credentials
++version: '3.8'
++
++services:
++  rabbitmq:
++    image: rabbitmq:management
++    ports:
++      - "15672:15672"
++      - "5672:5672"
+\ No newline at end of file
+Index: spring-boot/spring-boot-rabbitmq-try-throw/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/pom.xml b/spring-boot/spring-boot-rabbitmq-try-throw/pom.xml
+new file mode 100644
+--- /dev/null	(date 1637051188595)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/pom.xml	(date 1637051188595)
+@@ -0,0 +1,41 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>spring-boot-rabbitmq-try-throw</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <properties>
++        <maven.compiler.source>8</maven.compiler.source>
++        <maven.compiler.target>8</maven.compiler.target>
++    </properties>
++
++    <dependencies>
++        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-amqp</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <version>2.5.3</version>
++            <scope>test</scope>
++        </dependency>
++        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-json -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-json</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-aop</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++    </dependencies>
++</project>
+\ No newline at end of file
+Index: spring-cloud/spring-cloud-openfeign/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 9091\r\nspring:\r\n  application:\r\n    name: opefeign-demo
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/resources/application.yml b/spring-cloud/spring-cloud-openfeign/src/main/resources/application.yml
+--- a/spring-cloud/spring-cloud-openfeign/src/main/resources/application.yml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/resources/application.yml	(date 1636628152825)
+@@ -2,4 +2,6 @@
+   port: 9091
+ spring:
+   application:
+-    name: opefeign-demo
+\ No newline at end of file
++    name: opefeign-demo
++  main:
++    allow-bean-definition-overriding: true
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/pom.xml b/spring-boot/spring-boot-rabbitmq-expiration-time/pom.xml
+new file mode 100644
+--- /dev/null	(date 1637113708740)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/pom.xml	(date 1637113708740)
+@@ -0,0 +1,46 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>spring-boot-rabbitmq-expiration-time</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <properties>
++        <maven.compiler.source>8</maven.compiler.source>
++        <maven.compiler.target>8</maven.compiler.target>
++    </properties>
++
++    <dependencies>
++        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-amqp</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <version>2.5.3</version>
++            <scope>test</scope>
++        </dependency>
++        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-json -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-json</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-aop</artifactId>
++            <version>2.5.3</version>
++        </dependency>
++    </dependencies>
++</project>
+\ No newline at end of file
+Index: java/thread-demo/src/main/java/com/best/java/thread/wait/TestTread.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/wait/TestTread.java b/java/thread-demo/src/main/java/com/best/java/thread/wait/TestTread.java
+new file mode 100644
+--- /dev/null	(date 1635244738010)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/wait/TestTread.java	(date 1635244738010)
+@@ -0,0 +1,26 @@
++package com.best.java.thread.wait;
++
++public class TestTread implements Runnable {
++
++    private Msg msg;
++    private Integer i;
++
++    public TestTread(Msg msg,Integer i) {
++        this.msg = msg;
++        this.i = i;
++    }
++
++
++    @Override
++    public void run() {
++        synchronized (msg) {
++            try {
++                msg.wait(5000,5000);
++            } catch (InterruptedException e) {
++                e.printStackTrace();
++            }
++            System.out.println("测试 : " + i);
++        }
++    }
++
++}
+Index: java/thread-demo/src/main/java/com/best/java/thread/join/JoinTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/join/JoinTest.java b/java/thread-demo/src/main/java/com/best/java/thread/join/JoinTest.java
+new file mode 100644
+--- /dev/null	(date 1635246100834)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/join/JoinTest.java	(date 1635246100834)
+@@ -0,0 +1,15 @@
++package com.best.java.thread.join;
++
++public class JoinTest implements Runnable{
++
++    @Override
++    public void run() {
++        System.out.println("JoinTest test start");
++        try {
++            Thread.sleep(10000);
++        } catch (InterruptedException e) {
++            e.printStackTrace();
++        }
++        System.out.println("runnable test end");
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/resources/application.yml b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1637053306952)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/resources/application.yml	(date 1637053306952)
+@@ -0,0 +1,10 @@
++server:
++  port: 8093
++spring:
++  rabbitmq:
++    password: guest
++    username: guest
++    host: localhost
++    listener:
++      simple:
++        acknowledge-mode: manual
+\ No newline at end of file
+Index: java/thread-demo/src/main/java/com/best/java/thread/join/ForJoinTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/join/ForJoinTest.java b/java/thread-demo/src/main/java/com/best/java/thread/join/ForJoinTest.java
+new file mode 100644
+--- /dev/null	(date 1635245193234)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/join/ForJoinTest.java	(date 1635245193234)
+@@ -0,0 +1,9 @@
++package com.best.java.thread.join;
++
++public class ForJoinTest implements Runnable {
++    @Override
++    public void run() {
++        System.out.println("ForJoinTest test start");
++        System.out.println("ForJoinTest test end");
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-try-throw/target/classes/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/target/classes/application.yml b/spring-boot/spring-boot-rabbitmq-try-throw/target/classes/application.yml
+new file mode 100644
+--- /dev/null	(date 1637053306952)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/target/classes/application.yml	(date 1637053306952)
+@@ -0,0 +1,10 @@
++server:
++  port: 8093
++spring:
++  rabbitmq:
++    password: guest
++    username: guest
++    host: localhost
++    listener:
++      simple:
++        acknowledge-mode: manual
+\ No newline at end of file
+Index: java/thread-demo/src/main/java/com/best/java/thread/wait/WakeUpThread.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/src/main/java/com/best/java/thread/wait/WakeUpThread.java b/java/thread-demo/src/main/java/com/best/java/thread/wait/WakeUpThread.java
+new file mode 100644
+--- /dev/null	(date 1635244738033)
++++ b/java/thread-demo/src/main/java/com/best/java/thread/wait/WakeUpThread.java	(date 1635244738033)
+@@ -0,0 +1,16 @@
++package com.best.java.thread.wait;
++
++public class WakeUpThread implements Runnable {
++    private Msg msg;
++    public WakeUpThread(Msg msg) {
++        this.msg = msg;
++    }
++
++    @Override
++    public void run() {
++        synchronized (msg) {
++            System.out.println("notifyAll");
++            msg.notifyAll();
++        }
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/GoodsConst.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/GoodsConst.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/GoodsConst.java
+new file mode 100644
+--- /dev/null	(date 1637113675788)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/GoodsConst.java	(date 1637113675788)
+@@ -0,0 +1,84 @@
++package com.best.spring.rabbitmq;
++
++/**
++ * @author 王存露
++ * @date 2021/4/2
++ */
++public class GoodsConst {
++    /**
++     * 配置您申请聚合数据调用汇率计算的KEY
++     */
++    public static final String APPKEY = "f4e57eb8bb12d6d572c560ec38426ca8";
++    /**
++     * 请求地址
++     */
++    public static final String REQUEST_URL = "http://web.juhe.cn:8080/finance/exchange/rmbquot";
++
++    /**
++     * 商品5点详情的分割图
++     */
++    public static final String SEPARATOR = "%f4e57eb8bb%";
++    /**
++     * 商品延迟交换机
++     */
++    public static final String GOODS_DELAY_EXCHANGE_NAME = "GOODS_DELAY_EXCHANGE_NAME";
++    /**
++     * 商品延迟队列
++     */
++    public static final String GOODS_DELAY_QUEUE_NAME = "GOODS_DELAY_QUEUE_NAME";
++    /**
++     * 商品处理队列KEY
++     */
++    public static final String GOODS_DELAY_QUEUE_ROUTING_KEY = "GOODS_DELAY_DELAY_QUEUE_ROUTING_KEY";
++
++    /**
++     * 商品死信交换机
++     */
++    public static final String GOODS_DEAD_EXCHANGE_NAME = "GOODS_DEAD_EXCHANGE_NAME";
++
++    /**
++     * 商品死信队列
++     */
++    public static final String GOODS_DEAD_QUEUE_NAME = "GOODS_DEAD_QUEUE_NAME";
++
++    /**
++     * 商品死信KEY
++     */
++    public static final String GOODS_DEAD_QUEUE_NAME_ROUTING_KEY = "GOODS_DEAD_QUEUE_NAME_ROUTING_KEY";
++
++
++    /**
++     * 商品延迟交换机
++     */
++    public static final String SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME = "SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME";
++    /**
++     * 亚马逊同步商品延迟队列
++     */
++    public static final String SYNC_AMAZON_GOODS_DELAY_QUEUE_NAME = "SYNC_AMAZON_GOODS_DELAY_QUEUE_NAME";
++    /**
++     * 亚马逊同步商品处理队列KEY
++     */
++    public static final String SYNC_AMAZON_GOODS_DELAY_QUEUE_ROUTING_KEY = "SYNC_AMAZON_GOODS_DELAY_DELAY_QUEUE_ROUTING_KEY";
++
++    /**
++     * 亚马逊同步商品死信交换机
++     */
++    public static final String SYNC_AMAZON_GOODS_DEAD_EXCHANGE_NAME = "SYNC_AMAZON_GOODS_DEAD_EXCHANGE_NAME";
++
++    /**
++     * 亚马逊同步商品死信队列
++     */
++    public static final String SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME = "SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME";
++
++    /**
++     * 亚马逊同步商品死信KEY
++     */
++    public static final String SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME_ROUTING_KEY = "SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME_ROUTING_KEY";
++
++
++    /**
++     * Upc 占位符
++     */
++    public static final String UPC_PLACEHOLDER = "G";
++
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java
+new file mode 100644
+--- /dev/null	(date 1637114730474)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java	(date 1637114730474)
+@@ -0,0 +1,23 @@
++package com.best.spring.rabbitmq;
++
++import com.best.spring.rabbitmq.enums.DemoEnum1;
++import com.best.spring.rabbitmq.model.Demo1;
++import org.junit.jupiter.api.Test;
++import org.springframework.amqp.core.AmqpTemplate;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class SpringBootRabbitMqDemoTest {
++
++    @Autowired
++    public AmqpTemplate amqpTemplate;
++
++    @Test
++    public void test() {
++        Demo1 demoEnum1 = new Demo1();
++        demoEnum1.setName("1");
++        demoEnum1.setDemoEnum1(DemoEnum1.MAN);
++        amqpTemplate.convertAndSend("exp1", null, demoEnum1);
++    }
++}
+\ No newline at end of file
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java
+new file mode 100644
+--- /dev/null	(date 1637052729255)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java	(date 1637052729255)
+@@ -0,0 +1,66 @@
++package com.best.spring.rabbitmq.config;
++
++import org.springframework.amqp.core.*;
++import org.springframework.amqp.rabbit.connection.ConnectionFactory;
++import org.springframework.amqp.rabbit.core.RabbitTemplate;
++import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
++import org.springframework.amqp.support.converter.MessageConverter;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++
++/**
++ * @author 王存露
++ */
++@Configuration
++public class RabbitMqConfig {
++    @Autowired
++    public ConnectionFactory connectionFactory;
++
++    @Bean
++    Queue queue() {
++        return QueueBuilder.durable("queue1")
++                           .build();
++    }
++
++    @Bean
++
++    Queue queue2() {
++        return QueueBuilder.durable("queue2")
++                           .build();
++    }
++
++    @Bean
++    FanoutExchange exchange() {
++        return ExchangeBuilder.fanoutExchange("exp1")
++                              .durable(true)
++                              .build();
++    }
++
++    @Bean
++    Binding binding( Queue queue,
++                    FanoutExchange exchange){
++        return BindingBuilder.bind(queue)
++                             .to(exchange);
++    }
++
++    @Bean
++    Binding binding2(Queue queue2,
++                    FanoutExchange exchange){
++        return BindingBuilder.bind(queue2)
++                             .to(exchange);
++    }
++    @Bean
++    public MessageConverter jsonMessageConverterPut() {
++        return new Jackson2JsonMessageConverter();
++    }
++
++    @Bean
++    public RabbitTemplate rabbitTemplate() {
++        RabbitTemplate template = new RabbitTemplate(connectionFactory);
++        template.setMessageConverter(jsonMessageConverterPut());
++        return template;
++    }
++
++
++}
+Index: spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceD.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceD.java b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceD.java
+new file mode 100644
+--- /dev/null	(date 1635756922457)
++++ b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceD.java	(date 1635756922457)
+@@ -0,0 +1,19 @@
++package com.best.spring.boot;
++
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Component;
++
++@Component
++public class ServiceD {
++
++    private ServiceC serviceC;
++
++    @Autowired
++    public void setServiceC(ServiceC serviceC) {
++        this.serviceC = serviceC;
++    }
++
++    public void setServiceB(){
++        serviceC.setServiceB();
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java
+new file mode 100644
+--- /dev/null	(date 1627360146656)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/enums/DemoEnum1.java	(date 1627360146656)
+@@ -0,0 +1,8 @@
++package com.best.spring.rabbitmq.enums;
++
++/**
++ * @author 王存露
++ */
++public enum DemoEnum1 {
++    MAN;
++}
+Index: spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceA.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceA.java b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceA.java
+new file mode 100644
+--- /dev/null	(date 1635758228009)
++++ b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceA.java	(date 1635758228009)
+@@ -0,0 +1,17 @@
++package com.best.spring.boot;
++
++import org.springframework.stereotype.Component;
++
++@Component
++public class ServiceA {
++    private final ServiceC serviceC;
++    public ServiceA(ServiceC servicec) {
++        this.serviceC = servicec;
++    }
++
++    public void setServiceB(){
++        serviceC.setServiceB();
++        System.out.println("b");
++    }
++
++}
+Index: spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceC.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceC.java b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceC.java
+new file mode 100644
+--- /dev/null	(date 1635756899431)
++++ b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceC.java	(date 1635756899431)
+@@ -0,0 +1,20 @@
++package com.best.spring.boot;
++
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Component;
++
++@Component
++public class ServiceC {
++
++    private ServiceD serviceD;
++
++    @Autowired
++    public void setServiceD(ServiceD serviceD) {
++        this.serviceD = serviceD;
++    }
++
++    public void setServiceB(){
++        serviceD.setServiceB();
++        System.out.println("b");
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/model/Demo1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/model/Demo1.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/model/Demo1.java
+new file mode 100644
+--- /dev/null	(date 1627360409330)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/model/Demo1.java	(date 1627360409330)
+@@ -0,0 +1,32 @@
++package com.best.spring.rabbitmq.model;
++
++import com.best.spring.rabbitmq.enums.DemoEnum1;
++
++/**
++ * @author 王存露
++ */
++public class Demo1 {
++    private String name;
++    private DemoEnum1 demoEnum1;
++
++    public String getName() {
++        return name;
++    }
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public DemoEnum1 getDemoEnum1() {
++        return demoEnum1;
++    }
++
++    public void setDemoEnum1(DemoEnum1 demoEnum1) {
++        this.demoEnum1 = demoEnum1;
++    }
++
++    @Override
++    public String toString() {
++        return "Demo1{" + "name='" + name + '\'' + ", demoEnum1=" + demoEnum1 + '}';
++    }
++}
+Index: spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceB.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceB.java b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceB.java
+new file mode 100644
+--- /dev/null	(date 1635758396719)
++++ b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/ServiceB.java	(date 1635758396719)
+@@ -0,0 +1,18 @@
++package com.best.spring.boot;
++
++import org.springframework.stereotype.Component;
++
++@Component
++public class ServiceB {
++
++    private ServiceA serviceA;
++
++    public ServiceB(ServiceA serviceA) {
++        this.serviceA = serviceA;
++    }
++
++    public void setServiceB(){
++        serviceA.setServiceB();
++        System.out.println("b");
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-try-throw/docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/docker-compose.yml b/spring-boot/spring-boot-rabbitmq-try-throw/docker-compose.yml
+new file mode 100644
+--- /dev/null	(date 1637050820051)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/docker-compose.yml	(date 1637050820051)
+@@ -0,0 +1,9 @@
++# Use root/example as user/password credentials
++version: '3.8'
++
++services:
++  rabbitmq:
++    image: rabbitmq:management
++    ports:
++      - "15672:15672"
++      - "5672:5672"
+\ No newline at end of file
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java
+new file mode 100644
+--- /dev/null	(date 1637114913026)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java	(date 1637114913026)
+@@ -0,0 +1,34 @@
++package com.best.spring.rabbitmq;
++
++import com.best.spring.rabbitmq.service.MyPrivete;
++import com.rabbitmq.client.Channel;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.Message;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++
++/**
++ * @author 王存露
++ */
++@SpringBootApplication
++public class SpringBootRabbitMqDemo {
++
++    private final static Logger log = LoggerFactory.getLogger(SpringBootRabbitMqDemo.class);
++    public static void main(String[] args) {
++        SpringApplication.run(SpringBootRabbitMqDemo.class, args);
++    }
++
++    @Autowired
++    private MyPrivete myPrivete;
++
++    @RabbitListener(queues = GoodsConst.SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME)
++    public void rce(String demo1,  Channel channel, Message message) {
++        log.info("start");
++        myPrivete.resolve(demo1,channel,message);
++    }
++
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java
+new file mode 100644
+--- /dev/null	(date 1637116551704)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java	(date 1637116551704)
+@@ -0,0 +1,34 @@
++package com.best.spring.rabbitmq.service;
++
++import com.best.spring.rabbitmq.SpringBootRabbitMqDemo;
++import com.rabbitmq.client.Channel;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.Message;
++import org.springframework.stereotype.Component;
++
++import java.io.IOException;
++
++/**
++ * @author lnsane
++ */
++@Component
++public class MyPrivete {
++    public void resolve(String demo1, Channel channel, Message message) {
++//        long queue2 = channel.basicGet("queue2", false).getEnvelope().getDeliveryTag();
++        Logger logger = LoggerFactory.getLogger(SpringBootRabbitMqDemo.class);
++
++
++        logger.info("正在消费");
++        System.out.println(demo1.toString());
++//        if (1 / 0 == 1) {
++//
++//        }
++        logger.info("消费完成");
++        try {
++            channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java
+new file mode 100644
+--- /dev/null	(date 1637138079230)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java	(date 1637138079230)
+@@ -0,0 +1,80 @@
++package com.best.spring.rabbitmq.aop;
++
++import com.best.spring.rabbitmq.GoodsConst;
++import com.rabbitmq.client.Channel;
++import org.aspectj.lang.JoinPoint;
++import org.aspectj.lang.ProceedingJoinPoint;
++import org.aspectj.lang.annotation.*;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.AmqpTemplate;
++import org.springframework.amqp.core.Message;
++import org.springframework.amqp.core.MessageProperties;
++import org.springframework.amqp.rabbit.core.RabbitTemplate;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.core.annotation.Order;
++import org.springframework.stereotype.Component;
++
++import java.io.IOException;
++
++/**
++ * @author lnsane
++ */
++@Aspect
++@Component
++@Order(1)
++public class CoustomApest {
++    @Autowired
++    private AmqpTemplate amqpTemplate;
++    private RabbitTemplate rabbitTemplate;
++
++    private final static Logger log = LoggerFactory.getLogger(CoustomApest.class);
++
++    @Pointcut("execution(public * com.best.spring.rabbitmq.service.*.*(..))")
++    public void controller() {
++    }
++
++
++    @AfterThrowing(throwing = "e", pointcut = "controller()")
++    public void tryThrow(JoinPoint joinPoint, RuntimeException e) {
++        System.out.println(joinPoint);
++        Object[] args = joinPoint.getArgs();
++        String msg =(String) args[0];
++        Channel channel  = (Channel) args[1];
++        Message message = (Message) args[2];
++        try {
++            MessageProperties props = new MessageProperties();
++            props.setExpiration("30000");
++            Message message2 = new Message(msg.getBytes(), props);
++            amqpTemplate.convertAndSend(GoodsConst.SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME,GoodsConst.SYNC_AMAZON_GOODS_DELAY_QUEUE_ROUTING_KEY,message2);
++            log.info("end");
++        } catch (Exception ex) {
++            ex.printStackTrace();
++        } finally {
++            try {
++                channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
++            } catch (IOException ex) {
++                ex.printStackTrace();
++            }
++        }
++        System.out.println(e);
++    }
++
++    @Before("execution(public * com.best.spring.rabbitmq.service.*.*(..))")
++    public void before(JoinPoint poin){
++        System.out.println(poin);
++    }
++
++    @AfterReturning(pointcut = "controller()",
++            returning = "result")
++    public void returnResult(JoinPoint point, Object result) {
++        System.out.println(point);
++    }
++
++    @Around("controller()")
++    public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
++        System.out.println(joinPoint);
++        Object[] args = joinPoint.getArgs();
++        return joinPoint.proceed();
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java
+new file mode 100644
+--- /dev/null	(date 1637114571785)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java	(date 1637114571785)
+@@ -0,0 +1,88 @@
++package com.best.spring.rabbitmq.config;
++
++import com.best.spring.rabbitmq.GoodsConst;
++import org.springframework.amqp.core.*;
++import org.springframework.amqp.rabbit.connection.ConnectionFactory;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.beans.factory.annotation.Qualifier;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++
++/**
++ * @author 王存露
++ */
++@Configuration
++public class RabbitMqConfig {
++    @Autowired
++    public ConnectionFactory connectionFactory;
++
++    /**
++     * 延迟交换机初始化
++     */
++    @Bean(name = GoodsConst.SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME)
++    public DirectExchange goodsDelayExchangeName() {
++        return ExchangeBuilder.directExchange(GoodsConst.SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME)
++                .durable(true)
++                .build();
++    }
++
++
++    /**
++     * 商品延迟队列
++     */
++    @Bean(name = GoodsConst.SYNC_AMAZON_GOODS_DELAY_QUEUE_NAME)
++    public Queue goodsDelayQueueName() {
++        return QueueBuilder.durable(GoodsConst.SYNC_AMAZON_GOODS_DELAY_QUEUE_NAME)
++                .deadLetterExchange(GoodsConst.SYNC_AMAZON_GOODS_DEAD_EXCHANGE_NAME)
++                .deadLetterRoutingKey(GoodsConst.SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME_ROUTING_KEY)
++                .build();
++    }
++
++    /**
++     * 商品死信交换机
++     */
++    @Bean(GoodsConst.SYNC_AMAZON_GOODS_DEAD_EXCHANGE_NAME)
++    public DirectExchange goodsDeadExchangeName() {
++        return ExchangeBuilder.directExchange(GoodsConst.SYNC_AMAZON_GOODS_DEAD_EXCHANGE_NAME)
++                .durable(true)
++                .build();
++    }
++
++    /**
++     * 商品死信队列
++     */
++    @Bean(GoodsConst.SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME)
++    public Queue goodsDeadQueueName() {
++        return QueueBuilder.durable(GoodsConst.SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME)
++                .build();
++    }
++
++    /**
++     * 延迟队列绑定延迟交换机
++     */
++    @Bean
++    public Binding delayBindingA(
++            @Qualifier(GoodsConst.SYNC_AMAZON_GOODS_DELAY_QUEUE_NAME)
++                    Queue queue,
++            @Qualifier(GoodsConst.SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME)
++                    DirectExchange exchange) {
++        return BindingBuilder.bind(queue)
++                .to(exchange)
++                .with(GoodsConst.SYNC_AMAZON_GOODS_DELAY_QUEUE_ROUTING_KEY);
++    }
++
++    /**
++     * 商品死信队列绑定死信交换机
++     */
++    @Bean
++    public Binding deadLetterBindingA(
++            @Qualifier(GoodsConst.SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME)
++                    Queue queue,
++            @Qualifier(GoodsConst.SYNC_AMAZON_GOODS_DEAD_EXCHANGE_NAME)
++                    DirectExchange exchange) {
++        return BindingBuilder.bind(queue)
++                .to(exchange)
++                .with(GoodsConst.SYNC_AMAZON_GOODS_DEAD_QUEUE_NAME_ROUTING_KEY);
++    }
++
++}
+Index: spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/Main.java b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/Main.java
+new file mode 100644
+--- /dev/null	(date 1636191618780)
++++ b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/Main.java	(date 1636191618780)
+@@ -0,0 +1,15 @@
++package com.best.spring.boot.web;
++
++import java.util.function.Consumer;
++
++/**
++ * @author lnsane
++ */
++public class Main {
++    public static void main(String[] args) {
++        hello(System.out::println);
++    }
++    public static void hello(Consumer consumer) {
++        consumer.accept("Hello");
++    }
++}
+Index: spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java
+new file mode 100644
+--- /dev/null	(date 1637114716152)
++++ b/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java	(date 1637114716152)
+@@ -0,0 +1,30 @@
++package com.best.spring.rabbitmq.controller;
++
++import com.best.spring.rabbitmq.GoodsConst;
++import org.springframework.amqp.core.AmqpTemplate;
++import org.springframework.amqp.core.Message;
++import org.springframework.amqp.core.MessageProperties;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.RequestMapping;
++import org.springframework.web.bind.annotation.RestController;
++
++/**
++ * @author lnsane
++ */
++@RestController
++@RequestMapping
++public class HelloController {
++    private AmqpTemplate amqpTemplate;
++
++    public HelloController(AmqpTemplate amqpTemplate) {
++        this.amqpTemplate = amqpTemplate;
++    }
++
++    @GetMapping
++    public void hello(){
++        MessageProperties props = new MessageProperties();
++        props.setExpiration("6000");
++        Message message2 = new Message("1".getBytes(), props);
++        amqpTemplate.convertAndSend(GoodsConst.SYNC_AMAZON_GOODS_DELAY_EXCHANGE_NAME,GoodsConst.SYNC_AMAZON_GOODS_DELAY_QUEUE_ROUTING_KEY,message2);
++    }
++}
+Index: spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.boot;\r\n\r\nimport org.springframework.boot.SpringApplication;\r\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\r\n\r\nimport javax.annotation.PostConstruct;\r\n\r\n/**\r\n * @author 王存露\r\n */\r\n@SpringBootApplication\r\npublic class SpringBootStartDemo {\r\n    public static void main(String[] args) {\r\n        SpringApplication.run(SpringBootStartDemo.class, args);\r\n    }\r\n\r\n    @PostConstruct\r\n    public void test() {\r\n        System.out.println(System.getProperty(\"sun.jnu.encoding\"));\r\n    }\r\n\r\n    @PostConstruct\r\n    public void test() {\r\n        System.out.println(System.getProperty(\"sun.jnu.encoding\"));\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java
+--- a/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java	(date 1636188414712)
+@@ -10,17 +10,18 @@
+  */
+ @SpringBootApplication
+ public class SpringBootStartDemo {
++
+     public static void main(String[] args) {
+         SpringApplication.run(SpringBootStartDemo.class, args);
+     }
+ 
+     @PostConstruct
+     public void test() {
+-        System.out.println(System.getProperty("sun.jnu.encoding"));
+-    }
+-
+-    @PostConstruct
+-    public void test() {
++        ServiceB serviceB = new ServiceB(new ServiceA(new ServiceC()));
++        serviceB.setServiceB();
+         System.out.println(System.getProperty("sun.jnu.encoding"));
+     }
++
++
++
+ }
+Index: spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.boot.web.filter;\r\n\r\nimport ch.qos.logback.classic.LoggerContext;\r\nimport org.slf4j.Logger;\r\nimport org.slf4j.LoggerFactory;\r\nimport org.springframework.core.annotation.Order;\r\nimport org.springframework.stereotype.Component;\r\n\r\nimport javax.servlet.*;\r\nimport java.io.IOException;\r\n\r\n/**\r\n * @author 王存露\r\n */\r\n@Component\r\n@Order(value = Integer.MAX_VALUE - 1)\r\npublic class FirstFilter implements Filter {\r\n\r\n    Logger logger = LoggerFactory.getLogger(FirstFilter.class);\r\n    @Override\r\n    public void init(FilterConfig filterConfig) throws ServletException {\r\n        logger.info(\"-----> first Filter init\");\r\n        Filter.super.init(filterConfig);\r\n    }\r\n\r\n    @Override\r\n    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {\r\n        logger.info(\"-----> first Filter run\");\r\n        filterChain.doFilter(servletRequest, servletResponse);\r\n    }\r\n\r\n    @Override\r\n    public void destroy() {\r\n        logger.info(\"-----> first Filter destroy\");\r\n        Filter.super.destroy();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java
+--- a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/filter/FirstFilter.java	(date 1635758248442)
+@@ -1,6 +1,5 @@
+ package com.best.spring.boot.web.filter;
+ 
+-import ch.qos.logback.classic.LoggerContext;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+ import org.springframework.core.annotation.Order;
+Index: spring-boot/spring-boot-rabbitmq/docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Use root/example as user/password credentials\r\nversion: '3.8'\r\n\r\nservices:\r\n  rabbitmq:\r\n    image: rabbitmq:management\r\n    ports:\r\n      - 15672:15672\r\n      - 5672:5672
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq/docker-compose.yml b/spring-boot/spring-boot-rabbitmq/docker-compose.yml
+--- a/spring-boot/spring-boot-rabbitmq/docker-compose.yml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-rabbitmq/docker-compose.yml	(date 1637050820051)
+@@ -5,5 +5,5 @@
+   rabbitmq:
+     image: rabbitmq:management
+     ports:
+-      - 15672:15672
+-      - 5672:5672
+\ No newline at end of file
++      - "15672:15672"
++      - "5672:5672"
+\ No newline at end of file
+Index: spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.boot.web;\r\n\r\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\r\nimport org.springframework.boot.builder.SpringApplicationBuilder;\r\n\r\n/**\r\n * @author 王存露\r\n */\r\n@SpringBootApplication\r\npublic class SpringBootWebTomcatStart {\r\n    public static void main(String[] args) {\r\n//        SpringApplication.run(SpringBootWebTomcatStart.class, args);\r\n        new SpringApplicationBuilder()\r\n                .sources(SpringBootWebTomcatStart.class)\r\n                .run(args);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java
+--- a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java	(date 1636627917995)
+@@ -14,4 +14,5 @@
+                 .sources(SpringBootWebTomcatStart.class)
+                 .run(args);
+     }
++
+ }
+Index: spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/config/MyFeign.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/config/MyFeign.java b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/config/MyFeign.java
+new file mode 100644
+--- /dev/null	(date 1636703407954)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/config/MyFeign.java	(date 1636703407954)
+@@ -0,0 +1,21 @@
++package com.best.spring.cloud.openfeign.config;
++
++import feign.RequestInterceptor;
++import feign.RequestTemplate;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.web.context.request.RequestContextHolder;
++import org.springframework.web.context.request.ServletRequestAttributes;
++
++/**
++ * @author lnsane
++ */
++//@Component
++public class MyFeign implements RequestInterceptor {
++    private final static Logger log = LoggerFactory.getLogger(RequestInterceptor.class);
++    @Override
++    public void apply(RequestTemplate requestTemplate) {
++        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
++        log.info("===request: {}", requestTemplate.url());
++    }
++}
+Index: spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello.java b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello.java
+new file mode 100644
+--- /dev/null	(date 1636704184018)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello.java	(date 1636704184018)
+@@ -0,0 +1,14 @@
++package com.best.spring.cloud.openfeign.lnheritance;
++
++import org.springframework.web.bind.annotation.RequestMapping;
++import org.springframework.web.bind.annotation.RequestMethod;
++
++/**
++ * @author lnsane
++ */
++public interface Hello {
++
++    @RequestMapping(method = RequestMethod.GET,value = "/hello")
++    void hello();
++
++}
+Index: spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.boot.web.controller;\r\n\r\nimport cn.hutool.core.thread.ThreadUtil;\r\nimport org.slf4j.Logger;\r\nimport org.slf4j.LoggerFactory;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.RestController;\r\n\r\n/**\r\n * @author 王存露\r\n */\r\n@RestController\r\npublic class HelloController {\r\n    Logger logger = LoggerFactory.getLogger(HelloController.class);\r\n\r\n    @GetMapping(\"/hello\")\r\n    public void hello() throws InterruptedException {\r\n        logger.info(\"-----> hello controller brefore\");\r\n        ThreadUtil.safeSleep(1000000000);\r\n        logger.info(\"-----> hello controller after\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java
+--- a/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java	(date 1636628990180)
+@@ -1,6 +1,6 @@
+ package com.best.spring.boot.web.controller;
+ 
+-import cn.hutool.core.thread.ThreadUtil;
++import com.github.lnsane.web.common.core.exception.BadRequestException;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+ import org.springframework.web.bind.annotation.GetMapping;
+@@ -16,7 +16,7 @@
+     @GetMapping("/hello")
+     public void hello() throws InterruptedException {
+         logger.info("-----> hello controller brefore");
+-        ThreadUtil.safeSleep(1000000000);
+         logger.info("-----> hello controller after");
++        throw new BadRequestException("12");
+     }
+ }
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java
+new file mode 100644
+--- /dev/null	(date 1627360905718)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/test/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemoTest.java	(date 1627360905718)
+@@ -0,0 +1,27 @@
++package com.best.spring.rabbitmq;
++
++import com.best.spring.rabbitmq.enums.DemoEnum1;
++import com.best.spring.rabbitmq.model.Demo1;
++import org.junit.jupiter.api.Test;
++import org.springframework.amqp.core.AmqpTemplate;
++import org.springframework.amqp.rabbit.annotation.RabbitListener;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.test.context.SpringBootTest;
++import org.springframework.messaging.handler.annotation.Payload;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++@SpringBootTest
++class SpringBootRabbitMqDemoTest {
++
++    @Autowired
++    public AmqpTemplate amqpTemplate;
++
++    @Test
++    public void test() {
++        Demo1 demoEnum1 = new Demo1();
++        demoEnum1.setName("1");
++        demoEnum1.setDemoEnum1(DemoEnum1.MAN);
++        amqpTemplate.convertAndSend("exp1", null, demoEnum1);
++    }
++}
+\ No newline at end of file
+Index: spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/controller/TestController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.boot.knife4j.controller;\r\n\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.RestController;\r\n\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\n@RestController\r\npublic class TestController {\r\n    @GetMapping\r\n    public Map<String, String> hello() {\r\n        HashMap<String, String> objectObjectHashMap = new HashMap<>();\r\n        objectObjectHashMap.put(\"hello\", \"world\");\r\n        return objectObjectHashMap;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/controller/TestController.java b/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/controller/TestController.java
+--- a/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/controller/TestController.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/controller/TestController.java	(date 1635319065511)
+@@ -1,6 +1,9 @@
+ package com.best.spring.boot.knife4j.controller;
+ 
++import io.swagger.annotations.ApiImplicitParam;
++import io.swagger.annotations.ApiImplicitParams;
+ import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.RequestParam;
+ import org.springframework.web.bind.annotation.RestController;
+ 
+ import java.util.HashMap;
+@@ -14,4 +17,10 @@
+         objectObjectHashMap.put("hello", "world");
+         return objectObjectHashMap;
+     }
++    // error demo
++    @ApiImplicitParams(@ApiImplicitParam(value = "userId",name = "用户id",dataType = "String",example = "123",required = true))
++    @GetMapping("/error/demo")
++    public void hash(@RequestParam("tt") String tt) {
++        System.out.println(tt);
++    }
+ }
+Index: spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/config/Knife4jConfiguration.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.boot.knife4j.config;\r\n\r\nimport org.springframework.context.annotation.Bean;\r\nimport org.springframework.context.annotation.Configuration;\r\nimport springfox.documentation.builders.ApiInfoBuilder;\r\nimport springfox.documentation.builders.PathSelectors;\r\nimport springfox.documentation.builders.RequestHandlerSelectors;\r\nimport springfox.documentation.spi.DocumentationType;\r\nimport springfox.documentation.spring.web.plugins.Docket;\r\nimport springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;\r\n\r\n@Configuration\r\n@EnableSwagger2WebMvc\r\npublic class Knife4jConfiguration {\r\n    @Bean(value = \"defaultApi2\")\r\n    public Docket defaultApi2() {\r\n        Docket docket = new Docket(DocumentationType.SWAGGER_2)\r\n                .apiInfo(new ApiInfoBuilder()\r\n                        //.title(\"swagger-bootstrap-ui-demo RESTful APIs\")\r\n                        .description(\"# swagger-bootstrap-ui-demo RESTful APIs\")\r\n                        .termsOfServiceUrl(\"http://www.xx.com/\")\r\n                        .contact(\"xx@qq.com\")\r\n                        .version(\"1.0\")\r\n                        .build())\r\n                //分组名称\r\n                .groupName(\"2.X版本\")\r\n                .select()\r\n                //这里指定Controller扫描包路径\r\n                .apis(RequestHandlerSelectors.basePackage(\"com.best.spring.boot.knife4j.controller\"))\r\n                .paths(PathSelectors.any())\r\n                .build();\r\n        return docket;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/config/Knife4jConfiguration.java b/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/config/Knife4jConfiguration.java
+--- a/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/config/Knife4jConfiguration.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-knife4j/src/main/java/com/best/spring/boot/knife4j/config/Knife4jConfiguration.java	(date 1635305939036)
+@@ -7,10 +7,10 @@
+ import springfox.documentation.builders.RequestHandlerSelectors;
+ import springfox.documentation.spi.DocumentationType;
+ import springfox.documentation.spring.web.plugins.Docket;
+-import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
++import springfox.documentation.swagger2.annotations.EnableSwagger2;
+ 
+ @Configuration
+-@EnableSwagger2WebMvc
++@EnableSwagger2
+ public class Knife4jConfiguration {
+     @Bean(value = "defaultApi2")
+     public Docket defaultApi2() {
+@@ -19,7 +19,6 @@
+                         //.title("swagger-bootstrap-ui-demo RESTful APIs")
+                         .description("# swagger-bootstrap-ui-demo RESTful APIs")
+                         .termsOfServiceUrl("http://www.xx.com/")
+-                        .contact("xx@qq.com")
+                         .version("1.0")
+                         .build())
+                 //分组名称
+Index: spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello2Feign.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello2Feign.java b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello2Feign.java
+new file mode 100644
+--- /dev/null	(date 1636704184041)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/Hello2Feign.java	(date 1636704184041)
+@@ -0,0 +1,11 @@
++package com.best.spring.cloud.openfeign.lnheritance;
++
++import org.springframework.cloud.openfeign.FeignClient;
++
++/**
++ * @author lnsane
++ */
++@FeignClient(name = "${spring.application.name}", url = "localhost:${server.port}")
++public interface Hello2Feign extends Hello {
++
++}
+Index: spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/SpringCloudOpenFeignDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.cloud.openfeign;\r\n\r\nimport org.springframework.boot.SpringApplication;\r\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\r\nimport org.springframework.cloud.openfeign.EnableFeignClients;\r\n\r\n@SpringBootApplication\r\n@EnableFeignClients(basePackages = \"com.best.spring.cloud.openfeign.feign\")\r\npublic class SpringCloudOpenFeignDemo {\r\n    public static void main(String[] args) {\r\n        SpringApplication.run(SpringCloudOpenFeignDemo.class, args);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/SpringCloudOpenFeignDemo.java b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/SpringCloudOpenFeignDemo.java
+--- a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/SpringCloudOpenFeignDemo.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/SpringCloudOpenFeignDemo.java	(date 1636704179614)
+@@ -5,7 +5,7 @@
+ import org.springframework.cloud.openfeign.EnableFeignClients;
+ 
+ @SpringBootApplication
+-@EnableFeignClients(basePackages = "com.best.spring.cloud.openfeign.feign")
++@EnableFeignClients(basePackages = {"com.best.spring.cloud.openfeign.feign","com.best.spring.cloud.openfeign.lnheritance"})
+ public class SpringCloudOpenFeignDemo {
+     public static void main(String[] args) {
+         SpringApplication.run(SpringCloudOpenFeignDemo.class, args);
+Index: spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.cloud.openfeign.controller;\r\n\r\nimport com.best.spring.cloud.openfeign.feign.HelloFeign;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.RestController;\r\n\r\n@RestController\r\npublic class TestController {\r\n    @Autowired\r\n    private HelloFeign helloFeign;\r\n\r\n    @GetMapping(\"/test\")\r\n    public String test(String name) {\r\n        return helloFeign.sayHello(name);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java
+--- a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/controller/TestController.java	(date 1636704184009)
+@@ -1,6 +1,6 @@
+ package com.best.spring.cloud.openfeign.controller;
+ 
+-import com.best.spring.cloud.openfeign.feign.HelloFeign;
++import com.best.spring.cloud.openfeign.lnheritance.Hello2Feign;
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.web.bind.annotation.GetMapping;
+ import org.springframework.web.bind.annotation.RestController;
+@@ -8,10 +8,11 @@
+ @RestController
+ public class TestController {
+     @Autowired
+-    private HelloFeign helloFeign;
++    private Hello2Feign helloFeign;
+ 
+     @GetMapping("/test")
+-    public String test(String name) {
+-        return helloFeign.sayHello(name);
++    public String test() {
++        helloFeign.hello();
++        return "";
+     }
+ }
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/resources/application.yml b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1637053306952)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/resources/application.yml	(date 1637053306952)
+@@ -0,0 +1,10 @@
++server:
++  port: 8093
++spring:
++  rabbitmq:
++    password: guest
++    username: guest
++    host: localhost
++    listener:
++      simple:
++        acknowledge-mode: manual
+\ No newline at end of file
+Index: spring-boot/spring-boot-rabbitmq-try-throw/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/README.md b/spring-boot/spring-boot-rabbitmq-try-throw/README.md
+new file mode 100644
+--- /dev/null	(date 1627351750053)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/README.md	(date 1627351750053)
+@@ -0,0 +1,1 @@
++# 一个spring boot rabbitmq 的快速demo
+\ No newline at end of file
+Index: spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.best.spring.cloud.lock.redis;\r\n\r\nimport org.redisson.api.RLock;\r\nimport org.redisson.api.RedissonClient;\r\nimport org.slf4j.Logger;\r\nimport org.slf4j.LoggerFactory;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.boot.SpringApplication;\r\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\r\nimport org.springframework.scheduling.annotation.EnableScheduling;\r\n\r\nimport javax.annotation.PostConstruct;\r\nimport java.util.concurrent.TimeUnit;\r\n\r\n@SpringBootApplication\r\n@EnableScheduling\r\npublic class RedisLockApp {\r\n    Logger logger = LoggerFactory.getLogger(RedisLockApp.class);\r\n    @Autowired\r\n    private RedissonClient redissonClient;\r\n\r\n    public static void main(String[] args) {\r\n        SpringApplication.run(RedisLockApp.class, args);\r\n    }\r\n\r\n    @PostConstruct\r\n    public void testLock() {\r\n        for (int i = 0; i < 2; i++) {\r\n            new Thread(new TestThread(i, redissonClient)).start();\r\n        }\r\n    }\r\n\r\n    //    @Scheduled(fixedDelay = 10000)\r\n    public void hello() {\r\n        logger.info(\"心跳检查\");\r\n    }\r\n}\r\n\r\n\r\nclass TestThread implements Runnable {\r\n\r\n    Logger logger = LoggerFactory.getLogger(TestThread.class);\r\n\r\n    private Integer threadFlag;\r\n    private RedissonClient redissonClient;\r\n\r\n    public TestThread(Integer threadFlag, RedissonClient redissonClient) {\r\n        this.threadFlag = threadFlag;\r\n        this.redissonClient = redissonClient;\r\n    }\r\n\r\n    @Override\r\n    public void run() {\r\n        String key = \"dec_store_lock_threadFlag\";\r\n\r\n        RLock lock = redissonClient.getFairLock(key);\r\n//        if (lock.tryLock()) {\r\n        try {\r\n            lock.lock(10, TimeUnit.SECONDS);\r\n            logger.info(\"当前锁的类型 ： 第 {} 线程  获得  锁\", threadFlag);\r\n            //等到1秒后释放锁\r\n            Thread.sleep(5000);\r\n        } catch (Exception e) {\r\n            e.printStackTrace();\r\n        } finally {\r\n            try {\r\n                logger.info(\"当前锁的类型 ： 第 {} 线程  释放  锁\", threadFlag);\r\n                lock.unlock();\r\n            } catch (Exception e) {\r\n                e.printStackTrace();\r\n            }\r\n        }\r\n//        } else {\r\n//            logger.info(\"当前锁的类型 ： 第 {} 没有  得到  锁\", threadFlag);\r\n//        }\r\n\r\n    }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java b/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java
+--- a/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-cloud/spring-cloud-redis-distributed-lock/src/main/java/com/best/spring/cloud/lock/redis/RedisLockApp.java	(date 1636440846630)
+@@ -10,7 +10,6 @@
+ import org.springframework.scheduling.annotation.EnableScheduling;
+ 
+ import javax.annotation.PostConstruct;
+-import java.util.concurrent.TimeUnit;
+ 
+ @SpringBootApplication
+ @EnableScheduling
+@@ -25,7 +24,7 @@
+ 
+     @PostConstruct
+     public void testLock() {
+-        for (int i = 0; i < 2; i++) {
++        for (int i = 0; i < 3; i++) {
+             new Thread(new TestThread(i, redissonClient)).start();
+         }
+     }
+@@ -56,7 +55,7 @@
+         RLock lock = redissonClient.getFairLock(key);
+ //        if (lock.tryLock()) {
+         try {
+-            lock.lock(10, TimeUnit.SECONDS);
++            lock.lock();
+             logger.info("当前锁的类型 ： 第 {} 线程  获得  锁", threadFlag);
+             //等到1秒后释放锁
+             Thread.sleep(5000);
+Index: spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/HelloController.java b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/HelloController.java
+new file mode 100644
+--- /dev/null	(date 1636704879480)
++++ b/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/lnheritance/HelloController.java	(date 1636704879480)
+@@ -0,0 +1,33 @@
++package com.best.spring.cloud.openfeign.lnheritance;
++
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.RestController;
++
++import javax.servlet.http.HttpServletRequest;
++
++/**
++ * @author lnsane
++ */
++@RestController
++public class HelloController implements Hello {
++    @Autowired
++    private Hello2Feign hello2Feign;
++    @Autowired
++    private HttpServletRequest request;
++    @Override
++    public void hello() {
++        System.out.println(request);
++        if (1 / 0 == 0) {
++
++        }
++    }
++
++    @GetMapping("/123")
++    public void one(HttpServletRequest httpServletRequest) {
++        System.out.println(request);
++        System.out.println(httpServletRequest);
++        System.out.println("123");
++    }
++
++}
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java
+new file mode 100644
+--- /dev/null	(date 1637056508551)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java	(date 1637056508551)
+@@ -0,0 +1,49 @@
++package com.best.spring.rabbitmq.aop;
++
++import com.rabbitmq.client.Channel;
++import org.aspectj.lang.JoinPoint;
++import org.aspectj.lang.ProceedingJoinPoint;
++import org.aspectj.lang.annotation.AfterThrowing;
++import org.aspectj.lang.annotation.Around;
++import org.aspectj.lang.annotation.Aspect;
++import org.aspectj.lang.annotation.Pointcut;
++import org.springframework.amqp.core.Message;
++import org.springframework.core.annotation.Order;
++import org.springframework.stereotype.Component;
++
++import java.io.IOException;
++
++/**
++ * @author lnsane
++ */
++@Aspect
++@Component
++@Order(1)
++public class CoustomApest {
++    @Pointcut("execution(public * com.best.spring.rabbitmq.service.*.*(..))")
++    public void controller() {
++    }
++
++
++    @AfterThrowing(throwing = "e", pointcut = "controller()")
++    public void tryThrow(JoinPoint joinPoint, RuntimeException e) {
++        System.out.println(joinPoint);
++        Object[] args = joinPoint.getArgs();
++        String msg =(String) args[0];
++        Channel channel  = (Channel) args[1];
++        Message message = (Message) args[2];
++        try {
++            channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
++        } catch (IOException ex) {
++            ex.printStackTrace();
++        }
++        System.out.println(e);
++    }
++
++    @Around("controller()")
++    public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
++        System.out.println(joinPoint);
++        Object[] args = joinPoint.getArgs();
++        return joinPoint.proceed();
++    }
++}
+Index: java/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>java</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>8</maven.compiler.source>\r\n        <maven.compiler.target>8</maven.compiler.target>\r\n    </properties>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/pom.xml b/java/pom.xml
+--- a/java/pom.xml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/java/pom.xml	(date 1635241257062)
+@@ -6,7 +6,11 @@
+ 
+     <groupId>org.example</groupId>
+     <artifactId>java</artifactId>
++    <packaging>pom</packaging>
+     <version>1.0-SNAPSHOT</version>
++    <modules>
++        <module>thread-demo</module>
++    </modules>
+ 
+     <properties>
+         <maven.compiler.source>8</maven.compiler.source>
+Index: spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java
+new file mode 100644
+--- /dev/null	(date 1637054031329)
++++ b/spring-boot/spring-boot-rabbitmq-try-throw/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java	(date 1637054031329)
+@@ -0,0 +1,32 @@
++package com.best.spring.rabbitmq.service;
++
++import com.best.spring.rabbitmq.SpringBootRabbitMqDemo;
++import com.rabbitmq.client.Channel;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.amqp.core.Message;
++import org.springframework.stereotype.Component;
++
++import java.io.IOException;
++
++/**
++ * @author lnsane
++ */
++@Component
++public class MyPrivete {
++    public void resolve(String demo1, Channel channel, Message message) {
++//        long queue2 = channel.basicGet("queue2", false).getEnvelope().getDeliveryTag();
++        Logger logger = LoggerFactory.getLogger(SpringBootRabbitMqDemo.class);
++        logger.info("正在消费");
++        System.out.println(demo1.toString());
++        if (1 / 0 == 1) {
++
++        }
++        logger.info("消费完成");
++        try {
++            channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
++    }
++}
+Index: java/thread-demo/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/thread-demo/pom.xml b/java/thread-demo/pom.xml
+new file mode 100644
+--- /dev/null	(date 1635241256990)
++++ b/java/thread-demo/pom.xml	(date 1635241256990)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <parent>
++        <artifactId>java</artifactId>
++        <groupId>org.example</groupId>
++        <version>1.0-SNAPSHOT</version>
++    </parent>
++    <modelVersion>4.0.0</modelVersion>
++
++    <artifactId>thread-demo</artifactId>
++
++    <properties>
++        <maven.compiler.source>8</maven.compiler.source>
++        <maven.compiler.target>8</maven.compiler.target>
++    </properties>
++
++</project>
+\ No newline at end of file
+Index: spring-boot/spring-boot-knife4j/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>spring-boot-knife4j</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>8</maven.compiler.source>\r\n        <maven.compiler.target>8</maven.compiler.target>\r\n    </properties>\r\n\r\n    <dependencies>\r\n\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-web</artifactId>\r\n            <version>2.5.4</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>com.github.xiaoymin</groupId>\r\n            <artifactId>knife4j-spring-boot-starter</artifactId>\r\n            <version>2.0.9</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-test</artifactId>\r\n            <version>2.5.4</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.projectlombok</groupId>\r\n            <artifactId>lombok</artifactId>\r\n            <version>1.18.20</version>\r\n            <scope>compile</scope>\r\n        </dependency>\r\n    </dependencies>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-knife4j/pom.xml b/spring-boot/spring-boot-knife4j/pom.xml
+--- a/spring-boot/spring-boot-knife4j/pom.xml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-knife4j/pom.xml	(date 1635316717192)
+@@ -23,7 +23,7 @@
+         <dependency>
+             <groupId>com.github.xiaoymin</groupId>
+             <artifactId>knife4j-spring-boot-starter</artifactId>
+-            <version>2.0.9</version>
++            <version>3.0.2</version>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+@@ -36,6 +36,17 @@
+             <artifactId>lombok</artifactId>
+             <version>1.18.20</version>
+             <scope>compile</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-validation</artifactId>
++            <version>2.5.4</version>
++            <scope>compile</scope>
++        </dependency>
++        <dependency>
++            <groupId>javax.validation</groupId>
++            <artifactId>validation-api</artifactId>
++            <version>2.0.1.Final</version>
+         </dependency>
+     </dependencies>
+ </project>
+\ No newline at end of file
+Index: spring-boot/spring-boot-web-start/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>spring-boot-web-start</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>8</maven.compiler.source>\r\n        <maven.compiler.target>8</maven.compiler.target>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-web</artifactId>\r\n            <version>2.2.5.RELEASE</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>cn.hutool</groupId>\r\n            <artifactId>hutool-all</artifactId>\r\n            <version>5.7.5</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-test</artifactId>\r\n            <version>2.2.5.RELEASE</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>junit</groupId>\r\n            <artifactId>junit</artifactId>\r\n            <version>4.13.2</version>\r\n        </dependency>\r\n\r\n    </dependencies>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spring-boot/spring-boot-web-start/pom.xml b/spring-boot/spring-boot-web-start/pom.xml
+--- a/spring-boot/spring-boot-web-start/pom.xml	(revision bbdeab44905bf680717e68e582d81d628ad69d65)
++++ b/spring-boot/spring-boot-web-start/pom.xml	(date 1636629265452)
+@@ -36,6 +36,5 @@
+             <artifactId>junit</artifactId>
+             <version>4.13.2</version>
+         </dependency>
+-
+     </dependencies>
+ </project>
+\ No newline at end of file
