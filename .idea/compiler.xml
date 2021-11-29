@@ -7,62 +7,63 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-rabbitmq-coutson-header" />
-        <module name="spring-boot-mybatis-plus" />
-        <module name="spring-boot-web-start" />
-        <module name="spring-boot-limit" />
+        <module name="spring" />
         <module name="thread-demo" />
-        <module name="spring-cloud-nacos" />
-        <module name="spring-boot-prometheus" />
         <module name="file-io" />
-        <module name="spring-boot-rabbitmq-expiration-time" />
-        <module name="spring-boot-elastic-search" />
-        <module name="spring-boot-session-default" />
-        <module name="spring-boot-admin-server" />
-        <module name="spring-boot-transaction" />
         <module name="spring-boot-event" />
-        <module name="spring-boot-kafka" />
-        <module name="spring-boot-rabbitmq" />
-        <module name="spring-boot-session" />
         <module name="spring-boot" />
-        <module name="spring-cloud-zookeeper-distributed-lock" />
-        <module name="spring-cloud-openfeign" />
         <module name="dubbo-service-api" />
-        <module name="spring-boot-flyway" />
-        <module name="spring-cloud-zookeeper" />
         <module name="dubbo" />
-        <module name="spring-boot-skywalking" />
         <module name="spring-cloud-redis-distributed-lock" />
-        <module name="spring-boot-sync-event-trancation" />
-        <module name="spring-boot-jpa" />
-        <module name="spring-boot-event-listener" />
         <module name="spring-boot-resolve-controller-method" />
-        <module name="spring-boot-mq-aop-mysql-transaction" />
-        <module name="spring-boot-jetcache" />
-        <module name="spring-cloud-nacos-config" />
-        <module name="spring-cloud-anmp" />
-        <module name="spring-boot-start" />
         <module name="strategy-pattern" />
         <module name="netty" />
-        <module name="spring-boot-admin-client" />
-        <module name="spring-boot-knife4j" />
-        <module name="spring-boot-cors" />
-        <module name="spring-boot-redis" />
-        <module name="spring-boot-xml" />
-        <module name="spring-boot-aop" />
-        <module name="spring-boot-log4j2-yml" />
         <module name="dubbo-publisher" />
-        <module name="spring-boot-rabbitmq-try-throw" />
-        <module name="spring-boot-csv" />
-        <module name="spring-boot-admin-example" />
-        <module name="spring-boot-mongodb" />
-        <module name="spring-boot-neo4j" />
         <module name="dubbo-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="redis-actual-combat" target="8" />
+      <module name="spring-boot-admin-client" target="8" />
+      <module name="spring-boot-admin-example" target="8" />
+      <module name="spring-boot-admin-server" target="8" />
+      <module name="spring-boot-aop" target="8" />
+      <module name="spring-boot-cors" target="8" />
+      <module name="spring-boot-csv" target="8" />
+      <module name="spring-boot-elastic-search" target="8" />
+      <module name="spring-boot-event-listener" target="8" />
+      <module name="spring-boot-flyway" target="8" />
       <module name="spring-boot-hive" target="8" />
+      <module name="spring-boot-jetcache" target="8" />
+      <module name="spring-boot-jpa" target="8" />
+      <module name="spring-boot-kafka" target="8" />
+      <module name="spring-boot-knife4j" target="8" />
+      <module name="spring-boot-limit" target="8" />
+      <module name="spring-boot-log4j2-yml" target="8" />
+      <module name="spring-boot-mongodb" target="8" />
+      <module name="spring-boot-mq-aop-mysql-transaction" target="8" />
+      <module name="spring-boot-mybatis-plus" target="8" />
+      <module name="spring-boot-neo4j" target="8" />
+      <module name="spring-boot-prometheus" target="8" />
+      <module name="spring-boot-rabbitmq" target="8" />
+      <module name="spring-boot-rabbitmq-coutson-header" target="8" />
+      <module name="spring-boot-rabbitmq-expiration-time" target="8" />
+      <module name="spring-boot-rabbitmq-try-throw" target="8" />
+      <module name="spring-boot-redis" target="8" />
+      <module name="spring-boot-session" target="8" />
+      <module name="spring-boot-session-default" target="8" />
+      <module name="spring-boot-skywalking" target="8" />
+      <module name="spring-boot-start" target="8" />
+      <module name="spring-boot-sync-event-trancation" target="8" />
+      <module name="spring-boot-transaction" target="8" />
+      <module name="spring-boot-web-start" target="8" />
+      <module name="spring-boot-xml" target="8" />
+      <module name="spring-cloud-anmp" target="8" />
+      <module name="spring-cloud-nacos" target="8" />
+      <module name="spring-cloud-nacos-config" target="8" />
+      <module name="spring-cloud-openfeign" target="8" />
+      <module name="spring-cloud-zookeeper" target="8" />
+      <module name="spring-cloud-zookeeper-distributed-lock" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

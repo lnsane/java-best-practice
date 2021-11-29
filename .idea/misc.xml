@@ -56,6 +56,10 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-session/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-session-default/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-resolve-controller-method/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-resolve-controller-method/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/pom.xml" />
       </list>
     </option>
   </component>
