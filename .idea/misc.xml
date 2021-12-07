@@ -60,6 +60,11 @@
         <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-resolve-controller-method/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-session/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-openfeign/pom.xml" />
       </list>
     </option>
   </component>

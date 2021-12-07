@@ -3,12 +3,14 @@ package com.best.spring.boot.mybatis.plus.controller;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.best.spring.boot.mybatis.plus.entity.User;
+import com.best.spring.boot.mybatis.plus.mapper.UserMapper;
 import com.best.spring.boot.mybatis.plus.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -16,6 +18,8 @@ import java.util.Optional;
 public class TestController extends BaseController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserMapper userMapper;
 
     @PostMapping("/page")
     @ResponseBody
@@ -41,5 +45,11 @@ public class TestController extends BaseController {
                 userService.update(user, Wrappers.<User>lambdaUpdate().eq(User::getId, user.getId()));
             }
         });
+    }
+
+    @GetMapping("listByCreateTime")
+    @ResponseBody
+    public List<User> listByCreateTime() {
+        return userMapper.selectUserByCreateTime(new Date());
     }
 }

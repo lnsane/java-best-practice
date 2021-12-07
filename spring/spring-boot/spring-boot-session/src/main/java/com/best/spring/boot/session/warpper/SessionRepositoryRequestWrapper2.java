@@ -1,5 +1,7 @@
 package com.best.spring.boot.session.warpper;
 
+import org.springframework.session.Session;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
@@ -11,14 +13,17 @@ import java.util.Map;
 /**
  * @author 王存露
  */
-public class SessionRepositoryRequestWrapper extends HttpServletRequestWrapper {
+public class SessionRepositoryRequestWrapper2<S extends Session> extends HttpServletRequestWrapper {
+
+    private S requestedSession;
+
     /**
      * Constructs a request object wrapping the given request.
      *
      * @param request The request to wrap
      * @throws IllegalArgumentException if the request is null
      */
-    public SessionRepositoryRequestWrapper(HttpServletRequest request) {
+    public SessionRepositoryRequestWrapper2(HttpServletRequest request) {
         super(request);
     }
 
@@ -129,9 +134,7 @@ public class SessionRepositoryRequestWrapper extends HttpServletRequestWrapper {
 
     @Override
     public HttpSession getSession() {
-        HttpSession session = super.getSession();
-        session.setAttribute("username","root");
-        return session;
+        return null;
     }
 
     @Override

@@ -5,4 +5,4 @@ spring:
     name: spring-web-start-demo
 logging:
   level:
-    root: debug
+    root: info

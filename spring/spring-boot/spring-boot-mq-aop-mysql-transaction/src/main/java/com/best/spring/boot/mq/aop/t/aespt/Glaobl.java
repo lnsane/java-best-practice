@@ -39,7 +39,7 @@ public class Glaobl {
     @Autowired
     private RedissonClient redissonClient;
 
-    @Pointcut("execution(public * com.best.spring.boot.mq.aop.t.service.Azom.put(..))")
+    @Pointcut("execution(public * com.best.spring.boot.mq.aop.t.service.Azom.*(..))")
     public void controller() {
     }
 

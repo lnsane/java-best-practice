@@ -1,9 +1,7 @@
 package com.best.spring.boot.session.filter;
 
 
-import com.best.spring.boot.session.warpper.SessionRepositoryRequestWrapper;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
+import com.best.spring.boot.session.warpper.SessionRepositoryRequestWrapper2;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -13,8 +11,8 @@ import java.io.IOException;
 /**
  * @author 王存露
  */
-@Component
-@Order(value = 0)
+//@Component
+//@Order(value = 0)
 public class SecFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -26,11 +24,9 @@ public class SecFilter implements Filter {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpSession session1 = ((HttpServletRequest) request).getSession();
         System.out.println(session1.getAttribute("username"));
-        SessionRepositoryRequestWrapper customRequest =
-                new SessionRepositoryRequestWrapper(httpRequest);
+        SessionRepositoryRequestWrapper2 customRequest =
+                new SessionRepositoryRequestWrapper2(httpRequest);
         HttpSession session = customRequest.getSession();
-        Object username = session.getAttribute("username");
-        System.out.println(username);
         chain.doFilter(customRequest, response);
     }
 

@@ -33,4 +33,14 @@ public class SecInterceptor implements HandlerInterceptor {
         logger.info(" -----> SecInterceptor run after");
         HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
     }
+
+
+    private String main(String name) {
+        if (name.length() > 0) {
+            if (name.charAt(0) == ',') {
+                return name.replaceFirst(",", "");
+            }
+        }
+        return name;
+    }
 }
