@@ -65,6 +65,11 @@
         <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring-boot/spring-boot-mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-openfeign/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-zookeeper-distributed-lock/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-nacos-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-anmp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-nacos/pom.xml" />
       </list>
     </option>
   </component>

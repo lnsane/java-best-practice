@@ -4,7 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <parent>
+        <artifactId>spring-cloud</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>spring-cloud-zookeeper-distributed-lock</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -18,14 +23,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper</artifactId>
-            <version>2.2.4.RELEASE</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
-            <version>5.2.0</version>
         </dependency>
 
 
@@ -33,7 +36,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.3.5.RELEASE</version>
         </dependency>
     </dependencies>
 </project>
