@@ -14,5 +14,13 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <modules>
+        <module>spring</module>
+        <module>netty</module>
+        <module>model</module>
+        <module>java</module>
+        <module>dubbo</module>
+    </modules>
+
 
 </project>

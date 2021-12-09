@@ -71,7 +71,7 @@
       <module name="dubbo-service-api" options="" />
       <module name="dubbo-simple" options="" />
       <module name="spring-boot-cors" options="" />
-      <module name="spring-boot-log4j2-yml" options="-parameters" />
+      <module name="spring-boot-log4j2-yml" options="" />
       <module name="spring-boot-prometheus" options="-parameters" />
     </option>
   </component>
