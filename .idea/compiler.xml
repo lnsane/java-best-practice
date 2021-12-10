@@ -7,6 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath>
+          <entry name="$PROJECT_DIR$/../checker-framework-3.20.0/checker/dist/checker.jar" />
+        </processorPath>
         <module name="dubbo-service-api" />
         <module name="spring-cloud-openfeign" />
         <module name="spring-cloud-zookeeper-distributed-lock" />
@@ -24,6 +27,7 @@
         <module name="spring-boot-event-listener" />
         <module name="thread-demo" />
         <module name="spring-boot-mq-aop-mysql-transaction" />
+        <module name="java-checker" />
         <module name="spring-boot-jetcache" />
         <module name="spring-cloud-nacos-config" />
         <module name="spring-cloud-anmp" />

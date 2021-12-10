@@ -12,6 +12,5 @@ public class AController {
     private BController bController;
 
     public void b() {
-        bController.a();
     }
 }

@@ -12,26 +12,6 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="jboss.community" />
-      <option name="name" value="JBoss Community repository" />
-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="huaweicloud" />
-      <option name="name" value="huaweicloud builds" />
-      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="Central Repository" />
-      <option name="name" value="Central Repository builds" />
-      <option name="url" value="https://repo1.maven.org/maven2/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
-      <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="aliyunmaven" />
       <option name="name" value="Repository for JDK 1.4 builds" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
@@ -50,6 +30,41 @@
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="http://192.168.5.210:8081/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring" />
+      <option name="name" value="spring" />
+      <option name="url" value="https://maven.aliyun.com/repository/spring" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="privateRepo" />
+      <option name="name" value="snapshots Sonatype Public" />
+      <option name="url" value="http://192.168.5.210:8081/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="huawei" />
+      <option name="name" value="huawei" />
+      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="huaweicloud" />
+      <option name="name" value="huaweicloud builds" />
+      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Central Repository" />
+      <option name="name" value="Central Repository builds" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public" />
     </remote-repository>
   </component>
 </project>

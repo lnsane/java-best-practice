@@ -1,5 +1,6 @@
 package com.best.spring.boot.web.controller;
 
+import lombok.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,5 +21,10 @@ public class HelloController {
         logger.info(id);
         logger.info("-----> hello controller brefore");
         logger.info("-----> hello controller after");
+        this.checker(null);
+    }
+
+    private void checker(@NonNull String str) {
+        logger.info(str);
     }
 }

@@ -1,7 +1,6 @@
 package com.best.spring.boot.web;
 
 import cn.hutool.core.io.FileUtil;
-import com.asprise.ocr.Ocr;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
 import org.springframework.beans.factory.annotation.Value;
@@ -50,16 +49,7 @@ public class SpringBootWebTomcatStart {
         return imageString;
     }
 
-    @Test
-    public void hello() {
-        Ocr.setUp(); // one time setup
-        Ocr ocr = new Ocr(); // create a new OCR engine
-        ocr.startEngine("eng", Ocr.SPEED_FASTEST); // English
-        String s = ocr.recognize(new File[]{new File("C:\\Users\\k\\Desktop\\testcode\\1.jpg")},
-                Ocr.RECOGNIZE_TYPE_ALL, Ocr.OUTPUT_FORMAT_PLAINTEXT); // PLAINTEXT | XML | PDF | RTF
-        System.out.println("Result: " + s);
-        ocr.stopEngine();
-    }
+
 
     @Test
     public void code() throws IOException {
@@ -103,8 +93,8 @@ public class SpringBootWebTomcatStart {
 //        }
         for (int i = 0; i < 130000; i++) {
             SpecCaptcha2 specCaptcha = new SpecCaptcha2(91, 30, 4);
-            if (!FileUtil.exist("D:\\ptyhon\\images\\" + specCaptcha.text().toString() + ".png")) {
-                FileOutputStream outputStream = new FileOutputStream(new File("D:\\ptyhon\\testImages\\" + specCaptcha.text().toString() + ".png"));
+            if (!FileUtil.exist("D:\\ptyhon\\images\\" + specCaptcha.text() + ".png")) {
+                FileOutputStream outputStream = new FileOutputStream(new File("D:\\ptyhon\\testImages\\" + specCaptcha.text() + ".png"));
                 specCaptcha.out(outputStream);
             }
         }

@@ -4,13 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a250eb1-fe52-4141-8737-7362f983308e" name="Default Changelist" comment="修改pom 文件">
+    <list default="true" id="7a250eb1-fe52-4141-8737-7362f983308e" name="Default Changelist" comment="fix: maven error">
+      <changelist_data name="王存露" email="1137738840@qq.com" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git-test/READE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java-checker/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java-checker/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java-checker/src/main/java/com/best/java/checker/CountryEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java-checker/src/main/java/com/best/java/checker/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java-checker/src/main/java/com/best/java/checker/MyUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Out1.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Out1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Out2.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/Out2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/ResolveData.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/ResolveData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/ResolveData2.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/ResolveData2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/TimeClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/TimeClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/TimeClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/TimeClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/TimeClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/demo/TimeClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/EchoServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/ServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/netty/target/classes/com/test/netty/echo/ServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-cors/target/classes/com/best/spring/boot/cors/CorsSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-cors/target/classes/com/best/spring/boot/cors/CorsSpringBootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-log4j2-yml/target/classes/com/best/spring/boot/log4j2/yml/Log4j2SpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-log4j2-yml/target/classes/com/best/spring/boot/log4j2/yml/Log4j2SpringBootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/SpringBootMqAopTDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/src/main/java/com/best/spring/boot/mq/aop/t/SpringBootMqAopTDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/META-INF/spring-boot-mq-aop-mysql-transaction.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/com/best/spring/boot/mq/aop/t/SpringBootMqAopTDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/com/best/spring/boot/mq/aop/t/SpringBootMqAopTDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/com/best/spring/boot/mq/aop/t/aespt/Glaobl.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/com/best/spring/boot/mq/aop/t/aespt/Glaobl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/com/best/spring/boot/mq/aop/t/consume/MyTest$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mq-aop-mysql-transaction/target/classes/com/best/spring/boot/mq/aop/t/consume/MyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mybatis-plus/target/classes/com/best/spring/boot/mybatis/plus/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mybatis-plus/target/classes/com/best/spring/boot/mybatis/plus/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mybatis-plus/target/classes/com/best/spring/boot/mybatis/plus/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-mybatis-plus/target/classes/com/best/spring/boot/mybatis/plus/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/AController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/AController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/BController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/BController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/SpringBootWebTomcatStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/SpringBootWebTomcatStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/controller/AController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/controller/AController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/controller/BController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/controller/BController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/classes/com/best/spring/boot/web/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/test-classes/com/best/spring/boot/web/controller/HelloControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/target/test-classes/com/best/spring/boot/web/controller/HelloControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +105,12 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="王存露 &lt;1137738840@qq.com&gt;" />
+        <option value="wangcunlu &lt;1137738840@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="2.0.0" />
@@ -69,6 +118,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -80,39 +130,40 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/IndexOutOfBoundsException.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/config/WebMvcConfig.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-transaction/src/main/java/com/best/spring/boot/transaction/SpringBootTransactionDemo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/MapSession.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolverComposite.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.4.2/mybatis-plus-annotation-3.4.2-sources.jar!/com/baomidou/mybatisplus/annotation/TableLogic.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/IndexOutOfBoundsException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/java/com/best/spring/jpa/SpringBootJpaDemo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/MapSession.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/config/WebMvcConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-transaction/src/main/java/com/best/spring/boot/transaction/SpringBootTransactionDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolverComposite.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/web/http/SessionRepositoryFilter.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletRequestMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.4.2/mybatis-plus-annotation-3.4.2-sources.jar!/com/baomidou/mybatisplus/annotation/TableLogic.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
         <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -120,6 +171,7 @@
       <map>
         <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -164,18 +216,18 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="import_schema_mapping" value="&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;d8d9f79a-c06d-4405-b4ed-024454d944f8&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/&quot;test&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;e99f75b7-a510-4773-b760-339486d31886&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/&quot;devops&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../company/new2/sellwitherp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../checker-framework-3.20.0/checker/dist/checker.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="outdated.bundled.kotlin.compiler" value="213-1.5.10-release-949-IJ5744.202" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5637019" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -233,13 +285,8 @@
         <option value="docker-deploy" />
       </set>
     </option>
-    <option name="excludedTypes">
-      <set>
-        <option value="HttpClient.HttpRequestRunConfigurationType" />
-      </set>
-    </option>
   </component>
-  <component name="RunManager" selected="TestNG.SpringBootWebTomcatStart.code2">
+  <component name="RunManager" selected="Spring Boot.SpringBootWebTomcatStart">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -253,26 +300,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="SwaggerCodegen">
-      <option name="activeConfigurationType" value="FILE" />
-      <option name="configurationPath" value="" />
-      <option name="customJreEnabled" value="false" />
-      <option name="customTemplatesPath" value="" />
-      <option name="enableDebugLogging" value="false" />
-      <option name="generateToPath" value="C:\Users\k\Desktop\java-best-practice\gen" />
-      <option name="generationParameters">
-        <list />
-      </option>
-      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-      <option name="jdkPath" value="" />
-      <option name="language" value="java" />
-      <option name="specificationPath" value="C:\Users\k\Desktop\java-best-practice\123.yaml" />
-      <method v="2" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.best.java.checker.Main" />
+      <module name="java-checker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.best.java.checker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="PromSpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -295,6 +336,35 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="SpringBootWebTomcatStart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-web-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.best.spring.boot.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.best.spring.boot.web.SpringBootWebTomcatStart" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\Users\k\Desktop\java-best-practice\gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="C:\Users\k\Desktop\java-best-practice\123.yaml" />
+      <method v="2" />
     </configuration>
     <configuration name="SpringBootWebTomcatStart.code" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-web-start" />
@@ -332,26 +402,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="spring-boot-mybatis-plus.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="mysql" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="spring/spring-boot/spring-boot-mybatis-plus/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.PromSpringBoot" />
+      <item itemvalue="Spring Boot.SpringBootMybatisPlusDemo" />
+      <item itemvalue="Spring Boot.SpringBootStartDemo" />
+      <item itemvalue="Spring Boot.SpringBootWebTomcatStart" />
       <item itemvalue="TestNG.SpringBootWebTomcatStart.code2" />
       <item itemvalue="TestNG.SpringBootWebTomcatStart.code" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="Spring Boot.SpringBootWebTomcatStart" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.SpringBootWebTomcatStart.code" />
         <item itemvalue="TestNG.SpringBootWebTomcatStart.code2" />
       </list>
@@ -454,6 +519,9 @@
       <workItem from="1639013887842" duration="3288000" />
       <workItem from="1639040985945" duration="648000" />
       <workItem from="1639041887236" duration="12000" />
+      <workItem from="1639103532743" duration="496000" />
+      <workItem from="1639104083825" duration="5597000" />
+      <workItem from="1639118366733" duration="1336000" />
     </task>
     <task id="LOCAL-00010" summary="新增 修改限流 demo">
       <created>1631417277615</created>
@@ -461,13 +529,6 @@
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
       <updated>1631417277615</updated>
-    </task>
-    <task id="LOCAL-00027" summary="增加 sentinel 使用">
-      <created>1629694346762</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1629694346762</updated>
     </task>
     <task id="LOCAL-00028" summary="增加 neo4j 操作">
       <created>1629802163069</created>
@@ -798,7 +859,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639033544612</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="fix: maven error">
+      <created>1639102029753</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1639102029753</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -891,7 +959,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="test 0009" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="关于 Java steam" />
     <MESSAGE value="change readme.md 1" />
     <MESSAGE value="squash! change readme.md 1" />
@@ -916,7 +984,8 @@
     <MESSAGE value="新增：Java 线程的demo" />
     <MESSAGE value="新增一些demo" />
     <MESSAGE value="修改pom 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改pom 文件" />
+    <MESSAGE value="fix: maven error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: maven error" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1981,7 +2050,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="555" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -2251,7 +2320,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="650" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2356,7 +2425,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="684" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2378,6 +2447,16 @@
           <url>jar://$MAVEN_REPOSITORY$/com/github/whvcse/easy-captcha/1.6.2/easy-captcha-1.6.2-sources.jar!/com/wf/captcha/base/Captcha.java</url>
           <line>100</line>
           <option name="timeStamp" value="698" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/java-checker/src/main/java/com/best/java/checker/Main.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="699" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/controller/HelloController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="700" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
