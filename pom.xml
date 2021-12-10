@@ -21,6 +21,4 @@
         <module>java</module>
         <module>dubbo</module>
     </modules>
-
-
 </project>

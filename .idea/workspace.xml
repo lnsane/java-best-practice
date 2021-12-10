@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a250eb1-fe52-4141-8737-7362f983308e" name="Default Changelist" comment="change pom.xml">
+    <list default="true" id="7a250eb1-fe52-4141-8737-7362f983308e" name="Default Changelist" comment="修改pom 文件">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo/dubbo-simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/dubbo-simple/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/file-io/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/file-io/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/thread-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/thread-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-redis-distributed-lock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/spring-cloud/spring-cloud-redis-distributed-lock/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,31 +81,31 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/SpringBootWebTomcatStart.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/MapSession.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletRequestMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolverComposite.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/java/com/best/spring/jpa/SpringBootJpaDemo.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.4.2/mybatis-plus-annotation-3.4.2-sources.jar!/com/baomidou/mybatisplus/annotation/TableLogic.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/IndexOutOfBoundsException.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/src/main/java/com/best/spring/boot/web/config/WebMvcConfig.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/java/com/best/spring/boot/SpringBootStartDemo.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-transaction/src/main/java/com/best/spring/boot/transaction/SpringBootTransactionDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-start/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/MapSession.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolverComposite.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.4.2/mybatis-plus-annotation-3.4.2-sources.jar!/com/baomidou/mybatisplus/annotation/TableLogic.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/SpringBootRabbitMqDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/aop/CoustomApest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/java/com/best/spring/jpa/SpringBootJpaDemo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-web-start/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/config/RabbitMqConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/service/MyPrivete.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq-expiration-time/src/main/java/com/best/spring/rabbitmq/controller/HelloController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/web/http/SessionRepositoryFilter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletRequestMethodArgumentResolver.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../openjdk/src.zip!/java/lang/Class.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spring/spring-boot/spring-boot-jpa/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
@@ -132,13 +126,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.8.4-bin" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -177,18 +164,18 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="import_schema_mapping" value="&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;d8d9f79a-c06d-4405-b4ed-024454d944f8&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/&quot;test&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;e99f75b7-a510-4773-b760-339486d31886&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/&quot;devops&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../company/new2/sellwitherp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="outdated.bundled.kotlin.compiler" value="213-1.5.10-release-949-IJ5744.202" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5637019" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -252,7 +239,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootMybatisPlusDemo">
+  <component name="RunManager" selected="TestNG.SpringBootWebTomcatStart.code2">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -265,6 +252,22 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\Users\k\Desktop\java-best-practice\gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="C:\Users\k\Desktop\java-best-practice\123.yaml" />
+      <method v="2" />
     </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
       <method v="2" />
@@ -292,22 +295,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="SwaggerCodegen">
-      <option name="activeConfigurationType" value="FILE" />
-      <option name="configurationPath" value="" />
-      <option name="customJreEnabled" value="false" />
-      <option name="customTemplatesPath" value="" />
-      <option name="enableDebugLogging" value="false" />
-      <option name="generateToPath" value="C:\Users\k\Desktop\java-best-practice\gen" />
-      <option name="generationParameters">
-        <list />
-      </option>
-      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-      <option name="jdkPath" value="" />
-      <option name="language" value="java" />
-      <option name="specificationPath" value="C:\Users\k\Desktop\java-best-practice\123.yaml" />
-      <method v="2" />
     </configuration>
     <configuration name="SpringBootWebTomcatStart.code" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-web-start" />
@@ -360,22 +347,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.spring-boot-mybatis-plus.mysql: Compose Deployment" />
-      <item itemvalue="HTTP Request.generated-requests | #1" />
-      <item itemvalue="HTTP Request.generated-requests | #2" />
-      <item itemvalue="Spring Boot.PromSpringBoot" />
-      <item itemvalue="Spring Boot.SpringBootMybatisPlusDemo" />
-      <item itemvalue="Spring Boot.SpringBootStartDemo" />
       <item itemvalue="TestNG.SpringBootWebTomcatStart.code2" />
       <item itemvalue="TestNG.SpringBootWebTomcatStart.code" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.spring-boot-mybatis-plus.mysql: Compose Deployment" />
         <item itemvalue="TestNG.SpringBootWebTomcatStart.code" />
         <item itemvalue="TestNG.SpringBootWebTomcatStart.code2" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +451,9 @@
       <workItem from="1638539693806" duration="12415000" />
       <workItem from="1638767657760" duration="3249000" />
       <workItem from="1639013489432" duration="315000" />
-      <workItem from="1639013887842" duration="2620000" />
+      <workItem from="1639013887842" duration="3288000" />
+      <workItem from="1639040985945" duration="648000" />
+      <workItem from="1639041887236" duration="12000" />
     </task>
     <task id="LOCAL-00010" summary="新增 修改限流 demo">
       <created>1631417277615</created>
@@ -481,13 +461,6 @@
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
       <updated>1631417277615</updated>
-    </task>
-    <task id="LOCAL-00026" summary="增加 spring boot admin">
-      <created>1629471023372</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1629471023372</updated>
     </task>
     <task id="LOCAL-00027" summary="增加 sentinel 使用">
       <created>1629694346762</created>
@@ -818,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638192831636</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="修改pom 文件">
+      <created>1639033544611</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1639033544612</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -908,7 +888,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -936,7 +915,8 @@
     <MESSAGE value="新增：spring boot mq demo" />
     <MESSAGE value="新增：Java 线程的demo" />
     <MESSAGE value="新增一些demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增一些demo" />
+    <MESSAGE value="修改pom 文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改pom 文件" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2402,7 +2382,7 @@
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/spring/spring-boot/spring-boot-rabbitmq/src/main/java/com/best/spring/rabbitmq/cq/SpringBootRabbitMqDemo.java</url>
           <line>21</line>
-          <properties class="com.best.spring.rabbitmq.cq.SpringBootRabbitMqDemo">
+          <properties class="com.best.spring.rabbitmq.cq.SpringBootRabbitMqDemo" method="rce">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="46" />
@@ -2458,13 +2438,13 @@
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/spring/spring-cloud/spring-cloud-openfeign/src/main/java/com/best/spring/cloud/openfeign/feign/HelloFeign.java</url>
           <line>15</line>
-          <properties class="com.best.spring.cloud.openfeign.feign.HelloFeign" />
+          <properties class="com.best.spring.cloud.openfeign.feign.HelloFeign" method="sayHello" />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.12/feign-core-10.12-sources.jar!/feign/Client.java</url>
           <line>56</line>
-          <properties class="feign.Client">
+          <properties class="feign.Client" method="execute">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="124" />
@@ -2520,7 +2500,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.5.6/spring-data-redis-2.5.6-sources.jar!/org/springframework/data/redis/connection/MessageListener.java</url>
           <line>33</line>
-          <properties class="org.springframework.data.redis.connection.MessageListener">
+          <properties class="org.springframework.data.redis.connection.MessageListener" method="onMessage">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="475" />
@@ -2528,7 +2508,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerMapping.java</url>
           <line>147</line>
-          <properties class="org.springframework.web.servlet.HandlerMapping">
+          <properties class="org.springframework.web.servlet.HandlerMapping" method="getHandler">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="509" />
@@ -2536,7 +2516,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerAdapter.java</url>
           <line>77</line>
-          <properties class="org.springframework.web.servlet.HandlerAdapter">
+          <properties class="org.springframework.web.servlet.HandlerAdapter" method="handle">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="527" />
@@ -2544,7 +2524,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/SessionRepository.java</url>
           <line>39</line>
-          <properties class="org.springframework.session.SessionRepository">
+          <properties class="org.springframework.session.SessionRepository" method="createSession">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="579" />
@@ -2552,7 +2532,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.54/tomcat-embed-core-9.0.54-sources.jar!/javax/servlet/http/HttpServletRequest.java</url>
           <line>432</line>
-          <properties class="javax.servlet.http.HttpServletRequest">
+          <properties class="javax.servlet.http.HttpServletRequest" method="getSession">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="583" />
@@ -2560,7 +2540,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandler.java</url>
           <line>54</line>
-          <properties class="org.springframework.web.method.support.HandlerMethodReturnValueHandler">
+          <properties class="org.springframework.web.method.support.HandlerMethodReturnValueHandler" method="handleReturnValue">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="590" />
@@ -2568,7 +2548,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.12/spring-web-5.3.12-sources.jar!/org/springframework/web/method/support/HandlerMethodArgumentResolver.java</url>
           <line>59</line>
-          <properties class="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+          <properties class="org.springframework.web.method.support.HandlerMethodArgumentResolver" method="resolveArgument">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="608" />
@@ -2576,7 +2556,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/HandlerMapping.java</url>
           <line>170</line>
-          <properties class="org.springframework.web.servlet.HandlerMapping">
+          <properties class="org.springframework.web.servlet.HandlerMapping" method="getHandler">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="614" />
@@ -2584,7 +2564,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMapping.java</url>
           <line>556</line>
-          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMapping">
+          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMapping" method="getHandlerInternal">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="616" />
@@ -2592,7 +2572,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
           <line>555</line>
-          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping">
+          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping" method="getMatchingMapping">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="622" />
@@ -2600,7 +2580,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
           <line>800</line>
-          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.Match">
+          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.Match" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="624" />
@@ -2608,7 +2588,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.12/spring-webmvc-5.3.12-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java</url>
           <line>630</line>
-          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.MappingRegistry">
+          <properties class="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.MappingRegistry" method="register">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="635" />
@@ -2616,7 +2596,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/web/http/HttpSessionIdResolver.java</url>
           <line>40</line>
-          <properties class="org.springframework.session.web.http.HttpSessionIdResolver">
+          <properties class="org.springframework.session.web.http.HttpSessionIdResolver" method="resolveSessionIds">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="660" />
@@ -2624,7 +2604,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/web/http/CookieSerializer.java</url>
           <line>48</line>
-          <properties class="org.springframework.session.web.http.CookieSerializer">
+          <properties class="org.springframework.session.web.http.CookieSerializer" method="readCookieValues">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="661" />
@@ -2632,7 +2612,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-core/2.5.3/spring-session-core-2.5.3-sources.jar!/org/springframework/session/SessionRepository.java</url>
           <line>52</line>
-          <properties class="org.springframework.session.SessionRepository">
+          <properties class="org.springframework.session.SessionRepository" method="save">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="667" />

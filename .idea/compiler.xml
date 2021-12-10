@@ -13,7 +13,6 @@
         <module name="spring-boot-flyway" />
         <module name="spring-cloud-zookeeper" />
         <module name="spring-boot-rabbitmq-coutson-header" />
-        <module name="dubbo" />
         <module name="spring-boot-mybatis-plus" />
         <module name="spring-boot-skywalking" />
         <module name="spring-cloud-redis-distributed-lock" />
