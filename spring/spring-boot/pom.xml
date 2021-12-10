@@ -22,7 +22,6 @@
         <module>spring-boot-resolve-controller-method</module>
         <module>spring-boot-xml</module>
         <module>spring-boot-transaction</module>
-        <module>spring-boot-resolve-controller-method</module>
         <module>spring-boot-sync-event-trancation</module>
         <module>spring-boot-start</module>
         <module>spring-boot-skywalking</module>

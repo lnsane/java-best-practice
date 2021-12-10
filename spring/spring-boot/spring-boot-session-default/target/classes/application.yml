@@ -1,7 +1,0 @@
-server:
-  port: 12380
-spring:
-  redis:
-    database: 1
-    host: localhost
-    port: 6379

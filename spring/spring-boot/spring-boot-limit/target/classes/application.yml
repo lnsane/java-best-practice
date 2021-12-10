@@ -1,7 +1,0 @@
-server:
-  port: 8086
-spring:
-  rabbitmq:
-    password: guest
-    username: guest
-    host: localhost

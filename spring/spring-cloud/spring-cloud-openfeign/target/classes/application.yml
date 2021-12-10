@@ -1,7 +1,0 @@
-server:
-  port: 9091
-spring:
-  application:
-    name: opefeign-demo
-  main:
-    allow-bean-definition-overriding: true

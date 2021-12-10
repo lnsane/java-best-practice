@@ -1,8 +1,0 @@
-server:
-  port: 8419
-spring:
-  application:
-    name: spring-boot-zookeeper-demo
-  cloud:
-    zookeeper:
-      connect-string: localhost:2181
