@@ -47,6 +47,7 @@
         <module>spring-boot-cors</module>
         <module>spring-boot-aop</module>
         <module>spring-boot-admin-example</module>
+        <module>spring-boot-wx-java</module>
     </modules>
 
     <properties>
