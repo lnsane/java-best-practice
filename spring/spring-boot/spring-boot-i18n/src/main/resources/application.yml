@@ -1,0 +1,6 @@
+server:
+  port: 9999
+spring:
+  messages:
+    encoding: utf-8
+    basename: static/i18n/messages

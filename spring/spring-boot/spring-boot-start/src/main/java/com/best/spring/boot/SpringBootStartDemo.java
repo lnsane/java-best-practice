@@ -1,5 +1,7 @@
 package com.best.spring.boot;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,15 +13,16 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 public class SpringBootStartDemo {
 
+    @Autowired
+    private AbsInface absInface;
+
     public static void main(String[] args) {
         SpringApplication.run(SpringBootStartDemo.class, args);
     }
 
     @PostConstruct
     public void test() {
-        ServiceB serviceB = new ServiceB(new ServiceA(new ServiceC()));
-        serviceB.setServiceB();
-        System.out.println(System.getProperty("sun.jnu.encoding"));
+        System.out.println(absInface.sayHello());
     }
 
 

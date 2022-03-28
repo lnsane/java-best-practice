@@ -48,6 +48,8 @@
         <module>spring-boot-aop</module>
         <module>spring-boot-admin-example</module>
         <module>spring-boot-wx-java</module>
+        <module>spring-boot-i18n</module>
+        <module>spring-cloud-resilience4j</module>
     </modules>
 
     <properties>
@@ -55,5 +57,19 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+            <dependency>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <groupId>org.springframework.boot</groupId>
+                <scope>import</scope>
+                <type>pom</type>
+                <version>2.6.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
