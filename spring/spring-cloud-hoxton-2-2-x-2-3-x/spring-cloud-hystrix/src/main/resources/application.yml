@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: sayHello
+server:
+  port: 9091
