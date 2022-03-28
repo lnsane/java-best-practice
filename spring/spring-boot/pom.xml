@@ -50,6 +50,7 @@
         <module>spring-boot-wx-java</module>
         <module>spring-boot-i18n</module>
         <module>spring-cloud-resilience4j</module>
+        <module>spring-cloud-retry</module>
     </modules>
 
     <properties>
