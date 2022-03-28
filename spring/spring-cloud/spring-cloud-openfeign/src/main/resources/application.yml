@@ -5,3 +5,6 @@ spring:
     name: opefeign-demo
   main:
     allow-bean-definition-overriding: true
+feign:
+  circuitbreaker:
+    enabled: true
