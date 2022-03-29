@@ -25,7 +25,6 @@
         <module>spring-cloud-consul</module>
         <module>spring-cloud-config-client</module>
         <module>spring-cloud-config-server</module>
-
     </modules>
 
     <properties>
