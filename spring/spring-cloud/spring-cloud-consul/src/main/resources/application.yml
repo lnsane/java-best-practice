@@ -1,0 +1,16 @@
+server:
+  port: 8321
+spring:
+  cloud:
+    consul:
+      discovery:
+        heartbeat:
+          enabled: true
+        healthCheckPath: ${management.server.servlet.context-path}/health
+        healthCheckInterval: 15s
+        instance-id: custom-service-id
+        serviceName: myprefix-${spring.application.name}
+      host: 119.91.232.58
+      port: 8500
+  application:
+    name: consul-demo
