@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      env: default # optional
+      label: master # optional
+      uri: http://localhost:9910 # optional
+  application:
+    name: my-config
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

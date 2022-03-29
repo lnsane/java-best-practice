@@ -22,6 +22,10 @@
         <module>spring-cloud-zookeeper</module>
         <module>spring-cloud-zookeeper-distributed-lock</module>
         <module>spring-cloud-opfeign-circuitbreaker</module>
+        <module>spring-cloud-consul</module>
+        <module>spring-cloud-config-client</module>
+        <module>spring-cloud-config-server</module>
+
     </modules>
 
     <properties>

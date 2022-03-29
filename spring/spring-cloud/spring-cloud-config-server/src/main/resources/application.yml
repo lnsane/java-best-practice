@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/c141015/spring-cloud-config
+          search-paths: applicatio*
+server:
+  port: 9910
