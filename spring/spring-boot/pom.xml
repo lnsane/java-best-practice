@@ -51,6 +51,8 @@
         <module>spring-boot-i18n</module>
         <module>spring-cloud-resilience4j</module>
         <module>spring-cloud-retry</module>
+        <module>spring-boot-easy-excel</module>
+        <module>spring-boot-bean-scope</module>
     </modules>
 
     <properties>
