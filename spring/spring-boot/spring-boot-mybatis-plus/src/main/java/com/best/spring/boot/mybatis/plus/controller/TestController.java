@@ -52,4 +52,14 @@ public class TestController extends BaseController {
     public List<User> listByCreateTime() {
         return userMapper.selectUserByCreateTime(new Date());
     }
+
+    @GetMapping("isExist")
+    @ResponseBody
+    public void isExist() {
+        if (userMapper.selectExist()) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
 }

@@ -23,4 +23,11 @@ public interface UserMapper extends BaseMapper<User> {
 
     @Select("select * from user where create_time > #{createTime}")
     List<User> selectUserByCreateTime(Date createTime);
+//    @Select("select *\n" +
+//            "        from user\n" +
+//            "        where exists (select *\n" +
+//            "        from user\n" +
+//            "        where user.username in ('wangcunlu')\n" +
+//            "        limit 1)")
+    Boolean selectExist();
 }
