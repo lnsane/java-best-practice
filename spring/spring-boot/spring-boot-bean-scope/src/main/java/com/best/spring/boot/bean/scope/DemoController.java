@@ -2,7 +2,9 @@ package com.best.spring.boot.bean.scope;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.WebApplicationContext;
 
@@ -34,5 +36,10 @@ public class DemoController {
         } finally {
             reentrantLock.unlock();
         }
+    }
+
+    @DeleteMapping(value = "delete")
+    public void delete(@RequestBody Message message) {
+        System.out.println(message);
     }
 }
