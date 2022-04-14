@@ -19,6 +19,7 @@
         <module>thread-demo</module>
         <module>file-io</module>
         <module>java-checker</module>
+        <module>ppt</module>
     </modules>
 
     <properties>

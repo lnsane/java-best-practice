@@ -89,14 +89,14 @@ public class WaitThred {
     }
 
     public static void main(String[] args) throws InterruptedException {
-//        Thread0 thread0 = new Thread0();
-//        Thread0 thread001 = new Thread0();
-//        Thread1 thread1 = new Thread1();
-//        Thread01 thread01 = new Thread01();
-//        Thread01 thread02 = new Thread01();
-//        thread001.start();
-//        thread01.start();
-//        thread02.start();
+        Thread0 thread0 = new Thread0();
+        Thread0 thread001 = new Thread0();
+        Thread1 thread1 = new Thread1();
+        Thread01 thread01 = new Thread01();
+        Thread01 thread02 = new Thread01();
+        thread001.start();
+        thread01.start();
+        thread02.start();
 //        thread0.start();
 //        thread0.start();
 //        Thread.sleep(11111);
@@ -106,10 +106,10 @@ public class WaitThred {
 //        thread0.join();
 //        System.out.println(":1");
 //        thread1.start();
-        ServiceA serviceA = new ServiceA();
-        for (int i = 0; i < 100; i++) {
-            new MyThread(new ServiceA()).start();
-        }
+//        ServiceA serviceA = new ServiceA();
+//        for (int i = 0; i < 100; i++) {
+//            new MyThread(new ServiceA()).start();
+//        }
     }
 
 }
