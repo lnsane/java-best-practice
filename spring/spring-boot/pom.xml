@@ -53,6 +53,7 @@
         <module>spring-cloud-retry</module>
         <module>spring-boot-easy-excel</module>
         <module>spring-boot-bean-scope</module>
+        <module>spring-boot-email</module>
     </modules>
 
     <properties>
