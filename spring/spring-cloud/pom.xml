@@ -26,6 +26,7 @@
         <module>spring-cloud-config-client</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-cloud-seata</module>
     </modules>
 
     <properties>
@@ -51,6 +52,14 @@
                 <scope>import</scope>
                 <type>pom</type>
                 <version>2.6.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2021.0.1.0</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

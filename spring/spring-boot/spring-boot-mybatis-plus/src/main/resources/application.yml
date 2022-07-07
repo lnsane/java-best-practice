@@ -4,10 +4,10 @@ spring:
   flyway:
     enabled: false
   datasource:
-    database-address: jdbc:mysql://119.91.232.58:3306/
+    database-address: jdbc:mysql://119.91.232.58:3307/
     database-name: test
     username: root
-    password: 123456
+    password: Wang931125
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${spring.datasource.database-address}${spring.datasource.database-name}?useUnicode=true&characterEncoding=utf8
 mybatis-plus:

@@ -1,0 +1,38 @@
+server:
+  port: 8419
+spring:
+  application:
+    name: spring-boot-nacos-config-demo
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        namespace: 645ad29e-5501-4e51-b655-070922e1e8bb
+        server-addr: 119.91.232.58:8849
+  flyway:
+    enabled: false
+  datasource:
+    database-address: jdbc:mysql://119.91.232.58:3307
+    database-name: test
+    username: root
+    password: Wang931125
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${spring.datasource.database-address}/${spring.datasource.database-name}?useUnicode=true&characterEncoding=utf8
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  #客户端和服务端在同一个事务组
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  service:
+    vgroup-mapping:
+      my_test_tx_group: default
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 119.91.232.58:8849
+      group: DEFAULT_GROUP
+      namespace: 645ad29e-5501-4e51-b655-070922e1e8bb
+      cluster: default

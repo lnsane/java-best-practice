@@ -55,11 +55,20 @@ public class TestController extends BaseController {
 
     @GetMapping("isExist")
     @ResponseBody
-    public void isExist() {
-        if (userMapper.selectExist()) {
+    public User isExist() {
+        User user = userMapper.selectExist();
+        if (true) {
             System.out.println("true");
         } else {
             System.out.println("false");
         }
+        return user;
+    }
+
+    @GetMapping("test")
+    @ResponseBody
+    public void test() {
+        userService.insertOne();
+//        userService.insertTwo();
     }
 }

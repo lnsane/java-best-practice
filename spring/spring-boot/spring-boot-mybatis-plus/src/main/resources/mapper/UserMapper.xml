@@ -141,10 +141,8 @@
     </trim>
   </insert>
 
-  <select id="selectExist" resultType="java.lang.Boolean">
-   select count(1)
-      from user
-      where user.username in ('wangcunlu')
-      limit 1
+  <select id="selectExist" resultType="com.best.spring.boot.mybatis.plus.entity.User">
+   select *
+      from user limit 1
   </select>
 </mapper>

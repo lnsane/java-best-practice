@@ -1,20 +1,20 @@
-spring:
-  mail:
-    host: smtp.163.com
-    username: 18357128255@163.com 1137738840@qq.com
-    password: PJYJYHNNUVGIIZCC  wbrlogvyvmiyiaaj
-    default-encoding: UTF-8
-    properties:
-      mail:
-        store:
-          protocol: smtp
-        transport:
-          protocol: smtp
-        smtp:
-          socketFactory:
-            class: javax.net.ssl.SSLSocketFactory
-          port: ${spring.mail.port}
-          auth: true
-          starttls:
-            enable: true
-            required: true
+#spring:
+#  mail:
+#    host: smtp.163.com
+#    username: 18357128255@163.com 1137738840@qq.com
+#    password: PJYJYHNNUVGIIZCC  wbrlogvyvmiyiaaj
+#    default-encoding: UTF-8
+#    properties:
+#      mail:
+#        store:
+#          protocol: smtp
+#        transport:
+#          protocol: smtp
+#        smtp:
+#          socketFactory:
+#            class: javax.net.ssl.SSLSocketFactory
+#          port: ${spring.mail.port}
+#          auth: true
+#          starttls:
+#            enable: true
+#            required: true

@@ -1,21 +1,13 @@
 package com.best.spring.boot.email;
 
 import com.sun.mail.imap.IMAPStore;
-import com.sun.mail.imap.protocol.MailboxInfo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.scheduling.annotation.EnableAsync;
 
-import javax.annotation.PostConstruct;
 import javax.mail.*;
 import javax.mail.search.SearchTerm;
 import java.util.HashMap;
 import java.util.Properties;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class OutBox {
 
@@ -108,18 +100,13 @@ public class OutBox {
      */
     public static void main(String[] args) throws MessagingException {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("1137738840@qq.com");
+        message.setFrom("18357128255@163.com");
         message.setTo("1137738840@qq.com");
         message.setSubject("subject");
         message.setText("text");
 
 
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("smtp.qq.com");
-        mailSender.setPort(465);
-
-        mailSender.setUsername("1137738840@qq.com");
-        mailSender.setPassword("wbrlogvyvmiyiaaj");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
@@ -127,6 +114,19 @@ public class OutBox {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.debug", "true");
         props.put("mail.smtp.port", "465");
+        props.setProperty("mail.smtp.socketFactory.class",
+                "javax.net.ssl.SSLSocketFactory");
+        props.setProperty("mail.smtp.socketFactory.fallback", "false");
+
+        mailSender.setHost("smtp.163.com");
+        mailSender.setPort(465);
+
+        mailSender.setUsername("18357128255@163.com");
+        mailSender.setPassword("PJYJYHNNUVGIIZCC");
+        mailSender.send(message);
+
+
+
 
 
         for (Folder folder : mailSender.getSession().getStore("smtp").getDefaultFolder().list()) {

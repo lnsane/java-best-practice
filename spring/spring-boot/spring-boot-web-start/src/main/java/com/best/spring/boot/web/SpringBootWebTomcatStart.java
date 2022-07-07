@@ -3,11 +3,13 @@ package com.best.spring.boot.web;
 import cn.hutool.core.io.FileUtil;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.testng.annotations.Test;
 
+import javax.annotation.PostConstruct;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -47,6 +49,13 @@ public class SpringBootWebTomcatStart {
             e.printStackTrace();
         }
         return imageString;
+    }
+
+    @Autowired
+    private Tb tb;
+    @PostConstruct
+    public void testss(){
+        System.out.println(tb.getS());
     }
 
 

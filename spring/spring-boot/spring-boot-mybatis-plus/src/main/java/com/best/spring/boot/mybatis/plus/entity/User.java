@@ -29,7 +29,8 @@ public class User {
      */
     @TableId(value = "id", type = IdType.ASSIGN_ID)
     @ApiModelProperty(value = "主键")
-    private String id;
+//    @JsonSerialize(using = ToStringSerializer.class)
+    private Long id;
 
     /**
      * 姓名

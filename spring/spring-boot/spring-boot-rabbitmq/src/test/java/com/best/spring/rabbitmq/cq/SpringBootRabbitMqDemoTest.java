@@ -2,6 +2,7 @@ package com.best.spring.rabbitmq.cq;
 
 import com.best.spring.rabbitmq.cq.enums.DemoEnum1;
 import com.best.spring.rabbitmq.cq.model.Demo1;
+import com.rabbitmq.client.Connection;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,11 @@ class SpringBootRabbitMqDemoTest {
     @Autowired
     public AmqpTemplate amqpTemplate;
 
+
+
     @Test
     public void test() {
+        Connection connection  = null;
         Demo1 demoEnum1 = new Demo1();
         demoEnum1.setName("1");
         demoEnum1.setDemoEnum1(DemoEnum1.MAN);

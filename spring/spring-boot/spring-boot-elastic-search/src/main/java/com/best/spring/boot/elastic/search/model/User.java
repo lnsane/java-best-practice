@@ -16,7 +16,7 @@ import org.springframework.data.elasticsearch.annotations.Setting;
 public class User {
     @Id
     private String id;
-    @Field(type = FieldType.Keyword)
+    @Field(type = FieldType.Keyword,index = true)
     public String userName;
     @Field(type = FieldType.Keyword)
     public SexEnum sex;

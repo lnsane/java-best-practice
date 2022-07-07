@@ -29,5 +29,5 @@ public interface UserMapper extends BaseMapper<User> {
 //            "        from user\n" +
 //            "        where user.username in ('wangcunlu')\n" +
 //            "        limit 1)")
-    Boolean selectExist();
+    User selectExist();
 }

@@ -10,11 +10,11 @@ public class SemaphoreExample {
     public static void main(String[] args) throws InterruptedException {
         Semaphore semaphore = new Semaphore(1,true);
         for (int i = 0; i < 1; i++) {
-            if (semaphore.tryAcquire(2,5, TimeUnit.SECONDS)) {
+            if (semaphore.tryAcquire(1,5, TimeUnit.SECONDS)) {
                 int finalI = i;
                 new Thread(() -> {
                     try {
-                        semaphore.tryAcquire(2,5, TimeUnit.SECONDS);
+                        semaphore.tryAcquire(1,5, TimeUnit.SECONDS);
                         System.out.println("lock " + finalI);
                         Thread.sleep(1000);
                         System.out.println("unlock " + finalI);
