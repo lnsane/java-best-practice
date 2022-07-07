@@ -12,7 +12,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <hutool.version>5.7.16</hutool.version>
+        <hutool.version>5.8.3</hutool.version>
         <mybatis-plus-boot-starter.version>3.4.3.4</mybatis-plus-boot-starter.version>
         <redisson-spring-boot-starter.version>3.16.3</redisson-spring-boot-starter.version>
         <knife4j-spring-boot-starter.version>2.0.9</knife4j-spring-boot-starter.version>
@@ -26,21 +26,66 @@
         <module>dubbo</module>
     </modules>
 
-
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.12.0</version>
+                </plugin>
+                <plugin>
+                    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-project-info-reports-plugin -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.2.1</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.4.0</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <!-- explicitly define maven-deploy-plugin after other to force exec order -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                    <executions>
+                        <execution>
+                            <id>deploy</id>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>deploy</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
