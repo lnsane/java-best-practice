@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: operation
+  datasource:
+    dynamic:
+      hikari: # 全局hikariCP参数，所有值和默认保持一致。(现已支持的参数如下,不清楚含义不要乱设置)
+        ## 最小空闲连接数量
+        min-idle: 5
+        ## 连接池最大连接数，默认是15
+        max-pool-size: 15
+        ## 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+        is-auto-commit: true
+        ## 空闲连接存活最大时间，默认600000（10分钟）
+        idle-timeout: 30000
+        ## 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+        max-lifetime: 1800000
+        ## 数据库连接超时时间,默认30秒，即30000
+        connection-timeout: 3000
+        connection-test-query: SELECT 1
+      datasource:
+        dev:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://119.91.232.58:3307/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=100&serverTimezone=GMT%2B8
+          username: root
+          password: Wang931125
+        test:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://119.91.232.58:3307/test2?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=100&serverTimezone=GMT%2B8
+          username: root
+          password: Wang931125
+      primary: dev
+    sharding-jdbc:
+      datasource:
+        ds0:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://119.91.232.58:3306/ds_0?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: Wang931125
+        ds1:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://119.91.232.58:3307/ds_1?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: Wang931125
+      showSql: true
+  sharding-sphere:
+    datasource:
+      ds0:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: Wang931125
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://119.91.232.58:3306/ds_0?characterEncoding=utf-8
+        username: root
+      ds1:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: Wang931125
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://119.91.232.58:3307/ds_1?characterEncoding=utf-8
+        username: root
+      names: ds0,ds1
+    sharding:
+      default-database-strategy:
+        standard:
+          precise-algorithm-class-name: com.ds.spring.boot.ds.data.source.OrderComplexKeysShardingAlgorithm
+          sharding-column: id
+      tables:
+        user:
+          actual-data-nodes: ds$->{0..1}.user_$->{0..2}
+          table-strategy:
+            standard:
+              precise-algorithm-class-name: com.ds.spring.boot.ds.data.source.OrderComplexKeysShardingAlgorithm
+              sharding-column: id
+server:
+  port: 8823

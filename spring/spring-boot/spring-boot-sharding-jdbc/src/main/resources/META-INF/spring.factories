@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.ds.spring.boot.ds.data.source.config.Db1JdbcConfig

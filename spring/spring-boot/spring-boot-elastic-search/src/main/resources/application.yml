@@ -1,3 +1,3 @@
 spring:
   elasticsearch:
-    uris: 119.91.232.58:9200
+    uris: 10.1.1.111:9600

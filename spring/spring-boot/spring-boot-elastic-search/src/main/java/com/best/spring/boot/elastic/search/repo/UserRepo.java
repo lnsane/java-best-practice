@@ -10,4 +10,6 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 public interface UserRepo extends ElasticsearchRepository<User,String> {
 
     User findFirstByUserNameAndSex(String userName, SexEnum sex);
+
+
 }

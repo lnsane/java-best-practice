@@ -45,11 +45,11 @@ public class TestController {
 
     @GetMapping("page")
     @ResponseBody
-    public List<UserVO> page(@RequestParam("p") Long p,@RequestParam("z") Long z){
+    public List<User> page(@RequestParam("p") Long p,@RequestParam("z") Long z){
         Page<User> page = new Page<>(p,z);
-        IPage<UserVO> iPage = userMapper.pagesss(page);
-        System.out.println(iPage.getTotal());
-        return iPage.getRecords();
+        Page<User> userPage = userMapper.selectPage(page, null);
+        System.out.println(userPage.getTotal());
+        return userPage.getRecords();
     }
 
 

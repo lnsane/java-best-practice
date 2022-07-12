@@ -21,6 +21,17 @@ public class User {
     @Field(type = FieldType.Keyword)
     public SexEnum sex;
 
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Field(type = FieldType.Keyword)
+    public Integer age;
+
     public String getId() {
         return id;
     }
