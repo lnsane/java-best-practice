@@ -1,28 +1,23 @@
 package com.best.spring.boot.elastic.search;
-import cn.hutool.core.util.IdUtil;
-import cn.hutool.core.util.StrUtil;
-import com.best.spring.boot.elastic.search.enums.SexEnum;
 
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.IdUtil;
+import com.best.spring.boot.elastic.search.enums.SexEnum;
 import com.best.spring.boot.elastic.search.model.User;
 import com.best.spring.boot.elastic.search.repo.UserRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.client.ElasticsearchClient;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.Strings;
-import org.elasticsearch.index.query.*;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.aggregations.AggregationBuilder;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
-import org.elasticsearch.search.aggregations.bucket.composite.CompositeAggregationBuilder;
-import org.elasticsearch.search.aggregations.bucket.filter.FilterAggregationBuilder;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
-import org.elasticsearch.search.aggregations.metrics.AvgAggregationBuilder;
-import org.elasticsearch.search.aggregations.metrics.MaxAggregationBuilder;
-import org.elasticsearch.search.aggregations.metrics.MinAggregationBuilder;
-import org.elasticsearch.search.aggregations.metrics.SumAggregationBuilder;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.search.sort.SortOrder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -55,61 +50,91 @@ class SpringBootElasticSearchDemoTest {
         userRepo.findAll().forEach(user1 -> System.out.println(user1.toString()));
     }
 
+    @Test
+    public void test2(){
+        User user = new User();
+        user.setUserName("wang");
+        user.setSex(SexEnum.MAN);
+        user.setAge(50);
+        user.setCreateTime(DateUtil.parse("2020-02-10 12:12:12"));
+        userRepo.save(user);
+        User user2 = new User();
+        user2.setUserName("wang2");
+        user2.setSex(SexEnum.WOMAN);
+        user2.setAge(30);
+        user2.setCreateTime(DateUtil.parse("2020-01-10 12:12:12"));
+        userRepo.save(user2);
+        User user3 = new User();
+        user3.setUserName("wang");
+        user3.setSex(SexEnum.MAN);
+        user3.setAge(50);
+        user3.setCreateTime(DateUtil.parse("2020-01-01 12:12:12"));
+        userRepo.save(user3);
+//        User user4 = new User();
+//        user4.setUserName("wang3");
+//        user4.setSex(SexEnum.MAN);
+//        user4.setAge(50);
+//        userRepo.save(user4);
+    }
+
     @Autowired
     private RestHighLevelClient restHighLevelClient;
     @Test
-    public void test2() throws IOException {
+    public void test3() throws IOException {
 
-        SearchRequest searchRequest = new SearchRequest("tbsendrcd_202208");
+        SearchRequest searchRequest = new SearchRequest("goods");
         searchRequest.routing("20220808");
 
 
-        SearchResponse response2 = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
-
+//        SearchResponse response2 = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
 
 
         BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+//
+//        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("userName", "wang");
+//        boolQuery.filter(termQueryBuilder);
 
-        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("sex", "MAN");
-        boolQuery.filter(termQueryBuilder);
-
-
+//
+//
         SearchSourceBuilder builder = new SearchSourceBuilder();
-
+        builder.sort("createTime", SortOrder.ASC);
 
 
 //        builder.from(0).size(5);
 
-        String[] includes = {"id","userName","sex","age"};
-        AggregationBuilder top = AggregationBuilders.topHits("result").fetchSource(includes, Strings.EMPTY_ARRAY);
+        String[] includes = {"id", "userName", "sex", "age","createTime"};
+        AggregationBuilder top = AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC).fetchSource(includes, Strings.EMPTY_ARRAY).size(1);
 
-        TermsAggregationBuilder aggBuilder = AggregationBuilders.terms("group1").field("testhaha").size(100000000);
+        TermsAggregationBuilder aggBuilder = AggregationBuilders.terms("group1").field("sex")
+//                .subAggregation(AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC))
+                .subAggregation(AggregationBuilders.terms("group2").field("userName")
+//                        .subAggregation(AggregationBuilders.topHits("result2").sort("createTime", SortOrder.ASC))
+                                .subAggregation(top)
+                                .subAggregation(AggregationBuilders.sum("age_sum").field("age"))
+                                .subAggregation(AggregationBuilders.max("age_max").field("age"))
+                )
+                .size(100000000);
 
-//        builder.aggregation(aggBuilder);
-
-        QueryBuilder successCountBuilder = QueryBuilders.rangeQuery("age").gte("0");
-        FilterAggregationBuilder successCountFilter = AggregationBuilders.filter("successCount", successCountBuilder);
-        successCountFilter.subAggregation(AggregationBuilders.count("age_sum").field("sex"));
-
-//        TermsAggregationBuilder terms = AggregationBuilders.terms("test11").field("test").size(100000000);
-
+//
+//        QueryBuilder successCountBuilder = QueryBuilders.termQuery("userName","wang");
+//        FilterAggregationBuilder successCountFilter = AggregationBuilders.filter("successCount", successCountBuilder);
+//        successCountFilter.subAggregation();
+//
+//
 
 //        TermsAggregationBuilder terms2 = AggregationBuilders.terms("age").field("age");
 //        aggBuilder.subAggregation(terms.subAggregation(AggregationBuilders.sum("123").field("age")));
 
-        aggBuilder.subAggregation(top);
-
-        aggBuilder.subAggregation(successCountFilter);
+        builder.query(boolQuery);
 
         builder.aggregation(aggBuilder);
+//        builder.from(0).size(1);
 
-        builder.query(boolQuery);
+
 
         searchRequest.source(builder);
 
         SearchResponse response = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
-
-
 
 
         log.info(String.valueOf(response));

@@ -8,6 +8,8 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 import org.springframework.data.elasticsearch.annotations.Setting;
 
+import java.util.Date;
+
 /**
  * @author 王存露
  */
@@ -20,6 +22,17 @@ public class User {
     public String userName;
     @Field(type = FieldType.Keyword)
     public SexEnum sex;
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    @Field(type = FieldType.Date)
+    public Date createTime;
 
     public Integer getAge() {
         return age;

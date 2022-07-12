@@ -57,6 +57,7 @@
         <module>xxl-job</module>
         <module>spring-boot-sharding-jdbc</module>
         <module>spring-boot-ds-datasource</module>
+        <module>spring-boot-ds</module>
     </modules>
 
     <properties>

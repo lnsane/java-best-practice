@@ -21,7 +21,6 @@
   </properties>
 
   <modules>
-    <module>microservices</module>
     <module>spring-boot</module>
     <module>spring-cloud</module>
     <module>spring-cloud-hoxton-2-2-x-2-3-x</module>
