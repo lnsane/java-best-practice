@@ -13,6 +13,8 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.Strings;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.TermQueryBuilder;
+import org.elasticsearch.script.Script;
 import org.elasticsearch.search.aggregations.AggregationBuilder;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
@@ -82,8 +84,7 @@ class SpringBootElasticSearchDemoTest {
     @Test
     public void test3() throws IOException {
 
-        SearchRequest searchRequest = new SearchRequest("goods");
-        searchRequest.routing("20220808");
+        SearchRequest searchRequest = new SearchRequest();
 
 
 //        SearchResponse response2 = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
@@ -110,8 +111,7 @@ class SpringBootElasticSearchDemoTest {
                 .subAggregation(AggregationBuilders.terms("group2").field("userName")
 //                        .subAggregation(AggregationBuilders.topHits("result2").sort("createTime", SortOrder.ASC))
                                 .subAggregation(top)
-                                .subAggregation(AggregationBuilders.sum("age_sum").field("age"))
-                                .subAggregation(AggregationBuilders.max("age_max").field("age"))
+                                .subAggregation(AggregationBuilders.sum("age").field("age"))
                 )
                 .size(100000000);
 
@@ -128,6 +128,117 @@ class SpringBootElasticSearchDemoTest {
         builder.query(boolQuery);
 
         builder.aggregation(aggBuilder);
+//        builder.from(0).size(1);
+
+
+
+        searchRequest.source(builder);
+
+        SearchResponse response = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
+
+
+        log.info(String.valueOf(response));
+    }
+
+    @Test
+    public void test4() throws IOException {
+        SearchRequest searchRequest = new SearchRequest();
+
+
+//        SearchResponse response2 = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
+
+
+        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+//
+//        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("userName", "wang");
+//        boolQuery.filter(termQueryBuilder);
+
+//
+//
+        SearchSourceBuilder builder = new SearchSourceBuilder();
+        builder.sort("createTime", SortOrder.ASC);
+
+
+//        builder.from(0).size(5);
+
+        String[] includes = {"id", "userName", "sex", "age","createTime"};
+        AggregationBuilder top = AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC).fetchSource(includes, Strings.EMPTY_ARRAY).size(1);
+
+        TermsAggregationBuilder aggBuilder = AggregationBuilders.terms("group1").field("sex")
+//                .subAggregation(AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC))
+                .subAggregation(AggregationBuilders.terms("group2").field("age")
+//                        .subAggregation(AggregationBuilders.topHits("result2").sort("createTime", SortOrder.ASC))
+                                .subAggregation(top)
+                                .subAggregation(AggregationBuilders.sum("age").field("age"))
+                )
+                .size(100000000);
+
+
+        builder.query(boolQuery);
+
+        builder.aggregation(aggBuilder);
+
+
+
+        searchRequest.source(builder);
+
+        SearchResponse response = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
+
+
+        log.info(String.valueOf(response));
+    }
+
+
+    @Test
+    public void test5() throws IOException {
+
+        SearchRequest searchRequest = new SearchRequest();
+
+
+//        SearchResponse response2 = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
+
+
+        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("group.keyword", "wang50");
+
+//
+//        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("userName", "wang");
+//        boolQuery.filter(termQueryBuilder);
+
+//
+//
+        SearchSourceBuilder builder = new SearchSourceBuilder();
+        builder.sort("createTime", SortOrder.ASC);
+
+
+//        builder.from(0).size(5);
+
+        String[] includes = {"id", "userName", "sex", "age","createTime"};
+        AggregationBuilder top = AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC).fetchSource(includes, Strings.EMPTY_ARRAY).size(1);
+//
+        TermsAggregationBuilder aggBuilder = AggregationBuilders.terms("group").field("group8")
+//                .subAggregation(AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC))
+//                .subAggregation(AggregationBuilders.terms("group2").field("userName")
+//                        .subAggregation(AggregationBuilders.topHits("result2").sort("createTime", SortOrder.ASC))
+
+//                )
+                .subAggregation(top)
+//                .subAggregation(AggregationBuilders.sum("age").field("age"))
+                .size(100000000);
+
+//
+//        QueryBuilder successCountBuilder = QueryBuilders.termQuery("userName","wang");
+//        FilterAggregationBuilder successCountFilter = AggregationBuilders.filter("successCount", successCountBuilder);
+//        successCountFilter.subAggregation();
+//
+//
+
+//        TermsAggregationBuilder terms2 = AggregationBuilders.terms("group1").field("group8");
+//        aggBuilder.subAggregation(terms.subAggregation(AggregationBuilders.sum("123").field("age")));
+
+        builder.aggregation(aggBuilder);
+
+//        builder.aggregation(terms2);
 //        builder.from(0).size(1);
 
 
