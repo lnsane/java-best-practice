@@ -199,7 +199,7 @@ class SpringBootElasticSearchDemoTest {
 
 
         BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
-        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("userAge", "wang50");
+        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("group.keyword", "wang50");
 
 //
 //        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("userName", "wang");
@@ -214,16 +214,17 @@ class SpringBootElasticSearchDemoTest {
 //        builder.from(0).size(5);
 
         String[] includes = {"id", "userName", "sex", "age","createTime"};
-//        AggregationBuilder top = AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC).fetchSource(includes, Strings.EMPTY_ARRAY).size(1);
+        AggregationBuilder top = AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC).fetchSource(includes, Strings.EMPTY_ARRAY).size(1);
 //
-//        TermsAggregationBuilder aggBuilder = AggregationBuilders.terms("group1").field("sex")
-////                .subAggregation(AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC))
+        TermsAggregationBuilder aggBuilder = AggregationBuilders.terms("group").field("group8")
+//                .subAggregation(AggregationBuilders.topHits("result").sort("createTime", SortOrder.ASC))
 //                .subAggregation(AggregationBuilders.terms("group2").field("userName")
-////                        .subAggregation(AggregationBuilders.topHits("result2").sort("createTime", SortOrder.ASC))
-//                                .subAggregation(top)
-//                                .subAggregation(AggregationBuilders.sum("age").field("age"))
+//                        .subAggregation(AggregationBuilders.topHits("result2").sort("createTime", SortOrder.ASC))
+
 //                )
-//                .size(100000000);
+                .subAggregation(top)
+//                .subAggregation(AggregationBuilders.sum("age").field("age"))
+                .size(100000000);
 
 //
 //        QueryBuilder successCountBuilder = QueryBuilders.termQuery("userName","wang");
@@ -232,12 +233,12 @@ class SpringBootElasticSearchDemoTest {
 //
 //
 
-//        TermsAggregationBuilder terms2 = AggregationBuilders.terms("age").field("age");
+//        TermsAggregationBuilder terms2 = AggregationBuilders.terms("group1").field("group8");
 //        aggBuilder.subAggregation(terms.subAggregation(AggregationBuilders.sum("123").field("age")));
 
-        builder.query(termQueryBuilder);
+        builder.aggregation(aggBuilder);
 
-//        builder.aggregation(aggBuilder);
+//        builder.aggregation(terms2);
 //        builder.from(0).size(1);
 
 

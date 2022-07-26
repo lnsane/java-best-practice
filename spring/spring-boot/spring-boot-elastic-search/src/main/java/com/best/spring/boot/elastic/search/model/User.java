@@ -13,8 +13,8 @@ import java.util.Date;
 /**
  * @author 王存露
  */
-//@Document(indexName = EsIndex.INDEX_NAME_MERCURY)
-//@Setting(replicas = 0)
+@Document(indexName = EsIndex.INDEX_NAME_MERCURY)
+@Setting(replicas = 0)
 public class User {
     @Id
     private String id;
