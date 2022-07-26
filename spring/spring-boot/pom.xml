@@ -58,6 +58,7 @@
         <module>spring-boot-sharding-jdbc</module>
         <module>spring-boot-ds-datasource</module>
         <module>spring-boot-ds</module>
+        <module>spring-boot-clickhouse</module>
     </modules>
 
     <properties>
