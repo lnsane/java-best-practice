@@ -59,6 +59,8 @@
         <module>spring-boot-ds-datasource</module>
         <module>spring-boot-ds</module>
         <module>spring-boot-mapstruct</module>
+        <module>spring-boot-dapr</module>
+        <module>spring-boot-dapr-client</module>
     </modules>
 
     <properties>
