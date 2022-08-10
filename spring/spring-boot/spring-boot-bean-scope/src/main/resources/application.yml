@@ -1,2 +1,4 @@
 server:
   port: 9011
+logging:
+  config:
