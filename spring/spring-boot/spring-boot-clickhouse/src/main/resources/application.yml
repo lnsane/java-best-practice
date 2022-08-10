@@ -1,0 +1,14 @@
+
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      validation-query: select 1
+    click:
+      driverClassName: com.clickhouse.jdbc.ClickHouseDriver
+      url: jdbc:clickhouse://35.200.8.67:8123/default
+      initialSize: 10
+      maxActive: 100
+      minIdle: 10
+      maxWait: 6000
