@@ -33,7 +33,9 @@ public class MapStructApplication {
         user.setSexEnums(SexEnums.MAN);
         user.setCreateTime(new Date());
         user.setUpdateTime(new Date());
-        UserDTO copy = userCopy.copy(user);
+        UserDTO copy = userCopy.copy(user,1111);
+
+
         System.out.println(copy);
     }
 }
