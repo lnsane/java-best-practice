@@ -8,10 +8,9 @@ dubbo:
     port: -1
     name: dubbo
   registry:
-    client: nacos
-    address: nacos://127.0.0.1:8848
-    username: nacos
-    password: nacos
+    address: zookeeper://127.0.0.1:2181?registry-type=service
+  consumer:
+    check: off
   scan:
     base-packages: com.best.dubbo.publisher.service
 demo:

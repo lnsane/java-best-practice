@@ -7,11 +7,7 @@ dubbo:
   application:
     metadata-type: composite
   registry:
-    client: nacos
-    address: nacos://127.0.0.1:8848
-    username: nacos
-    password: nacos
-    simplified: true
+    address: zookeeper://127.0.0.1:2181?registry-type=service
   consumer:
     check: off
 demo:

@@ -9,7 +9,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
-import java.util.Date;
 
 /**
  * @author CunLu Wang
@@ -31,8 +30,6 @@ public class MapStructApplication {
         user.setAge(1);
         user.setIncome(123);
         user.setSexEnums(SexEnums.MAN);
-        user.setCreateTime(new Date());
-        user.setUpdateTime(new Date());
         UserDTO copy = userCopy.copy(user,1111);
 
 
