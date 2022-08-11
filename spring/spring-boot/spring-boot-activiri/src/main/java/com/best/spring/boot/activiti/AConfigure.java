@@ -2,21 +2,19 @@ package com.best.spring.boot.activiti;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 
 import javax.sql.DataSource;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 
 public class AConfigure  {
     @Autowired
     private DataSource dataSource;
-
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
     @Bean
     public UserDetailsService myUserDetailsService() {
 //        ProcessEngineConfiguration
@@ -37,11 +35,12 @@ public class AConfigure  {
         };
 
         for (String[] user : usersGroupsAndRoles) {
-            List<String> authoritiesStrings = Arrays.asList(Arrays.copyOfRange(user, 2, user.length));
-            jdbcUserDetailsManager.createUser(new User(user[0], "",
-                    authoritiesStrings.stream().map(s -> new SimpleGrantedAuthority(s)).collect(Collectors.toList())));
+//            List<String> authoritiesStrings = Arrays.asList(Arrays.copyOfRange(user, 2, user.length));
+//            jdbcUserDetailsManager.createUser(new User(user[0], new BCryptPasswordEncoder().encode(user[1]),
+//                    authoritiesStrings.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList())));
         }
 
         return jdbcUserDetailsManager;
     }
+
 }

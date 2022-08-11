@@ -1,9 +1,5 @@
 server:
   port: 9999
-  servlet:
-    context-path: /
-    session:
-      timeout: 9000
 
 spring:
   datasource:
@@ -16,9 +12,11 @@ spring:
           username: root
           password: Wang931125!
           driver-class-name: com.mysql.cj.jdbc.Driver
+  #Activiti property configuration
   activiti:
-    db-history-used: true
+    database-schema-update: true
+    job-executor-activate: true # asyncExecutorEnabled属性设置设置true后将代替那些老的Job executor
     history-level: full
-    check-process-definitions: false
-
+    db-history-used: true
+    check-process-definitions: false # 自动部署验证设置:true-开启（默认）、false-关闭
 
