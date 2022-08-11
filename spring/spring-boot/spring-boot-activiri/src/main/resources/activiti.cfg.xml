@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+        <property name="databaseType" value="mysql"></property>	<!--  Database type , It's better to configure  -->
+
+        <property name="jdbcUrl" value="jdbc:mysql://35.234.43.150:3306/task"></property>	<!--  database URL, I put it in a place called activiti In the database  -->
+
+        <property name="jdbcDriver" value="com.mysql.jdbc.Driver"></property>	<!--  Database driver class  mysql This is it , Other databases can be modified  -->
+
+        <property name="jdbcUsername" value="root"></property>	<!--  The account to connect to the database  -->
+
+        <property name="jdbcPassword" value="Wang931125!"></property>	<!--  Password to connect to the database  -->
+
+        <!-- <property name="databaseSchema" value="activiti"></property> -->	<!--  This property may be used , It will be explained later  -->
+
+        <!--自动部署方式 -->
+        <!--<property name="deploymentResources" value="classpath*:/processes/*"/>-->
+
+<!--        <property name="activityFontName" value="宋体"/>-->
+<!--        <property name="labelFontName" value="宋体"/>-->
+<!--        <property name="annotationFontName" value="宋体"/>-->
+<!---->
+<!--        <property name="dbIdentityUsed" value="false" />-->
+<!--        <property name="databaseSchema" value="ACT"/>-->
+<!--        <property name="databaseSchemaUpdate" value="none"/>&lt;!&ndash; 第一次执行 设置为true &ndash;&gt;-->
+        <!-- 引擎默认名称为default，ProcessEngines.getDefaultProcessEngine()查询时会先检索main/resources，然后再检索test/resources的
+        activiti.cfg.xml和activiti-context.xml文件，所以当main/resources监测不到指定文件时就会导致该引擎被当做web应用的引擎对象，这样会导致有两个引擎
+        所以把引擎的名称改为非默认的“default”
+        -->
+<!--        <property name="jobExecutorActivate" value="false"/>-->
+        <property name="asyncExecutorActivate" value="false"/>
+<!--        <property name="asyncExecutorEnabled" value="false"/>-->
+    </bean>
+</beans>
