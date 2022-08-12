@@ -63,6 +63,7 @@
         <module>spring-boot-dapr</module>
         <module>spring-boot-dapr-client</module>
         <module>spring-boot-activiri</module>
+        <module>spring-boot-yapi</module>
     </modules>
 
     <properties>

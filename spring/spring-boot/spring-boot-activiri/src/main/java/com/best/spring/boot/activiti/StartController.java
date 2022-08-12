@@ -21,8 +21,13 @@ public class StartController {
         this.runtimeService = runtimeService;
     }
 
+    /**
+     * 开始
+     * @param userKey 参数1
+     * @param processKey 参数2
+     * @return 相应
+     */
     @PostMapping(path = "start")
-
     public RestMessgae start(@RequestParam("user") String userKey,
                              @RequestParam("processKey") String processKey) {
         HashMap<String, Object> variables=new HashMap<>(1);
