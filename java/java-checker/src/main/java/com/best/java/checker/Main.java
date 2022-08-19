@@ -7,6 +7,6 @@ import java.lang.String;
  */
 public class Main {
     public static void main(String[] args) {
-        String s = new String("123");
+        String s = "123";
     }
 }

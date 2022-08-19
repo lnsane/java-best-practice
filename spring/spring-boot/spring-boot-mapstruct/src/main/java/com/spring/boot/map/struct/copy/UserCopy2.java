@@ -2,6 +2,7 @@ package com.spring.boot.map.struct.copy;
 
 import com.spring.boot.map.struct.model.emuns.SexEnums;
 import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
 /**
  * @author CunLu Wang
@@ -10,7 +11,7 @@ import org.mapstruct.Mapper;
 @Mapper
 public interface UserCopy2 {
 
-
+    static UserCopy2 INSTANCE = Mappers.getMapper(UserCopy2.class);
 //    @Mapping(target = "userAge",source = "age")
 //    @Mapping(target = "userName",source = "userName",ignore = true)
 //    @Mapping(target = "sexEnums", expression = "java(COMMENT_MAPPER.getDefault(user.getSexEnums()))")
