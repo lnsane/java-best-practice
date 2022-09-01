@@ -19,7 +19,7 @@ public class VolatileExample {
         }
 
     }
-    static class MyThread extends Thread {
+    public static class MyThread extends Thread {
         public static  Boolean getFlag() {
             return flag;
         }
