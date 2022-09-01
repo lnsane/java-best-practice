@@ -25,7 +25,7 @@ public class SegmentLock<T> {
     }
 
     public ReentrantLock lock(T key) {
-//        System.out.println((key.hashCode()>>>1) % segments);
+        System.out.println(key +"----"+ (( key.hashCode()) ^ (key.hashCode() >>> 16)) % segments );
         return lockMap.get((key.hashCode()>>>1) % segments);
     }
 
