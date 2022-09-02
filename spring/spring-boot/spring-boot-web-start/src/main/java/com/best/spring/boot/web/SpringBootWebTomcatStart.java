@@ -4,6 +4,7 @@ import cn.hutool.core.io.FileUtil;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -25,6 +26,9 @@ import java.util.Properties;
  */
 @SpringBootApplication
 public class SpringBootWebTomcatStart {
+
+    @Autowired
+    private TopServiceImpl2 TopServiceImpl2;
     @Value("${server.port}")
     public static void main(String[] args) {
 //        SpringApplication.run(SpringBootWebTomcatStart.class, args);
@@ -55,6 +59,8 @@ public class SpringBootWebTomcatStart {
     private Tb tb;
     @PostConstruct
     public void testss(){
+        TopService build = TopServiceImpl2.build("12");
+        build.change();
         System.out.println(tb.getS());
     }
 

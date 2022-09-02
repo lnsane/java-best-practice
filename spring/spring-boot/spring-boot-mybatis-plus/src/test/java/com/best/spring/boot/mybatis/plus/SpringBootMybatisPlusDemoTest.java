@@ -1,5 +1,6 @@
 package com.best.spring.boot.mybatis.plus;
 
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.best.spring.boot.mybatis.plus.entity.User;
 import com.best.spring.boot.mybatis.plus.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
@@ -17,5 +18,11 @@ class SpringBootMybatisPlusDemoTest {
     @Test
     void main() {
         userMapper.insert(User.builder().username("root1").createTime(new Date()).updateTime(new Date()).build());
+    }
+
+    @Test
+    void main2() {
+        User user = userMapper.selectOne(Wrappers.<User>lambdaQuery().last("limit 1"));
+        System.out.println(user);
     }
 }

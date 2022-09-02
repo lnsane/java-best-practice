@@ -1,14 +1,22 @@
 package com.spring.boot.map.struct.demo2;
 
-import org.mapstruct.*;
+import com.spring.boot.map.struct.copy.FaceCopy;
+import com.spring.boot.map.struct.model.User;
+import org.mapstruct.Condition;
+import org.mapstruct.Context;
+import org.mapstruct.DecoratedWith;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
 import java.util.Locale;
 
-@Mapper(componentModel = "spring",
-        uses = {BooleanStrategy.class},
-        injectionStrategy = InjectionStrategy.CONSTRUCTOR,
-        typeConversionPolicy = ReportingPolicy.IGNORE)
+@Mapper(componentModel = "spring")
+//        uses = {BooleanStrategy.class},
+//        injectionStrategy = InjectionStrategy.CONSTRUCTOR,
+//        typeConversionPolicy = ReportingPolicy.IGNORE)
+@DecoratedWith(FaceCopy.class)
 public interface InventoryMapper {
+    FaceCopy INSTANCE = Mappers.getMapper( FaceCopy.class );
     /**
      * DO 转 DTO
      *

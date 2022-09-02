@@ -15,10 +15,10 @@ public class Main {
 
 
     static class MyThread extends Thread {
-        final String ass = "1238jfhdjf";
+        final String ass = "pay::redis::lock::id::";
         private int anInt;
         public MyThread(int i) {
-            this.anInt = i * 1111;
+            this.anInt = i * 123;
         }
 
         @Override

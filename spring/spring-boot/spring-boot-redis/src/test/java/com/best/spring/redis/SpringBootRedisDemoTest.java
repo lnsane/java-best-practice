@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
 
@@ -27,7 +28,7 @@ public class SpringBootRedisDemoTest {
     @Test
     public void stringOpt() {
         redisTemplate.opsForValue()
-                     .setIfAbsent("123", "ADMIN", Duration.ofSeconds(120));
+                     .set("123", "23222", 1111, TimeUnit.SECONDS);
     }
 
     @Test

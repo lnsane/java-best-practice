@@ -19,5 +19,8 @@ public class Log4j2SpringBootApplication {
         log.error("error");
         log.warn("warn");
         log.debug("debug");
+        A a = new A();
+        a.setA("1221212");
+        log.info("asdasd:{}",a);
     }
 }

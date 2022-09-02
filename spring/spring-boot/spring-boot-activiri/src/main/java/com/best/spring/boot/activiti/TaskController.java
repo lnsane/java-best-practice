@@ -1,7 +1,13 @@
 package com.best.spring.boot.activiti;
 
+import org.activiti.engine.HistoryService;
 import org.activiti.engine.TaskService;
+import org.activiti.engine.history.HistoricActivityInstance;
+import org.activiti.engine.history.HistoricDetail;
+import org.activiti.engine.history.HistoricProcessInstance;
+import org.activiti.engine.history.HistoricTaskInstance;
 import org.activiti.engine.task.Task;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,9 +22,62 @@ public class TaskController {
 
     private final TaskService taskService;
 
-    public TaskController(TaskService taskService) {
+    private final HistoryService historyService;
+    public TaskController(TaskService taskService, HistoryService historyService) {
         this.taskService = taskService;
+        this.historyService = historyService;
     }
+
+    @GetMapping(path = "histdd")
+    public void findTask() {
+        List<HistoricProcessInstance> list = historyService.createHistoricProcessInstanceQuery()
+                .orderByProcessInstanceId()
+                .asc()
+                .list();
+        if (list != null && list.size() > 0) {
+            for (HistoricProcessInstance hpi : list) {
+                System.out.println("流程定义ID：" + hpi.getProcessDefinitionId());
+                System.out.println("流程实例ID：" + hpi.getId());
+                System.out.println("开始时间：" + hpi.getStartTime());
+                System.out.println("结束时间：" + hpi.getEndTime());
+                System.out.println("流程持续时间：" + hpi.getDurationInMillis());
+                System.out.println("=======================================");
+            }
+        }
+    }
+
+    @GetMapping(path = "hist")
+    public void queryHistoricActivitiInstance(@RequestParam("id") String id) {
+        List<HistoricActivityInstance> list = historyService
+                .createHistoricActivityInstanceQuery()
+                .processInstanceId(id)
+                .list();
+        if (list != null && list.size() > 0) {
+            for (HistoricActivityInstance hai : list) {
+                System.out.println(hai.getId());
+                System.out.println("步骤ID：" + hai.getActivityId());
+                System.out.println("步骤名称：" + hai.getActivityName());
+                System.out.println("执行人：" + hai.getAssignee());
+                System.out.println("====================================");
+            }
+        }
+    }
+    @GetMapping(path = "histsss")
+    public void queryHistoricActivitiIssnstance(@RequestParam("id") String id) {
+        List<HistoricTaskInstance> list = historyService
+                .createHistoricTaskInstanceQuery()
+                .processInstanceId(id)
+                .list();
+        if (list != null && list.size() > 0) {
+            for (HistoricTaskInstance hti : list) {
+                System.out.print("taskId:" + hti.getId()+"，");
+                System.out.print("name:" + hti.getName()+"，");
+                System.out.print("pdId:" + hti.getProcessDefinitionId()+"，");
+                System.out.print("assignee:" + hti.getAssignee()+"，");
+            }
+        }
+    }
+
 
     @PostMapping(path = "findTaskByAssignee")
     public RestMessgae findTaskByAssignee(@RequestParam("assignee") String assignee) {
@@ -27,10 +86,7 @@ public class TaskController {
         //创建任务查询对象
         List<Task> taskList;
         try {
-            taskList = taskService.createTaskQuery()
-                    //指定个人任务查询
-                    .taskAssignee(assignee)
-                    .list();
+            taskList = taskService.createTaskQuery().active().list();
         } catch (Exception e) {
             restMessgae = RestMessgae.fail("查询失败", e.getMessage());
             e.printStackTrace();

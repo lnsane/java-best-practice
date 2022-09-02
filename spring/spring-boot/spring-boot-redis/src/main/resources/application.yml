@@ -3,5 +3,5 @@ server:
 spring:
   redis:
     database: 1
-    host: localhost
-    port: 6379
+    host: 119.91.232.58
+    port: 6389
