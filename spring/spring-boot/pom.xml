@@ -65,6 +65,7 @@
         <module>spring-boot-activiri</module>
         <module>spring-boot-yapi</module>
         <module>spring-boot-page-helper</module>
+        <module>spring-boot-cron</module>
     </modules>
 
     <properties>
