@@ -26,20 +26,19 @@ public class ProducerApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         int sec = 59;
-        DataModel dataModel = new DataModel();
-        Integer integer = DelayLevelCalculate.calculateDefault(59, dataModel);
+        Data dataModel = new Data();
+        Integer integer = Delay.calculateDefault(59, dataModel);
         // Send request in async mode and receive a reply of User type.
-        rocketMQTemplate.sendAndReceive(userTopic, dataModel, new RocketMQLocalRequestCallback<DataModel>() {
+        rocketMQTemplate.sendAndReceive(userTopic, dataModel, new RocketMQLocalRequestCallback<Data>() {
             @Override
-            public void onSuccess(DataModel message) {
+            public void onSuccess(Data message) {
                 System.out.printf("send user object and receive %s %n", message.toString());
             }
 
             @Override
             public void onException(Throwable e) {
-                e.printStackTrace();
             }
-        }, 5000,integer);
+        }, -1,integer);
     }
 
 }

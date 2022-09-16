@@ -1,17 +1,14 @@
 package com.spring.boot.rocktmq.demo;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  * @author CunLu Wang
  * @since 2022/9/16
  */
-public class DataModel {
+public class Data {
 
     private Long remainDelayTime;
 
-    public DataModel() {
+    public Data() {
     }
 
     public Long getRemainDelayTime() {
