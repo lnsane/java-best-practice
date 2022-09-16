@@ -1,0 +1,6 @@
+server:
+  port: 2913
+logging:
+  file:
+    path: ./
+    name: aop.log

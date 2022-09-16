@@ -29,6 +29,9 @@ public class SpringBootWebTomcatStart {
 
     @Autowired
     private TopServiceImpl2 TopServiceImpl2;
+
+    @Value("${project.version}")
+    private String value;
     @Value("${server.port}")
     public static void main(String[] args) {
 //        SpringApplication.run(SpringBootWebTomcatStart.class, args);
@@ -62,6 +65,8 @@ public class SpringBootWebTomcatStart {
         TopService build = TopServiceImpl2.build("12");
         build.change();
         System.out.println(tb.getS());
+
+        System.out.println(value);
     }
 
 
