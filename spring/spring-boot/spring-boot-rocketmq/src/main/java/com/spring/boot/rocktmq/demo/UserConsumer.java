@@ -31,15 +31,15 @@ public class UserConsumer implements RocketMQListener<DataModel> {
 //        System.out.printf("######## user_consumer received: %s ; age: %s ; name: %s \n", message, message.getUserAge(), message.getUserName());
         if (ObjectUtil.isNotNull(message)) {
             if (ObjectUtil.isNotNull(message.getRemainDelayTime())) {
-                if (message.getRemainDelayTime() <= 1) {
+                if (message.getRemainDelayTime() <= 0) {
                     System.out.println(JSONUtil.toJsonStr(message));
                 } else {
                     System.out.println( "剩余秒 ：" + message.getRemainDelayTime());
                     Integer integer = DelayLevelCalculate.calculateDefault(message.getRemainDelayTime(), message);
                     // Send request in async mode and receive a reply of User type.
-                    rocketMQTemplate.sendAndReceive(userTopic, message, new RocketMQLocalRequestCallback<User>() {
+                    rocketMQTemplate.sendAndReceive(userTopic, message, new RocketMQLocalRequestCallback<DataModel>() {
                         @Override
-                        public void onSuccess(User message) {
+                        public void onSuccess(DataModel message) {
                             System.out.printf("send user object and receive %s %n", message.toString());
                         }
 
