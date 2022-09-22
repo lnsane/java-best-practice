@@ -16,31 +16,33 @@ public class ThreadPoolExecutorExample {
                                                                        10,
                                                                        10,
                                                                        TimeUnit.SECONDS,
-                                                                       new ArrayBlockingQueue<>(10, true),
+                                                                       new ArrayBlockingQueue<>(500000, true),
                                                                        Thread::new,
                                                                        new ThreadPoolExecutor.AbortPolicy());
 
-
-        for (int i = 0; i < 100; i++) {
-            int finalI = i;
-            Runnable runnable = () -> {
-                try {
-                    Thread.sleep(1000);
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < 100; i++) {
+                int finalI = i;
+                Runnable runnable = () -> {
+//                try {
+//                    Thread.sleep(1000);
                     synchronized (ThreadPoolExecutorExample.class) {
                         list.add(finalI);
                     }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+                    System.out.println(finalI);
+                };
+                try {
+                    threadPoolExecutor.execute(runnable);
+                } catch (Exception e) {
+                    System.out.println(e + "-----------" + i);
                 }
-                System.out.println(finalI);
-            };
-            try {
-                threadPoolExecutor.execute(runnable);
-            } catch (Exception e) {
-                System.out.println(e + "-----------" + i);
             }
         }
         threadPoolExecutor.shutdown();
+        System.out.println("end");
         while (!threadPoolExecutor.isTerminated()) {
 
         }

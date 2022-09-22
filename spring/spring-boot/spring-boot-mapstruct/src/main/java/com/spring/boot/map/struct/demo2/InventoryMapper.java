@@ -2,10 +2,7 @@ package com.spring.boot.map.struct.demo2;
 
 import com.spring.boot.map.struct.copy.FaceCopy;
 import com.spring.boot.map.struct.model.User;
-import org.mapstruct.Condition;
-import org.mapstruct.Context;
-import org.mapstruct.DecoratedWith;
-import org.mapstruct.Mapper;
+import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 
 import java.util.Locale;
@@ -14,7 +11,7 @@ import java.util.Locale;
 //        uses = {BooleanStrategy.class},
 //        injectionStrategy = InjectionStrategy.CONSTRUCTOR,
 //        typeConversionPolicy = ReportingPolicy.IGNORE)
-@DecoratedWith(FaceCopy.class)
+//@DecoratedWith(FaceCopy.class)
 public interface InventoryMapper {
     FaceCopy INSTANCE = Mappers.getMapper( FaceCopy.class );
     /**
@@ -24,10 +21,10 @@ public interface InventoryMapper {
      * @return
      */
     @Mappings({
-            @Mapping(target = "centimeters", source = "inch",qualifiedByName= {"EnglishToGerman"}),
+            @Mapping(target = "centimeters", source = "inch"),
             @Mapping(target = ".", source = "hello")
     })
-    InventoryDTO doToDto(InventoryDO inventoryDO, @Context Locale locale);
+    InventoryDTO doToDto(InventoryDO inventoryDO);
 
     default InventoryDTO translateInventoryDO(InventoryDO inventoryDO, @Context Locale locale) {
         // manually implemented logic to translate the OwnerManual with the given Locale

@@ -1,5 +1,9 @@
 package com.spring.boot.rocktmq.demo;
 
+import cn.hutool.core.lang.Console;
+import cn.hutool.core.thread.ConcurrencyTester;
+import cn.hutool.core.thread.ThreadUtil;
+import cn.hutool.core.util.RandomUtil;
 import org.apache.rocketmq.spring.core.RocketMQLocalRequestCallback;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,20 +29,29 @@ public class ProducerApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        int sec = 59;
-        Data dataModel = new Data();
-        Integer integer = Delay.calculateDefault(59, dataModel);
         // Send request in async mode and receive a reply of User type.
-        rocketMQTemplate.sendAndReceive(userTopic, dataModel, new RocketMQLocalRequestCallback<Data>() {
-            @Override
-            public void onSuccess(Data message) {
-                System.out.printf("send user object and receive %s %n", message.toString());
-            }
+        ConcurrencyTester tester = ThreadUtil.concurrencyTest(1, () -> {
+            Data dataModel = new Data();
+            Integer integer = Delay.calculateDefault(59, dataModel);
+            rocketMQTemplate.sendAndReceive(userTopic, dataModel, new RocketMQLocalRequestCallback<Data>() {
+                @Override
+                public void onSuccess(Data message) {
+                    System.out.printf("send user object and receive %s %n", message.toString());
+                }
 
-            @Override
-            public void onException(Throwable e) {
-            }
-        }, -1,integer);
+                @Override
+                public void onException(Throwable e) {
+                }
+            }, -1,integer);
+            // 测试的逻辑内容
+            long delay = RandomUtil.randomLong(100, 1000);
+            ThreadUtil.sleep(delay);
+            Console.log("{} test finished, delay: {}", Thread.currentThread().getName(), delay);
+        });
+
+        // 获取总的执行时间，单位毫秒
+        Console.log(tester.getInterval());
+
     }
 
 }
