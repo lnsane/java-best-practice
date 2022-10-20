@@ -13,7 +13,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <hutool.version>5.8.3</hutool.version>
-        <mybatis-plus-boot-starter.version>3.4.3.4</mybatis-plus-boot-starter.version>
+        <mybatis-plus-boot-starter.version>3.1.0</mybatis-plus-boot-starter.version>
         <redisson-spring-boot-starter.version>3.16.3</redisson-spring-boot-starter.version>
         <knife4j-spring-boot-starter.version>2.0.9</knife4j-spring-boot-starter.version>
     </properties>

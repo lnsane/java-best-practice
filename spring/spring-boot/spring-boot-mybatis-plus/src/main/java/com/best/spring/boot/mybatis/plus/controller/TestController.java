@@ -24,7 +24,7 @@ public class TestController extends BaseController {
     @PostMapping("/page")
     @ResponseBody
     public Page<User> getPage(@RequestBody(required = false) Page<User> page) {
-        return userService.page(page);
+        return (Page<User>) userService.page(page);
     }
 
     @PostMapping

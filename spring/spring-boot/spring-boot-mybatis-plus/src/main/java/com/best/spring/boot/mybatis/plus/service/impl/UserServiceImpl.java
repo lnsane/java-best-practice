@@ -32,7 +32,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
     @Override
     public int insertOrUpdate(User record) {
-        return baseMapper.insertOrUpdate(record);
+        return baseMapper.insert(record);
     }
 
     @Override

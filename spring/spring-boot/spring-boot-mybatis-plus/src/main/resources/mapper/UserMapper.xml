@@ -79,18 +79,18 @@
         #{item.updateTime,jdbcType=TIMESTAMP})
     </foreach>
   </insert>
-  <insert id="insertOrUpdate" parameterType="com.best.spring.boot.mybatis.plus.entity.User">
+  <insert id="insert" parameterType="com.best.spring.boot.mybatis.plus.entity.User" useGeneratedKeys="true" keyProperty="id">
     <!--@mbg.generated-->
-    insert into `user`
+    insert into `user3`
     (id, username, create_time, update_time)
     values
     (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP},
       #{updateTime,jdbcType=TIMESTAMP})
-    on duplicate key update
-    id = #{id,jdbcType=VARCHAR},
-    username = #{username,jdbcType=VARCHAR},
-    create_time = #{createTime,jdbcType=TIMESTAMP},
-    update_time = #{updateTime,jdbcType=TIMESTAMP}
+<!--    on duplicate key update-->
+<!--    id = #{id,jdbcType=VARCHAR},-->
+<!--    username = #{username,jdbcType=VARCHAR},-->
+<!--    create_time = #{createTime,jdbcType=TIMESTAMP},-->
+<!--    update_time = #{updateTime,jdbcType=TIMESTAMP}-->
   </insert>
   <insert id="insertOrUpdateSelective" parameterType="com.best.spring.boot.mybatis.plus.entity.User">
     <!--@mbg.generated-->

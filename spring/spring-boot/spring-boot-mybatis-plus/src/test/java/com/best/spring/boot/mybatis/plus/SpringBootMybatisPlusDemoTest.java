@@ -17,7 +17,9 @@ class SpringBootMybatisPlusDemoTest {
 
     @Test
     void main() {
-        userMapper.insert(User.builder().username("root1").createTime(new Date()).updateTime(new Date()).build());
+        User root1 = User.builder().username("root1").createTime(new Date()).updateTime(new Date()).build();
+//        userMapper.insert(root1);
+//        System.out.println(root1);
     }
 
     @Test

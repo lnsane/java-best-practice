@@ -1,12 +1,10 @@
 package com.best.spring.boot.mybatis.plus.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.best.spring.boot.mybatis.plus.enums.SexEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.models.auth.In;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,15 +20,16 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName(value = "test.`user`")
+@TableName(value = "test.`user3`")
+//@KeySequence(value = "IdGen")
 public class User {
     /**
      * 主键
      */
-    @TableId(value = "id", type = IdType.ASSIGN_ID)
+    @TableId(value = "id", type = IdType.INPUT)
+//    @TableField(value = "id",fill = FieldFill.INSERT)
     @ApiModelProperty(value = "主键")
-//    @JsonSerialize(using = ToStringSerializer.class)
-    private Long id;
+    private Integer id;
 
     /**
      * 姓名

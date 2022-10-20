@@ -67,6 +67,7 @@
         <module>spring-boot-page-helper</module>
         <module>spring-boot-cron</module>
         <module>spring-boot-rocketmq</module>
+        <module>kingdee</module>
     </modules>
 
     <properties>

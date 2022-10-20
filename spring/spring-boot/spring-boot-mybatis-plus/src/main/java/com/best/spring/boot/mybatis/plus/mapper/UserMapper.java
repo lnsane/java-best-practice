@@ -15,7 +15,7 @@ public interface UserMapper extends BaseMapper<User> {
 
     int batchInsert(@Param("list") List<User> list);
 
-    int insertOrUpdate(User record);
+    int insert(User record);
 
     int insertOrUpdateSelective(User record);
 
