@@ -5,6 +5,14 @@ import org.springframework.context.ApplicationEvent;
 import java.time.Clock;
 
 public class GoodsEventListener extends ApplicationEvent {
+    public String getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(String goodsId) {
+        this.goodsId = goodsId;
+    }
+
     private String goodsId;
 
     public GoodsEventListener(Object source, String goodsId) {
