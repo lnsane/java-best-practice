@@ -21,13 +21,13 @@
         <dependency>
             <groupId>io.dapr</groupId>
             <artifactId>dapr-sdk</artifactId>
-            <version>1.6.0</version>
+            <version>1.7.1</version>
         </dependency>
         <!-- Dapr's SDK integration with SpringBoot (optional). -->
         <dependency>
             <groupId>io.dapr</groupId>
             <artifactId>dapr-sdk-springboot</artifactId>
-            <version>1.6.0</version>
+            <version>1.7.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
         <dependency>

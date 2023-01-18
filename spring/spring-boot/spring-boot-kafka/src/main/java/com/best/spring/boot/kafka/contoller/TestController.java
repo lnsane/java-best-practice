@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author 王存露
@@ -19,7 +20,7 @@ public class TestController {
     private KafkaTemplate<String, String> kafkaTemplate;
 
     @GetMapping(value = "/")
-    public void test(){
+    public void test() throws ExecutionException, InterruptedException {
         int i = 1000000;
         while (true) {
             if (i < 0 ){
@@ -30,7 +31,7 @@ public class TestController {
             headers.put(KafkaHeaders.TOPIC, "topicName");
 //        kafkaTemplate.send(new GenericMessage<>("student", headers));
             // use the below to send String values through kafka
-            kafkaTemplate.send("topicName","123", "some string value "+ uuid);
+            kafkaTemplate.send("topicName","123", "some string value "+ uuid).get();
             i--;
         }
     }

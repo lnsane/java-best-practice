@@ -1,8 +1,8 @@
 package com.best.spring.boot.dapr.client;
 
-import io.dapr.client.DaprClientBuilder;
+import io.dapr.client.DaprClient;
 import io.dapr.client.domain.HttpExtension;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,9 +11,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class GoodsRPCImpl implements GoodsRPC {
+    @Autowired
+    private DaprClient daprClient;
+
     @Override
     public Hello hello() {
-        return (new DaprClientBuilder()).build().invokeMethod(SERVICE_ID,
+        return  daprClient.invokeMethod(SERVICE_ID,
                 Thread.currentThread().getStackTrace()[1].getMethodName(), null, HttpExtension.GET, null,
                 Hello.class).block();
     }
