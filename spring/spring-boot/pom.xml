@@ -69,6 +69,7 @@
         <module>spring-boot-rocketmq</module>
         <module>kingdee</module>
         <module>spring-boot-active-mysql-timeout</module>
+        <module>spring-boot-cache</module>
     </modules>
 
     <properties>
