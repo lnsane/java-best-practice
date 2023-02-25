@@ -5,11 +5,17 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.support.SimpleCacheManager;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Optional;
 
 /**
  * @author CunLu Wang
@@ -25,9 +31,12 @@ public class CacheSpringBootApplication {
     }
 
     @Autowired
+    @Lazy
+    private CacheSpringBootApplication cacheSpringBootApplication;
+    @Autowired
     private CacheManager cacheManager;
 
-    class User {
+    public class User {
         public String getId() {
             return id;
         }
@@ -53,19 +62,24 @@ public class CacheSpringBootApplication {
         User user = new User();
         user.setId("1");
         user.setUsername("2");
-        mewUserBean(user);
+        cacheSpringBootApplication.mewUserBean(user);
         return "";
     }
 
-    @GetMapping("/user")
-    public String newUser2(){
-        Cache cache = cacheManager.getCache("1");
-        System.out.println(cache.get("1"));
-        return "1";
+    @GetMapping("/user/{id}")
+    @Cacheable(value = "user",key = "#id")
+    public User newUser2(@PathVariable("id") String id){
+        Cache cache = cacheManager.getCache("user");
+        Cache.ValueWrapper valueWrapper = Optional.ofNullable(cache).map(cache1 -> cache1.get("1")).orElse(null);
+        Object o = valueWrapper.get();
+        System.out.println(o);
+
+        System.out.println();
+        return null;
     }
 
-    @Cacheable(value = "{user}",key = "{user.id}")
-    public void mewUserBean(User user) {
-        System.out.println(user);
+    @Cacheable(value = "user",key = "#user.id")
+    public User mewUserBean(User user) {
+        return user;
     }
 }
