@@ -1,6 +1,5 @@
 package com.best.java.thread.wait;
 
-import javax.xml.ws.Service;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
