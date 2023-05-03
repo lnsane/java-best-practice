@@ -20,6 +20,7 @@
         <module>file-io</module>
         <module>java-checker</module>
         <module>ppt</module>
+        <module>jdk17</module>
     </modules>
 
     <properties>
