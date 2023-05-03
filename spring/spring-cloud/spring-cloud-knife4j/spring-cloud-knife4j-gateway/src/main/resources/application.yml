@@ -1,0 +1,16 @@
+server:
+  port: 9101
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          #          enabled: true
+          lowerCaseServiceId: true
+      routes:
+        - id: crm_route
+          uri: http://localhost:9192/
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1

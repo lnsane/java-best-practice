@@ -27,6 +27,7 @@
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-seata</module>
+        <module>spring-cloud-knife4j</module>
     </modules>
 
     <properties>
