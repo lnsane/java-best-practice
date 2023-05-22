@@ -5,6 +5,7 @@ spring:
     name: spring-boot-nacos-config-demo
   main:
     allow-bean-definition-overriding: true
+    allow-circular-references: true
   cloud:
     nacos:
       config:

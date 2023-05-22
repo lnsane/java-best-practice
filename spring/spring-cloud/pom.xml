@@ -28,6 +28,7 @@
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-seata</module>
         <module>spring-cloud-knife4j</module>
+        <module>spring-boot-nacos-rush</module>
     </modules>
 
     <properties>

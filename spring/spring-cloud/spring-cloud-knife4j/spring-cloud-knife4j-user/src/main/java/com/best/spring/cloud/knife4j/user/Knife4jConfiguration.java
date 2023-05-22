@@ -41,7 +41,9 @@ public class Knife4jConfiguration {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.best.spring.cloud.knife4j"))
                 .paths(PathSelectors.any())
-                .build().securityContexts(CollectionUtils.newArrayList(securityContext(),securityContext1())).securitySchemes(CollectionUtils.<SecurityScheme>newArrayList(apiKey(),apiKey1()));    }
+                .build().securityContexts(CollectionUtils.newArrayList(securityContext(),securityContext1()))
+                .securitySchemes(CollectionUtils.<SecurityScheme>newArrayList(apiKey(),apiKey1()));
+    }
 
     private ApiInfo groupApiInfo(){
         return new ApiInfoBuilder()

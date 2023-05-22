@@ -70,6 +70,7 @@
         <module>kingdee</module>
         <module>spring-boot-active-mysql-timeout</module>
         <module>spring-boot-cache</module>
+        <module>spring-boot-s3</module>
     </modules>
 
     <properties>

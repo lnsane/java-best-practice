@@ -1,0 +1,25 @@
+# Use root/example as user/password credentials
+version: '3.8'
+services:
+  nacos:
+    image: nacos/nacos-server:2.0.2
+    container_name: nacos-standalone
+    environment:
+      - PREFER_HOST_MODE=hostname
+      - MODE=standalone
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+#  prometheus:
+#    container_name: prometheus
+#    image: prom/prometheus:latest
+#    ports:
+#      - "9090:9090"
+#    depends_on:
+#      - nacos
+#    restart: on-failure
+#  grafana:
+#    container_name: grafana
+#    image: grafana/grafana:latest
+#    ports:
+#      - "3000:3000"
