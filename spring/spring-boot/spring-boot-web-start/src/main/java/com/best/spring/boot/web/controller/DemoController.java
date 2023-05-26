@@ -1,6 +1,7 @@
 package com.best.spring.boot.web.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
@@ -15,7 +16,8 @@ public class DemoController {
 
 
     @GetMapping("/demo")
-    public void demo(){
+    public void demo(@RequestParam("test") String test,@RequestParam("test2") String test2){
+
         this.demo2();
     }
 

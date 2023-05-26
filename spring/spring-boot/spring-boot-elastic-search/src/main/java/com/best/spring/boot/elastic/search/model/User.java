@@ -8,6 +8,7 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 import org.springframework.data.elasticsearch.annotations.Setting;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Date;
  */
 @Document(indexName = EsIndex.INDEX_NAME_MERCURY)
 @Setting(replicas = 0)
-public class User {
+public class User implements Serializable {
     @Id
     private String id;
     @Field(type = FieldType.Keyword,index = true)

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: paas-sos-auth
+  main:
+    allow-circular-references: true
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+      routes:
+        - id: auth_route
+          uri: http://localhost:8009/
+          predicates:
+            - Path=/**
+          filters:
+            - StripPrefix=1
