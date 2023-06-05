@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @DubboService(version = "${demo.service.version}")
 @RestController
 public class DemoServiceImplHello implements HelloDubboService {
@@ -20,6 +22,11 @@ public class DemoServiceImplHello implements HelloDubboService {
     @GetMapping("/hello")
     public String sayHello(@RequestParam("name") String name) {
         return "hello " + name + " by " + applicationName;
+    }
+
+    @Override
+    public List<String> copyList(List<String> list) {
+        return list;
     }
 
     // Fallback 函数，函数签名与原函数一致或加一个 Throwable 类型的参数.

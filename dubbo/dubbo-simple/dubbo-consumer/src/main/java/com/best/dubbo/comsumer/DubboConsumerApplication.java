@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @EnableAutoConfiguration
 @RestController
 public class DubboConsumerApplication {
@@ -20,6 +23,10 @@ public class DubboConsumerApplication {
 
     @GetMapping(value = "/")
     public String sayHello() {
+        List<String> a = new ArrayList<>();
+        List<String> strings1 = helloDubboService.copyList(a);
+        System.out.println(strings1);
+
         return helloDubboService.sayHello(null);
     }
 

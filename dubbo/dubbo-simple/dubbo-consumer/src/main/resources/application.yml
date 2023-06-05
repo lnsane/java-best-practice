@@ -7,7 +7,7 @@ dubbo:
   application:
     metadata-type: composite
   registry:
-    address: zookeeper://119.91.232.58:2181?registry-type=service
+    address: zookeeper://127.0.0.1:2181?registry-type=service
     simplified: true
   consumer:
     check: off
