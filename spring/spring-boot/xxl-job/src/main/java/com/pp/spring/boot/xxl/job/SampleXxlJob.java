@@ -29,7 +29,7 @@ public class SampleXxlJob {
      */
     @XxlJob("demoJobHandler")
     public void demoJobHandler() throws Exception {
-        XxlJobHelper.log("XXL-JOB, Hello World.");
+        XxlJobHelper.log("XXL-JOB, Hello World. {} , {}",1233,"hahaha");
 
         for (int i = 0; i < 5; i++) {
             XxlJobHelper.log("beat at:" + i);

@@ -1,0 +1,10 @@
+logbook:
+  include:
+    - /**
+  filter.enabled: true
+  format.style: http
+logging:
+  level:
+    org.zalando.logbook: trace
+  file:
+    path: ./log

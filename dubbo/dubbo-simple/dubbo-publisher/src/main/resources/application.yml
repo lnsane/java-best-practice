@@ -3,16 +3,43 @@ server:
 spring:
   application:
     name: publisher-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.10.110:2222
+        namespace: 6e837751-c70c-491c-8e2d-e9bfbbfca7fd
+      config:
+        import-check:
+          enabled: false
 dubbo:
-  protocol:
-    port: -1
-    name: dubbo
+  application:
+    name: comsumer-service
+  metadata-report:
+    address: nacos://skyline-nacos.skyline-account.svc.dev.local:8848
+    username: nacos
+    password: nacos
+    parameters:
+      namespace: dubbo
   registry:
-    address: zookeeper://127.0.0.1:2181?registry-type=service
+    simplified: true
+    client: nacos
+    address: nacos://skyline-nacos.skyline-account.svc.dev.local:8848
+    username: nacos
+    password: nacos
+    use-as-config-center: true
+    use-as-metadata-center: true
+    parameters:
+      namespace: dubbo
+  protocol:
+    name: dubbo
+    port: -1
   consumer:
-    check: off
+    check: false
+    timeout: 30000
   scan:
     base-packages: com.best.dubbo.publisher.service
 demo:
   service:
     version: 1.0.0
+
+
