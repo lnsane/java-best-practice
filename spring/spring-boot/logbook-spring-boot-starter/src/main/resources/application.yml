@@ -2,7 +2,7 @@ logbook:
   include:
     - /**
   filter.enabled: true
-  format.style: http
+  format.style: json
 logging:
   level:
     org.zalando.logbook: trace
