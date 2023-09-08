@@ -72,6 +72,7 @@
         <module>spring-boot-cache</module>
         <module>spring-boot-s3</module>
         <module>logbook-spring-boot-starter</module>
+        <module>spring-boot-mapstruct-plus</module>
     </modules>
 
     <properties>

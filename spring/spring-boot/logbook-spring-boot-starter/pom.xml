@@ -28,6 +28,10 @@
             <artifactId>logbook-spring-boot-starter</artifactId>
             <version>2.16.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>

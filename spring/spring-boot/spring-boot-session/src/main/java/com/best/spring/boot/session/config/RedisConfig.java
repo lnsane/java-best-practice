@@ -2,6 +2,7 @@ package com.best.spring.boot.session.config;
 
 import com.best.spring.boot.session.RedisLienter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -15,7 +16,8 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 @Configuration
 public class RedisConfig {
     private final RedisConnectionFactory redisConnectionFactory;
-
+    @Value("${spring.redis.database}")
+    private String redisDatabase;
     @Autowired
     public RedisConfig(RedisConnectionFactory redisConnectionFactory) {
         this.redisConnectionFactory = redisConnectionFactory;
@@ -34,7 +36,7 @@ public class RedisConfig {
      * */
     @Bean
     public ChannelTopic channelTopic() {
-        return new ChannelTopic("__keyevent@1__:expired");
+        return new ChannelTopic("__keyevent@"+redisDatabase+"__:expired");
     }
 
     /**
@@ -42,7 +44,7 @@ public class RedisConfig {
      * */
     @Bean
     public PatternTopic patternTopic() {
-        return new PatternTopic("/__keyevent@1__:expired/*");
+        return new PatternTopic("/__keyevent@"+redisDatabase+"__:expired/*");
     }
 
     /**
