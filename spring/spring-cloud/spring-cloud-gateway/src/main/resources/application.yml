@@ -1,3 +1,13 @@
+logbook:
+  include:
+    - /**
+  filter.enabled: true
+  format.style: json
+logging:
+  level:
+    org.zalando.logbook: trace
+  file:
+    path: ./log
 spring:
   application:
     name: paas-sos-auth

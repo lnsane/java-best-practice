@@ -12,9 +12,9 @@ import reactor.core.publisher.Mono;
  * @author CunLu Wang
  * @since 2023/5/25
  */
-@RefreshScope
-@Component
-@Order(value = -2)
+//@RefreshScope
+//@Component
+//@Order(value = -2)
 public class AllFilter implements WebFilter {
 
     @Override
