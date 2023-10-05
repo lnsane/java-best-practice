@@ -27,5 +27,7 @@
     <file url="file://$PROJECT_DIR$/spring/spring-cloud/spring-boot-nacos-rush/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-cloud/spring-cloud-knife4j/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-cloud/spring-cloud-knife4j/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring-cloud/spring-cloud-zipkin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring-cloud/spring-cloud-zipkin/src/main/resources" charset="UTF-8" />
   </component>
 </project>

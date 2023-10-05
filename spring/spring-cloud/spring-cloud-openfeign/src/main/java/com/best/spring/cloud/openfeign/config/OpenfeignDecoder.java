@@ -22,11 +22,11 @@ public class OpenfeignDecoder implements Decoder {
     @Override
     public Object decode(Response response, Type type) throws IOException, DecodeException, FeignException {
         byte[] bodyData = Util.toByteArray(response.body().asInputStream());
-        log.info("Feign 响应. 状态码: {}, 响应体: {}", response.status(), response.charset().newDecoder().decode(ByteBuffer.wrap(bodyData)));
+        log.info("Feign 响应. 状态码: {}, 响应体: {}", response.status(), new String(bodyData));
         String typeName = type.getTypeName();
         try {
             Class<?> clazz = Class.forName(getClassName(typeName));
-            return new Gson().fromJson(response.charset().newDecoder().decode(ByteBuffer.wrap(bodyData)).toString(),clazz);
+            return new Gson().fromJson(new String(bodyData), clazz);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

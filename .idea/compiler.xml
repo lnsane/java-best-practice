@@ -36,6 +36,7 @@
         <module name="kingdee" />
         <module name="spring-boot-page-helper" />
         <module name="spring-cloud-feign-user" />
+        <module name="spring-cloud-zipkin" />
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-session" />
         <module name="seata-order" />
@@ -94,6 +95,21 @@
         <module name="spring-boot-s3" />
         <module name="spring-boot-neo4j" />
         <module name="dubbo-consumer" />
+      </profile>
+      <profile name="Annotation profile for spring-boot-mapstruct-plus" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/io/github/linpeilie/mapstruct-plus-processor/1.3.5/mapstruct-plus-processor-1.3.5.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/github/linpeilie/mapstruct-plus/1.3.5/mapstruct-plus-1.3.5.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/cn/hutool/hutool-core/5.8.15/hutool-core-5.8.15.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/baidu/lbsyun/javapoet/1.9.0/javapoet-1.9.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="spring-boot-mapstruct-plus" />
       </profile>
       <profile name="Annotation profile for java-best-practice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

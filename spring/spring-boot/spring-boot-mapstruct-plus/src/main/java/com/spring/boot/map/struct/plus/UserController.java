@@ -16,7 +16,6 @@ public class UserController {
     @GetMapping("/user")
     public void user() {
             User user = new User();
-            user.setUserName("admin");
             UserDto convert = converter.convert(user, UserDto.class);
             System.out.println(convert);
     }
