@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author lnsane
@@ -31,6 +32,11 @@ public class HelloController implements Hello {
         usernameUser.setUsername(username);
         user.add(usernameUser);
         userData.setS(user);
+        try {
+            TimeUnit.SECONDS.sleep(40);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return userData;
     }
 

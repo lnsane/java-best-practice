@@ -1,0 +1,7 @@
+server:
+  port: 9092
+spring:
+  application:
+    name: zipkin-demo
+  main:
+    allow-bean-definition-overriding: true

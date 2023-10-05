@@ -1,5 +1,9 @@
 server:
   port: 8039
+  tomcat:
+    max-keep-alive-requests: 2
+    max-connections: 11
+    keep-alive-timeout: 10000
 spring:
   application:
     name: spring-web-start-demo

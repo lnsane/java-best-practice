@@ -6,5 +6,10 @@ spring:
   main:
     allow-bean-definition-overriding: true
 feign:
-  circuitbreaker:
+  hystrix:
     enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 3000
+        readTimeout: 3000

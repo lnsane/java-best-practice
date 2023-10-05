@@ -1,8 +1,5 @@
-package com.best.spring.cloud.openfeign.controller;
+package com.best.spring.cloud.zipkin.feign;
 
-import com.best.spring.cloud.openfeign.bean.Data;
-import com.best.spring.cloud.openfeign.lnheritance.Hello2Feign;
-import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,9 +13,9 @@ public class TestController {
 
     @GetMapping("/test")
     public String test() {
-        Data<?> hello = helloFeign.hello();
-        System.out.println(hello);
-        System.out.println(new Gson().toJson(hello));
+        log.info("开始");
+        helloFeign.hello();
+        log.info("异常");
         return "";
     }
 }

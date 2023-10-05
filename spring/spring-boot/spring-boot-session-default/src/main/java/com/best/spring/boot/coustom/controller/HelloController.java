@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author 王存露
@@ -29,7 +30,8 @@ public class HelloController {
 
     @GetMapping(value = "send")
     private void send(){
-        redisTemplate.convertAndSend("__keyevent@1__:expired","123123123");
+        redisTemplate.opsForValue().set("wangcunlu","123123123",10L, TimeUnit.SECONDS);
+        redisTemplate.convertAndSend("__keyevent@wangcunlu__:expired","123123123");
     }
 
     @GetMapping(value = "delete/{str}")
